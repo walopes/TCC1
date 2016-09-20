@@ -1,0 +1,230 @@
+
+\documentclass[oneside,11pt]{normas-utf-tex} %oneside = para dissertacoes com numero de paginas menor que 100 (apenas frente da folha) 
+
+% force A4 paper format
+%\special{papersize=210mm,297mm}
+
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=3cm,bmargin=2cm,lmargin=3cm,rmargin=2cm}
+%\usepackage[a4paper,top=3cm, bottom=2cm, left=3cm, right=2cm, includeheadfoot, verbose]{geometry}
+
+
+\usepackage[table]{xcolor}
+\usepackage{gensymb}  % Para o (+ ou -), ou \pm
+
+%\usepackage{abntex}
+%\usepackage{abntcite}
+%\usepackage[scaled]{helvet}
+%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage[brazil]{babel} % pacote portugues brasileiro
+%\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % pacote para acentuacao direta
+\usepackage{amsmath,amsfonts,amssymb} % pacote matematico
+\usepackage{graphicx} % pacote grafico
+%\usepackage{times} % fonte times
+\usepackage[final]{pdfpages} % adicao da ata
+\usepackage{hyperref} % gera hiperlinks para o sumario, links, referencias -- deve vir antes do 'abntcite' 
+\usepackage{tabularx}
+\usepackage{pgfgantt}
+\usepackage{rotating}
+\usepackage{comment}
+%\usepackage{times}
+\usepackage{subcaption}
+\usepackage{mathptmx}
+\usepackage{indentfirst} %Indenta o primeiro parágrafo da seção
+
+%\usepackage[scaled]{helvet}
+%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
+
+\usepackage{caption}% http://ctan.org/pkg/caption
+%\captionsetup[figure]{justification=raggedleft,singlelinecheck=off}
+
+\usepackage[labelsep=endash]{caption}
+
+
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.1cm}  % tente também \onelineskip
+
+%%%%%% Declarações novas: para mexer no cronograma 
+
+\usepackage{array}
+\usepackage{varwidth}
+
+%%%%%%
+
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+% ---------- Preambulo ----------
+\instituicao{Universidade Tecnol\'ogica Federal do Paran\'a} % nome da instituicao
+\departamento{Departamento Acadêmico de Informática} % nome do programa
+\programa{Curso de Engenharia de Computa\c{c}\~ao} % área ou curso
+
+\documento{Trabalho de Conclusão de Curso}
+%\documento{Proposta}
+\nivel{Graduação}
+\titulacao{Engenheiro de Computação} 
+
+%\titulo{{Controle híbrido de robô seguidor de linha auxiliado por inteligência artificial}} % titulo do trabalho em portugues
+%\titulo{{Inteligência artificial aplicada à controle híbrido de robô seguidor de linha (provisorio)}} % titulo do trabalho em portugues
+\titulo{{Projeto e Implementação de robô autônomo seguidor de linha}} % titulo do trabalho em portugues
+
+\title{{lalala}} % titulo do trabalho em ingles
+
+\autor{Willian Americano Lopes} % autor do trabalho
+\cita{LOPES, Willian Americano} % sobrenome (maiusculas), nome do autor do trabalho
+
+\palavraschave{Quadricóptero. Multi-rotor. VTOL.} % palavras-chave do trabalho
+\keywords{Quadrotor. Multi-rotor. VTOL.} % palavras-chave do trabalho em ingles
+
+%\comentario{\UTFPRdocumentodata\ de graduação, apresentado à disciplina de Trabalho de Conclusão de Curso 1, do Curso Superior de Engenharia de Computação do \UTFPRdepartamentodata\ - DAINF - da \ABNTinstituicaodata\ - UTFPR, como requisito parcial para obten\c{c}\~ao do título de ``\UTFPRtitulacaodata\ em Computação''.}
+\comentario{Proposta de \UTFPRdocumentodata\ de graduação, apresentada à disciplina de Trabalho de Conclusão de Curso 1, do Curso Superior de Engenharia de Computação do \UTFPRdepartamentodata\ - DAINF - da \ABNTinstituicaodata\ - UTFPR, como requisito parcial para obten\c{c}\~ao do título de ``\UTFPRtitulacaodata\ ''.}
+
+
+\orientador{Prof. Dr. Fábio Favarim} % nome do orientador do trabalho
+\coorientador{Prof. Dr. Eng. César Rafael Claure Torrico} % co-orientador
+
+\local{Pato Branco} % cidade
+\data{\the\year} % ano automatico
+
+% desativa hifenizacao mantendo o texto justificado.
+% thanks to Emilio C. G. Wille
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\sloppy
+
+
+
+
+%---------- Inicio do Documento ----------
+\begin{document}
+
+
+\capa % geracao automatica da capa
+\folhaderosto % geracao automatica da folha de rosto
+
+%\termodeaprovacao
+
+%Dedicatória
+%\begin{dedicatoria}
+%Dedico este trabalho à meus pais, que me proporcionaram este momento (melhorar depois).
+%\end{dedicatoria}
+
+%Agradecimentos
+%\begin{agradecimentos}
+%Incluir os agradecimentos aqui...
+%\end{agradecimentos}
+
+%epigrafe
+%\begin{epigrafe}
+%\textit{``Se enxerguei mais longe, foi porque}\\
+%\textit{me apoiei nos ombros de gigantes''}
+%\newline \newline \raggedleft Sir Isaac Newton.
+%\end{epigrafe}
+
+%resumo
+%\begin{resumo}
+%Incluir o resumo aqui....
+%\end{resumo}
+
+%abstract
+%\begin{abstract}
+%Include the abstract here
+%\end{abstract}
+
+%listas (opcionais, mas recomenda-se a partir de 5 elementos)
+%\listadefiguras % geracao automatica da lista de figuras
+%\listadetabelas % geracao automatica da lista de tabelas
+%\listadequadros % adivinhe :)
+%\listadesiglas % geracao automatica da lista de siglas
+%\listadesimbolos % geracao automatica da lista de simbolos
+
+% sumario
+\sumario % geracao automatica do sumario
+
+
+%---------- Inicio do Texto ----------
+% recomenda-se a escrita de cada capitulo em um arquivo texto separado (exemplo: intro.tex, fund.tex, exper.tex, concl.tex, etc.) e a posterior inclusao dos mesmos no mestre do documento utilizando o comando \input{}, da seguinte forma:
+
+
+\input{intro.tex}
+\input{funda.tex}
+%\input{metod.tex}
+%\input{recur.tex}
+\input{viabi.tex}
+%\input{concl.tex}
+
+
+%---------- Referencias ----------
+\clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.
+
+%\label{bibstart}
+%\bibliographystyle{plain}
+%\bibliography{bibliografia} % geracao automatica das referencias a partir do arquivo bibliografia.bib
+%\label{bibend}
+
+\bibliographystyle{abnt-alf} % Estilo autor-data
+%\bibliographystyle{plain} % Estilo autor-data
+\bibliography{bibliografia.bib}    % As referencias deste testo estão no arquivo bibliografia.bib
+
+%\bibliographystyle{abbrv}
+%\bibliography{ref.bib}
+
+
+
+
+% --------- Ordenacao Afabetica da Lista de siglas --------
+%\textbf{* Observa\c{c}\~oes:} a ordenacao alfabetica da lista de siglas ainda nao eh realizada de forma automatica, porem
+% eh possivel se de realizar isto manualmente. Duas formas:
+%
+% ** Primeira forma)
+%    A ordenacao eh feita com o auxilio do comando 'sort', disponivel em qualquer
+% sistema Linux e UNIX, e tambem em sistemas Windows se instalado o coreutils (http://gnuwin32.sourceforge.net/packages/coreutils.htm)
+% comandos para compilar e ordenar, supondo que seu arquivo se chame 'dissertacao.tex':
+%
+%      $ latex dissertacao
+%      $ bibtex dissertacao && latex dissertacao
+%      $ latex dissertacao
+%      $ sort dissertacao.lsg > dissertacao.lsg.tmp
+%      $ mv dissertacao.lsg.tmp dissertacao.lsg
+%      $ latex dissertacao
+%      $ dvipdf dissertacao.dvi
+%
+%
+% ** Segunda forma)
+%\textbf{Sugest\~ao:} crie outro arquivo .tex para siglas e utilize o comando \sigla{sigla}{descri\c{c}\~ao}.
+%Para incluir este arquivo no final do arquivo, utilize o comando \input{arquivo.tex}.
+%Assim, Todas as siglas serao geradas na ultima pagina. Entao, devera excluir a ultima pagina da versao final do arquivo
+% PDF do seu documento.
+
+
+%-------- Citacoes ---------
+% - Utilize o comando \citeonline{...} para citacoes com o seguinte formato: Autor et al. (2011).
+% Este tipo de formato eh utilizado no comeco do paragrafo. P.ex.: \citeonline{autor2011}
+
+% - Utilize o comando \cite{...} para citacoeses no meio ou final do paragrafo. P.ex.: \cite{autor2011}
+
+
+
+%-------- Titulos com nomes cientificos (titulo, capitulos e secoes) ----------
+% Regra para escrita de nomes cientificos:
+% Os nomes devem ser escritos em italico, 
+%a primeira letra do primeiro nome deve ser em maiusculo e o restante em minusculo (inclusive a primeira letra do segundo nome).
+% VEJA os exemplos abaixo.
+% 
+% 1) voce nao quer que a secao fique com uppercase (caixa alta) automaticamente:
+%\section[nouppercase]{\MakeUppercase{Estudo dos efeitos da radiacao ultravioleta C e TFD em celulas de} {\textit{Saccharomyces boulardii}}
+%
+% 2) por padrao os cases (maiusculas/minuscula) sao ajustados automaticamente, voce nao precisa usar makeuppercase e afins.
+% \section{Introducao} % a introducao sera posta no texto como INTRODUCAO, automaticamente, como a norma indica.
+
+
+\end{document}
