@@ -1,0 +1,48 @@
+\chapter{Recursos de Hardware e Software} \label{cap:recur}
+
+Neste capítulo serão apresentados os principais recursos de \textit{hardware} e \textit{software} utilizados nesse projeto, bem como a origem destes recursos.
+
+
+\section{Recursos de Hardware} \label{sec:recurhard}
+
+Os recursos de \textit{hardware} necessários englobam o quadricóptero, o sistema de comunicação e a estação base.
+
+O quadricóptero pode ser divido em duas partes: estrutura física e placa de controle. Os componentes da estrutura física são:
+
+\begin{itemize}
+\item 1x Chassi de 45cm diâmetro 
+\item 4x Motor brushless 5000kV 
+\item 4x Hélice 9x4,7 GWS 
+\item 4x \sigla{ESC}{Eletronic Speed Control} 30A 
+\item 1x Bateria 4000mAh 7,4V
+\end{itemize}
+
+estes componentes foram emprestados pelo prof. Hugo Vieira, orientador desse trabalho. Também foi emprestada uma placa de controle, chamada ``KK multicopter'', porém essa é uma placa de baixo desempenho e espera-se substituí-la por uma melhor. O desejável seria construir a própria placa de controle, porém devido ao encapsulamento \sigla{SMD}{Surface Mounted Device} utilizado nos sensores MEMS, a montagem dessas placas requer o uso de equipamentos específicos, inviáveis para esse projeto.
+
+Até o momento não há disponibilidade de nenhum dos componentes do sistema de comunicação, todos deverão ser adquiridos. Eles são:
+
+\begin{itemize}
+\item 2x Módulo transceptor de RF
+\item 1x USB \textit{dongle}
+\item 1x Rádio controle 4 ou mais canais
+\item 1x Receptor 4 ou mais canais
+\end{itemize}
+
+A estação base é um computador, desktop ou portátil, recente, com sistema operacional Windows ou Linux. Será usado um computador próprio.
+
+
+\section{Recursos de Software}
+
+Alguns recursos de software utilizados dependerão das alternativas de hardware escolhidas e só poderão ser definidas posteriormente. Inicialmente serão utilizados os seguintes:
+
+\begin{itemize}
+\item Matlab ou Octave: simulações do sistema de controle, coleta de dados do quadricóptero. Disponíveis na UTFPR e gratuito, respectivamente.
+\item Eagle: criação de diagramas eletrônicos e placas de circuito impresso. Gratuito.
+\item Astah community ou Dia: edição de diagramas UML e fluxogramas. Ambos gratuitos.
+\end{itemize}
+
+
+
+
+
+

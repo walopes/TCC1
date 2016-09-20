@@ -1,0 +1,30 @@
+\chapter{Metodologia} \label{cap:metod}
+
+\begin{comment}
+Nesse capítulo será descrita a metodologia utilizada para o desenvolvimento deste projeto. Serão descritas as etapas do projeto e os principais fundamentos e tecnologias a serem empregados.
+
+O trabalho será composto por seis etapas:
+
+\begin{enumerate}
+\item Projetar e montar a estrutura física.
+\item Modelar o sistema.
+\item Projetar e implementar o sistema de comunicação.
+\item Projetar e construir o sistema embarcado.
+\item Projetar e implementar o sistema de controle.
+\item Idealizar e conduzir experimentos reais de teste de navegação.
+\end{enumerate}
+
+\noindent{\bf Etapa 1:} essa etapa será destinada ao projeto, aquisição e montagem da estrutura física do quadricóptero. A estrutura é composta basicamente por um chassi, quatro motores, quatro hélices e uma bateria. Deverão ser analisados os recursos disponíveis no mercado ou passíveis de empréstimo capazes de satisfazer os requisitos do sistema. Ao final desta etapa, a estrutura deverá ser testada com o sistema eletrônico de um quadricóptero de controle remoto comercial, a fim de verificar suas capacidades básicas de voo.
+
+\noindent{\bf Etapa 2:} nessa fase será feita a modelagem matemática da estrutura física desenvolvida na etapa anterior. Essa modelagem é necessária para o projeto do sistema de controle que será desenvolvido na etapa 5. Apesar de ter um grande foco teórico, também serão necessários testes empíricos.
+
+\noindent{\bf Etapa 3:} aqui deverá ser desenvolvido o sistema de comunicação. Haverá dois canais de comunicação: um principal (quadricóptero-estação base), para definição de objetivos e coleta de dados, e um secundário (quadricóptero-controle remoto), de emergência, para que um humano possa assumir o controle. Deverão ser analisadas as tecnologias disponíveis, custo de implementação e integração com o sistema embarcado, a estação base e o controle remoto.
+
+\noindent{\bf Etapa 4:} essa etapa é destinada o projeto e construção de um sistema embarcado microcontrolado para realização das funções do quadricóptero. O sistema deve ser capaz de realizar todas as tarefas em tempo real e de forma autônoma. Suas tarefas incluem: leitura dos sensores, comunicação, execução do sistema de controle de estabilidade e acionamento dos motores. Pode ser escolhido um sistema comercial, desde que atenda ao requisitos e que ofereça total acesso ao microcontrolador, ou pode ser desenvolvido um.
+
+%O canal principal será entre o quadricóptero e uma estação base. A estação base enviará rotas de voo ou objetivos para o quadricóptero, e coletará dados dos sensores e estados internos. O canal secundário, ou de emergência, será estabelecido entre um controle remoto e o quadricóptero. Sua função é permitir que, em casos de mal funcionamento, risco de dano ao veículo ou a pessoas ao redor, um piloto externo possa assumir o controle e aterrissá-lo em uma posição segura.
+
+\noindent{\bf Etapa 5:} nessa fase deverá ser projetado e implementado um sistema de controle de estabilidade e desvio de obstáculos. Diversas técnicas de controle já foram analisadas em outros projetos, cada uma apresentando vantagens e desvantagens, de acordo com as características do ambiente de estudo. Com base nesses trabalhos deverão ser escolhidas uma ou mais técnicas para utilização. Baseado na modelagem matemática desenvolvida na etapa 2, softwares matemáticos poderão ser utilizados para auxiliar no projeto do controlador, realizando simulações do funcionamento do sistema antes da implementação no sistema embarcado. Testes reais deverão ser realizados.
+
+\noindent{\bf Etapa 6:} por fim, deverão ser conduzidos testes para verificar o funcionamento completo do veículo e validar os objetivos deste projeto.
+\end{comment}

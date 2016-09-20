@@ -1,0 +1,29 @@
+\RequirePackage{float}
+\RequirePackage{tocloft}
+
+\newcommand{\quadref}[1]{Quadro \thechapter.\ref{#1}}
+
+\newcommand{\listQuadrosname}{Lista de Quadros}
+\newlistof{quadro}{qud}{\listQuadrosname}
+\floatstyle{plaintop}
+\newfloat{Quadros}{H}{lop}
+\floatname{Quadros}{Quadro}
+
+\newenvironment{quadro}
+{\refstepcounter{quadro}
+
+\addcontentsline{qud}{quadro}{\numberline{Quadro \thechapter.\thequadro\ }}
+\begin{Quadros}\begin{center}
+}
+{\end{center}\end{Quadros}}
+
+\newlistof{quadros}{exp}{\listQuadrosname}
+\newcommand{\quadros}[1]{%
+\refstepcounter{quadros}
+\par\noindent{Quadro \thechapter.\thequadros: #1}
+\addcontentsline{exp}{quadros}
+{\protect\numberline{\thechapter.\thequadros}#1}\par}
+
+\addcontentsline{toc}{chapter}{Lista de Quadros}
+
+

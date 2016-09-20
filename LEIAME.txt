@@ -1,0 +1,24 @@
+|-----------------------------------------------------------------------------|
+|			Willian Americano Lopes				      |
+|			Engenharia de Computação			      |
+|			UTFPR - Pato Branco				      |
+|			Última alteração: 16/08/2016			      |
+|  			Todos os direitos reservados!			      |
+|									      |
+|-----------------------------------------------------------------------------|
+|  Este documento contém algumas dicas na hora de utilizar este		      |
+| template, que está modificado de acordo com o Abntex2, mas conforme as      |
+| normas da UTFPR para este ano.					      |
+|									      |
+| -> Utilizar o BibTex:							      |
+|   Primeiro é necessário compilar o documento .tex (quickbuild/pdfLaTex);    |
+|   Em seguida executa o BibTex;					      |
+|   Executa-se novamente o documento .tex para que as referências/            |
+|      citações apareçam no texto.					      |
+|									      |
+|									      |
+|									      |
+|									      |
+|									      |
+|									      |
+|-----------------------------------------------------------------------------|

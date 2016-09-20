@@ -1,0 +1,83 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tcc1.aux
+The style file: abnt-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: abnt-options.bib
+Database file #2: bibliografia.bib.bib
+You're missing a field name---line 218 of file bibliografia.bib.bib
+ :   
+ :   %author = {ANSI/RIA.R15.06-1999},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 242 of file bibliografia.bib.bib
+ :   
+ :   %url={https://books.google.com.br/books?id=aPa0AAAACAAJ},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 255 of file bibliografia.bib.bib
+ : 
+ : %volume = '';
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "abnt-etal-list=99"
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliografico abnt-alf.bst versao 1.53           |
+| Implementa a NBR6023, NBR10520 e NBR10523               |
+| Em caso de duvidas ou problemas com este estilo procure |
+| http://abntex.codigolivre.org.br                        |
++---------------------------------------------------------+
+You've used 21 entries,
+            6522 wiz_defined-function locations,
+            1240 strings with 11339 characters,
+and the built_in function-call counts, 48405 in all, are:
+= -- 7636
+> -- 275
+< -- 1399
++ -- 1537
+- -- 92
+* -- 2091
+:= -- 4526
+add.period$ -- 78
+call.type$ -- 23
+change.case$ -- 121
+chr.to.int$ -- 26
+cite$ -- 17
+duplicate$ -- 7059
+empty$ -- 1229
+format.name$ -- 415
+if$ -- 9655
+int.to.chr$ -- 6
+int.to.str$ -- 2
+missing$ -- 321
+newline$ -- 92
+num.names$ -- 85
+pop$ -- 498
+preamble$ -- 1
+purify$ -- 64
+quote$ -- 0
+skip$ -- 7401
+stack$ -- 1
+substring$ -- 1772
+swap$ -- 1580
+text.length$ -- 21
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 125
+width$ -- 0
+write$ -- 257
+(There were 3 error messages)

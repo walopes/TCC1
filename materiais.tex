@@ -1,0 +1,126 @@
+
+%\chapter{Recursos de Hardware e Software} \label{cap:materiais}
+%\chapter{Materiais} \label{cap:materiais}
+\chapter{Materiais} \label{cap:materiais}
+\vspace{-2cm}
+Neste capítulo serão apresentados os materiais a serem utilizados neste projeto.\newline
+%\vspace{1cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Microcontrolador} \label{cap:micro}
+
+Será utilizado o \textit{Kit} de desenvolvimento NUCLEO-F303K8, da ST Microelectronics, %\textsuperscript{TM}, 
+que possui as seguintes especificações básicas \cite{stm303}:
+
+\begin{itemize}
+ \item Microprocessador de arquitetura \textit{Advanced RISC Machine} (\sigla{ARM}{\textit{Advanced RISC Machine}}) Cortex-M4 de 32 bits com FPU;
+ \item 72 MHz de frequência máxima de operação;
+ \item Instruções de \textit{Digital Signal Processor} (\sigla{DSP}{\textit{Digital Signal Processor}});
+ \item 90 DMIPS de desempenho;
+ \item 64KB de memória \textit{Flash};
+ \item 16KB de SRAM;
+ \item 2 módulos \textit{Analog to Digital Converter} (\sigla{ADC}{\textit{Analog to Digital Converter}}) com até 21 canais;
+ \item 11 módulos de temporizadores (\textit{timers}).
+\end{itemize}%\newline
+\vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Motores CC} \label{cap:motores}
+Será utilizado o motor de corrente contínua (\sigla{CC}{Corrente contínua}) 
+\textit{High-Power Carbon Brush} (\sigla{HPCB}{\textit{High-Power Carbon Brush}}) modelo 3041 da Pololu, %\textsuperscript{TM} 
+\cite{pololu_motor}. Este motor possui alimentação de 12V, caixa de redução 10:1, 3000 
+\sigla{RPM}{\textit{Revolutions Per Minute}} e eixo estendido, o qual permite o acoplamento do encoder magnético. 
+
+\vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ponte H} \label{cap:ponteh}
+Será utilizada uma Ponte H para o controle de velocidade dos motores. O modelo que será utilizado é o TB6612FNG, da 
+Toshiba, que é capaz de controlar até dois motores CC com corrente constante de 1,2A \cite{ponte}. 
+A velocidade do motor é controlada por \textit{Pulse Width Modulation} (\sigla{PWM}{\textit{Pulse Width Modulation}}).
+
+
+\vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Encoder magnético} \label{cap:encoder}
+Um \textit{encoder} magnético é um transdutor de movimento, que converte movimentos em informações elétricas, %\cite{}.
+sendo possível obter dados como posição e velocidade. Neste trabalho será utilizado o modelo 3081 da 
+Pololu, %\textsuperscript{TM}, 
+o qual realiza 12 contagens por revolução do eixo e é compatível com o motor 3041 
+\cite{pololu_encoder}.
+
+\vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sensores de refletância} \label{cap:reflet}
+O sensor de refletância é um dispositivo eletrônico que consiste de um \textit{Light Emitter Diode} 
+\sigla{LED}{\textit{Light Emitter Diode}} e um fototransistor, medindo assim a refletância de uma superfície. Este circuito 
+será utilizado para detectar a linha do percurso. 
+O modelo que será utilizado nesse trabalho é o QRE1113P, da Fairchild %\textsuperscript{TM} Semiconductor\cite{reflet}.
+Semiconductor\cite{reflet}.
+\vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Placa de circuito impresso} \label{cap:chassi}
+O \textit{chassi} do robô, ou seja, a estrutura deste, será confeccionada em uma placa de 
+circuito impresso (\sigla{PCB}{\textit{Printed Circuit Board}}) de fenolite.
+\vspace{0.5cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Módulo bluetooth} \label{cap:bluetooth}
+Será utilizado o módulo \textit{bluetooth} %\textregistered 
+HC-05 para a telemetria. Este módulo possuiu a configuração 
+mestre-escravo e comunicação \textit{Universal Asynchronous Receiver Transmitter} 
+(\sigla{UART}{\textit{Universal Asynchronous Receiver Transmitter}}).
+
+\vspace{0.5cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Rodas} \label{cap:rodas}
+Serão utilizadas rodas de poliuretano ou silicone.
+\vspace{0.5cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bateria Lipo} \label{cap:bateria}
+Será utilizada uma bateria do tipo Lítio-Polímero (\sigla{Li-Po}{Lítio-Polímero}) de duas céluas, 7,4V, 1300mAh e 
+32,5A de corrente máxima de descarga, pois possui alta capacidade de corrente e densidade de carga.
+\vspace{0.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conversor Step-Up} \label{cap:stepup}
+O conversor \textit{Step-up} que será utilizado é o XL6009, que é um módulo elevador de tensão. Este circuito possui 
+eficiência de 94\%, corrente e tensão de saída máxima de 3A e 35V, respectivamente \cite{stepup}.
+\vspace{0.5cm}
+
+
+%\newline
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Esfera deslizante} \label{cap:esfera}
+Será utilizada uma esfera deslizante para sustentar a parte frontal do robô e manter os sensores de refletância em sua 
+correta posição de funcionamento.
+\vspace{0.5cm}
+
+
+%\newline
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Step-Down} \label{cap:stepdown}
+
+%\newline
+
+
+
+
+% https://www.pololu.com/product/3038
+
+% https://www.pololu.com/product/3081
+
+
+

@@ -1,0 +1,148 @@
+
+\chapter{Referencial Teórico} \label{cap:funda}
+
+\vspace{-2cm} %Deixar no formato certo, 1 'ENTER' após e a seção e 2 'ENTERs' antes da seção
+
+Neste capítulo são apresentados os principais conceitos teóricos relacionados ao desenvolvimento deste trabalho.
+
+\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Robótica} \label{cap:rob_auto}
+% Passar pra frente
+A palavra ``Robô'' foi criada pelo escritor tcheco Karel Capek, sendo utilizada em sua peça 
+\textit{Rossum's Universal Robots} (\sigla{RUR}{\textit{Rossum's Universal Robots}}), a qual foi 
+encenada em 1921, em Praga. Na linguagem eslava, \textit{robota} significa atividade 
+forçada ou escrava. Na peça de Capek, os robôs eram pessoas fabricadas artificialmente, ausentes
+de emoção \cite{polonskii1996}.\par
+A \textit{Robotic Industries Association} (\sigla{RIA}{\textit{Robotic Industries Association}}), 
+entidade norte-americana responsável pela indústria de robótica, define um robô industrial como
+ \textit{ um manipulador multipropósito reprogramável, controlado automaticamente, programado em três 
+ ou mais eixos, os quais podem ser fixos em um lugar ou móveis para aplicações em automação industrial} 
+ \cite{RIA_def}.
+%\footnote{Fonte em \url{http://www.robotics.org/product-catalog-detail.cfm/productid/2953}. Acesso em: 15 agosto 2016}. 
+%Diferentemente do que foi imaginado por Capek, hoje máquinas fazem o trabalho destes seres-humanos.
+Diferentemente do que foi imaginado por Capek, são máquinas que realizam o trabalho.
+
+%\begin{comment}
+\citeonline{secchi2012} classifica os robôs em três tipos:
+\begin{itemize}
+ \item Industriais: São formados por estruturas mecâncias articuladas, as quais se movem pelas ordens de um sistema de 
+ controle, normalmente um microcontrolador;
+ \item Médicos: Também conhecidos como de cooperação ou reabilitação, são os utilizados em cirurgias de alta complexidade e 
+ precisão, assim como as próteses inteligentes, que visam manter a aparência e funcionalidade do membro de pessoas com 
+ deficiência.;
+ \item Móveis: São plataformas mecânicas, que se locomovem através de um certo ambiente e apresentam certa autonomia.
+São empregados principalmente em tarefas onde se tem risco à vida humana, como na manutenção de reatores nucleares ou 
+exploração de 
+minérios, mas também podem ser aplicados na agricultura e no transporte de cargas.
+\end{itemize}
+
+
+\vspace{1cm}
+\subsection{Robôs móveis}
+
+
+%% 	É	AQUI	QUE 	TEM 	QUE	ALTERAR
+%% A Kathya falou para colocar outra definição e explicar um pouco melhor.
+
+\end{comment}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Regras da Robocore para robôs seguidores de linha} \label{cap:regras_comp}
+
+Na Seção \ref{cap:espc_robocore} e Seção \ref{cap:perc_robocore} são apresentadas as regras relacionadas à 
+especificação dos robôs e do percurso, respectivamente, 
+para a categoria robô seguidor de linha Pro, em eventos realizados pela \citeonline{RegrasRobocore}.
+
+\vspace{1cm}
+\subsection{Especificação dos robôs} \label{cap:espc_robocore}
+
+Para competir na categoria seguidor de linha, os robôs devem ser totalmente autônomos, não podendo serem controlados 
+externamente por fio ou por rádio, com exceção para quando este for iniciado. Todos os componentes devem ser embarcados. A 
+dimensão máxima permitida é de 250mm   de   comprimento,   250mm   de   largura   e   200mm   de   altura. Não é 
+permitido alterar as dimensões do robô durante a partida, assim como alterar o \textit{hardware} ou \textit{software} 
+durante a tomada de tempo. Também não é permitida a utilização de um mecanismo de sucção, 
+que vise aumentar a força normal do robô em relação ao solo.
+
+\vspace{1cm}
+\subsection{Especificações do Percurso} \label{cap:perc_robocore}
+
+A pista é feita de uma ou mais placas de \sigla{MDF}{\textit{Medium-Density Fiberboard}} revestidas com uma manta de 
+borracha preta, assim, eventualmente serão necessárias emendas para compor a área do percurso. Os robôs, no entanto, 
+devem ser capazes de superar os desníveis decorrentes das emendas, que são de aproximadamente 1mm.
+Uma linha branca, de 19$\pm$1mm, indica o percurso. Esta linha pode cruzar sobre ela mesma, tendo, neste caso, 
+um ângulo de intersecção de 90$\pm$5º (graus), com os 250mm antes e depois do cruzamento sendo retas (conforme pode 
+ser visto na Figura \ref{fig:percurso1}). O circuito é totalmente plano, porém podem ocorrer 
+inclinações de até 5º.\par
+
+
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.37\textwidth,font=footnotesize,textfont=bf}
+ \includegraphics[scale=0.6]{figuras/Percurso1.png}
+ \caption{Intersecções no percurso \label{fig:percurso1}}
+ \vspace{-0.7cm}
+ \caption*{Fonte: Disponível em \cite[p.4]{RegrasRobocore}.}
+\end{figure}
+%\captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
+
+
+
+
+
+
+A área que se estende entre o ponto de partida e o ponto de chegada, considerando 200mm da linha e 200mm a esquerda da linha
+ é denominada ``área de partida-chegada'', conforme pode ser visto na Figura \ref{fig:percurso2}.\par
+
+\vspace{0.6cm}
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.55\textwidth,font=footnotesize,textfont=bf}
+ \includegraphics[scale=0.5]{figuras/Percurso2.png}
+ \caption{Área de partida-chegada \label{fig:percurso2}}
+  \vspace{-0.3cm}
+ \caption*{Fonte: Disponível em \cite[p.4]{RegrasRobocore}.}
+\end{figure}
+
+
+
+%\captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
+Quando houver um arco (intersecção entre a faixa branca), o raio deste é de pelo menos 100mm. Quando houver uma 
+alteração na curvatura do percurso, deve haver uma marcação no lado esquerdo da linha, como pode ser visto na Figura 
+\ref{fig:percurso4}.\par
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.68\textwidth,font=footnotesize,textfont=bf}
+ \includegraphics[scale=0.6]{figuras/Percurso4.png}
+ \caption{Marcações de sinalização de curvatura \label{fig:percurso4}}
+ \vspace{-0.3cm}
+ \caption*{Fonte: Disponível em \cite[p.4]{RegrasRobocore}.}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
