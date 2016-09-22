@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.53 }
 
+\bibitem[ANSI/RIA.R15.06-1999 2010]{RIAdef}
+\abntrefinfo{ANSI/RIA.R15.06-1999}{ANSI/RIA.R15.06-1999}{2010}
+{ANSI/RIA.R15.06-1999. \textbf{Robot Terms and Definitions}. 2010.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.robotics\-.org\-/product-catalog-detail\-.cfm\-/productid\-/2953$>$}{http://www.robotics.org/product-catalog-detail.cfm/productid/2953}.
+  Acesso em: 15 ago. 2016.}
+
 \bibitem[Cassandras e Lafortune 2008]{cassandras}
 \abntrefinfo{Cassandras e Lafortune}{CASSANDRAS; LAFORTUNE}{2008}
 {CASSANDRAS, C.~G.; LAFORTUNE, S. \textbf{Introduction to Discrete Event
@@ -41,6 +48,11 @@ Dispon{\'\i}vel em: $<$https:\-/\-/www\-.pololu\-.com\-/product\-/3081$>$.
 {POLOLU. \textbf{Pololu micromotor datasheet}. 2016.
 Dispon{\'\i}vel em: $<$https:\-/\-/www\-.pololu\-.com\-/product\-/3048$>$.
   Acesso em: 01 set. 2016.}
+
+\bibitem[Polonskii 1996]{polonskii1996}
+\abntrefinfo{Polonskii}{POLONSKII}{1996}
+{POLONSKII, M. \textbf{Introdu{\c{c}}{\~a}o {\`a} rob{\'o}tica e
+  mecatr{\^o}nica}. 2. ed. Caxias do Sul: EDUCS, 1996.}
 
 \bibitem[Records 2016]{vex_guiness}
 \abntrefinfo{Records}{RECORDS}{2016}
@@ -84,6 +96,12 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/robogames\-.net\-/index\-.php$>$}{http://robogames.net/index.php}.
   Acesso em: 29 ago. 2016.}
+
+\bibitem[Secchi 2012]{secchi2012}
+\abntrefinfo{Secchi}{SECCHI}{2012}
+{SECCHI, H.~A. \textbf{Uma introdução aos robôs móveis}. Serra: NERA-IFES,
+  2012. Traduzido do original \textit{Una Introducción a los Robots
+  Móviles}.}
 
 \bibitem[Semiconductor 2016]{reflet}
 \abntrefinfo{Semiconductor}{SEMICONDUCTOR}{2016}
