@@ -12,17 +12,18 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: bibliografia.bib.bib
-You're missing a field name---line 233 of file bibliografia.bib.bib
+You're missing a field name---line 30 of file bibliografia.bib.bib
+ : 
+ : %   title =     {Computational principles of mobile robotics},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 265 of file bibliografia.bib.bib
  :   
  :   %url={https://books.google.com.br/books?id=aPa0AAAACAAJ},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 246 of file bibliografia.bib.bib
- : 
- : %volume = '';
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "abnt-etal-list=99"
+Warning--I didn't find a database entry for "embedded"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -34,45 +35,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 24 entries,
+You've used 26 entries,
             6522 wiz_defined-function locations,
-            1261 strings with 11743 characters,
-and the built_in function-call counts, 53315 in all, are:
-= -- 8301
-> -- 321
-< -- 1532
-+ -- 1684
-- -- 107
-* -- 2338
-:= -- 5057
-add.period$ -- 91
-call.type$ -- 26
-change.case$ -- 141
-chr.to.int$ -- 32
-cite$ -- 20
-duplicate$ -- 7685
-empty$ -- 1411
-format.name$ -- 484
-if$ -- 10639
+            1272 strings with 12050 characters,
+and the built_in function-call counts, 60965 in all, are:
+= -- 9508
+> -- 352
+< -- 1811
++ -- 1972
+- -- 117
+* -- 2697
+:= -- 5798
+add.period$ -- 101
+call.type$ -- 28
+change.case$ -- 154
+chr.to.int$ -- 37
+cite$ -- 22
+duplicate$ -- 8849
+empty$ -- 1534
+format.name$ -- 530
+if$ -- 12062
 int.to.chr$ -- 6
 int.to.str$ -- 2
-missing$ -- 377
-newline$ -- 105
-num.names$ -- 100
-pop$ -- 573
+missing$ -- 413
+newline$ -- 114
+num.names$ -- 110
+pop$ -- 632
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 79
 quote$ -- 0
-skip$ -- 8026
+skip$ -- 9188
 stack$ -- 1
-substring$ -- 1957
-swap$ -- 1755
-text.length$ -- 23
+substring$ -- 2268
+swap$ -- 2058
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 145
+while$ -- 161
 width$ -- 0
-write$ -- 302
+write$ -- 333
 (There were 2 error messages)

@@ -5,7 +5,7 @@
 
 Neste capítulo são apresentados os principais conceitos teóricos relacionados ao desenvolvimento deste trabalho.
 
-\begin{comment}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}
 \section{Robótica} \label{cap:rob_auto}
@@ -17,9 +17,8 @@ forçada ou escrava. Na peça de Capek, os robôs eram pessoas fabricadas artifi
 de emoção \cite{polonskii1996}.\par
 A \textit{Robotic Industries Association} (\sigla{RIA}{\textit{Robotic Industries Association}}), 
 entidade norte-americana responsável pela indústria de robótica, define um robô industrial como
- \textit{ um manipulador multipropósito reprogramável, controlado automaticamente, programado em três 
- ou mais eixos, os quais podem ser fixos em um lugar ou móveis para aplicações em automação industrial} 
- \cite{RIA_def}.
+ \textit{um manipulador multipropósito reprogramável, controlado automaticamente, programado em três 
+ ou mais eixos, os quais podem ser fixos em um lugar ou móveis para aplicações em automação industrial} \cite{RIAdef}.
 %\footnote{Fonte em \url{http://www.robotics.org/product-catalog-detail.cfm/productid/2953}. Acesso em: 15 agosto 2016}. 
 %Diferentemente do que foi imaginado por Capek, hoje máquinas fazem o trabalho destes seres-humanos.
 Diferentemente do que foi imaginado por Capek, são máquinas que realizam o trabalho.
@@ -40,19 +39,60 @@ minérios, mas também podem ser aplicados na agricultura e no transporte de car
 
 
 \vspace{1cm}
-\subsection{Robôs móveis}
+%\subsection{Robôs móveis}
+\subsection{Robótica móvel}	
 
 
-%% 	É	AQUI	QUE 	TEM 	QUE	ALTERAR
-%% A Kathya falou para colocar outra definição e explicar um pouco melhor.
+Mesmo que os robôs industriais apresentem alta precisão e velocidade, estes possuem uma grande desvantagem, que é a falta 
+de mobilidade. %Algumas atividades necessitam que o dispositivo trafeguem através de uma planta industrial
+Algumas atividades não seriam realizadas sem a utilização destes dispositivos, como a 
+\textit{Mars Pathfinder mission}, missão exploratória da 
+\sigla{NASA}{ \textit{National Aeronautics and Space Administration}} para o reconhecimento da atmosfera de Marte. O 
+veículo Sojourner, utilizado na missão, explorou o território marciano por 83 dias, tirando fotografias e realizando 
+medições do ambiente \cite{nasa}.
 
+
+A robótica móvel lida com o controle de veículos autônomos e semi-autônomos, tendo ênfase em problemas relacionados com o 
+espaço em larga escala, que são regiões com espaços consideravelmente maiores que as observáveis pelo ponto de visão 
+do robô. O espaço em larga escala é de extrema importância para um robô móvel, visto que afeta 
+o seu movimento, compreensão e raciocínio nesta área, sendo estes três subproblemas essenciais para este campo 
+\cite{dudek_mobile}.
+
+%\cite{nasa}
+%É uma área de pesquisa interdisciplinar, consistindo de ...
+
+\begin{comment}
+% Retirado do livro do dudek
+A mobile robot is a combination of various physical (hardware) and computational (soft-
+ware) components. In terms of hardware components, a mobile robot can be considered
+as a collection of subsystems for:
+Locomotion: How the robot moves through its environment
+Sensing: How the robot measures properties of itself and its environment
+Reasoning: How the robot maps these measurements into actions
+Communication: How the robot communicates with an outside operator
+Later chapters consider the algorithms and representations that make these capabilities
+possible, while this chapter concentrates on the underlying hardware, with special empha-
+sis on locomotion for wheeled robots.
 \end{comment}
 
 
+  
+  
+  \citeonline{Intro_auto} classifica os robôs móveis em duas categorias relacionadas à locomoção: 
+Robôs com pernas (\textit{legged robots}) e robôs com rodas (\textit{wheeled robots}). Os robôs com rodas serão os alvos de 
+estudo deste trabalho. (pagina 
 
 
+\subsection{Robôs seguidores de linha}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Sistema embarcado}
+
+%Segundo Li e Qual (sei lá? 2008), um sistema embarcado é \textit{Um sistema embarcado é um sistema BLABLABLA... continua}.
+Sistemas embarcados são sistemas computacionais que integram \textit{harware} e \textit{software}, com o objetivo de 
+rodar uma aplicação específica \cite{embedded}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}
@@ -65,11 +105,11 @@ para a categoria robô seguidor de linha Pro, em eventos realizados pela \citeon
 \vspace{1cm}
 \subsection{Especificação dos robôs} \label{cap:espc_robocore}
 
-Para competir na categoria seguidor de linha, os robôs devem ser totalmente autônomos, não podendo serem controlados 
+Para competir na categoria seguidor de linha, os robôs devem ser totalmente autônomos, não podendo ser controlados 
 externamente por fio ou por rádio, com exceção para quando este for iniciado. Todos os componentes devem ser embarcados. A 
 dimensão máxima permitida é de 250mm   de   comprimento,   250mm   de   largura   e   200mm   de   altura. Não é 
 permitido alterar as dimensões do robô durante a partida, assim como alterar o \textit{hardware} ou \textit{software} 
-durante a tomada de tempo. Também não é permitida a utilização de um mecanismo de sucção, 
+durante a tomada de tempo. Também não é permitida a utilização de mecanismo de sucção, 
 que vise aumentar a força normal do robô em relação ao solo.
 
 \vspace{1cm}
@@ -120,7 +160,7 @@ Quando houver um arco (intersecção entre a faixa branca), o raio deste é de p
 alteração na curvatura do percurso, deve haver uma marcação no lado esquerdo da linha, como pode ser visto na Figura 
 \ref{fig:percurso4}.\par
 
-\begin{figure}[h!]
+\begin{figure}[t!]
  \centering
  \captionsetup{width=0.68\textwidth,font=footnotesize,textfont=bf}
  \includegraphics[scale=0.6]{figuras/Percurso4.png}

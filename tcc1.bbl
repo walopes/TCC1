@@ -23,6 +23,12 @@ Dispon{\'\i}vel em:
   2014.
 Trabalho de Conclusão de Curso. Universidade Tecnológica Federal do Paraná.}
 
+\bibitem[Jenkin 2010]{dudek_mobile}
+\abntrefinfo{Jenkin}{JENKIN}{2010}
+{JENKIN, G. D.~M. \textbf{Computational principles of mobile robotics}. 2. ed.
+  Cambridge University Press, 2010. Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/gen\-.lib\-.rus\-.ec\-/book\-/index\-.php?md5=FCF0F4E452EC55632B18C18863BCB6FA$>$}{http://gen.lib.rus.ec/book/index.php?md5=FCF0F4E452EC55632B18C18863BCB6FA}.}
+
 \bibitem[MAUÁ 2016]{maua}
 \abntrefinfo{MAUÁ}{MAUÁ}{2016}
 {MAUÁ, I. \textbf{Instituto Mauá de Tecnologia sedia o evento de Robótica
@@ -30,6 +36,13 @@ Trabalho de Conclusão de Curso. Universidade Tecnológica Federal do Paraná.}
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/maua\-.br\-/imprensa\-/press-releases\-/instituto-maua-tecnologia-sedia-evento-robotica-winter-challenge-2016$>$}{http://maua.br/imprensa/press-releases/instituto-maua-tecnologia-sedia-evento-robotica-winter-challenge-2016}.
   Acesso em: 23 ago. 2016.}
+
+\bibitem[Nasa 2016]{nasa}
+\abntrefinfo{Nasa}{NASA}{2016}
+{NASA. \textbf{Mars Pathfinder/ Sojourner Rover}. 2016.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.jpl\-.nasa\-.gov\-/missions\-/mars-pathfinder-sojourner-rover$>$}{http://www.jpl.nasa.gov/missions/mars-pathfinder-sojourner-rover}.
+  Acesso em: 24 set. 2016.}
 
 \bibitem[Petry 2016]{alemao}
 \abntrefinfo{Petry}{PETRY}{2016}
