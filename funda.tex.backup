@@ -46,16 +46,28 @@ minérios, mas também podem ser aplicados na agricultura e no transporte de car
 Mesmo que os robôs industriais apresentem alta precisão e velocidade, estes possuem uma grande desvantagem, que é a falta 
 de mobilidade. %Algumas atividades necessitam que o dispositivo trafeguem através de uma planta industrial
 Algumas atividades não seriam realizadas sem a utilização destes dispositivos, como a 
-\textit{Mars Pathfinder mission}, missão exploratória da 
+\textit{Mars Pathfinder}, missão exploratória da 
 \sigla{NASA}{ \textit{National Aeronautics and Space Administration}} para o reconhecimento da atmosfera de Marte. O 
-veículo Sojourner, utilizado na missão, explorou o território marciano por 83 dias, tirando fotografias e realizando 
+veículo Sojourner (Figura \ref{fig:nasa}) que foi utilizado nesta missão, explorou o território marciano por 83 dias, 
+tirando fotografias e realizando 
 medições do ambiente \cite{nasa}.
+
+\begin{figure}[th]
+ \centering
+ \captionsetup{width=0.5\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[scale=0.6]{figuras/nasa.png}
+ \includegraphics[scale=0.4]{figuras/nasa.png}
+ \caption{Veículo exploratório Sojourner \label{fig:nasa}}
+ \vspace{-0.3cm}
+ %\caption*{Fonte: Disponível em \url{https://mars.jpl.nasa.gov/MPF/rover/sim2.jpg}.}
+ \caption*{Fonte: Disponível em <https://mars.jpl.nasa.gov/MPF/rover/sim2.jpg>}
+\end{figure}
 
 
 A robótica móvel lida com o controle de veículos autônomos e semi-autônomos, tendo ênfase em problemas relacionados com o 
 espaço em larga escala, que são regiões com espaços consideravelmente maiores que as observáveis pelo ponto de visão 
 do robô. O espaço em larga escala é de extrema importância para um robô móvel, visto que afeta 
-o seu movimento, compreensão e raciocínio nesta área, sendo estes três subproblemas essenciais para este campo 
+o seu movimento, compreensão e raciocínio nesta área, sendo estes três subproblemas essenciais para este campo de pesquisa
 \cite{dudek_mobile}.
 
 %\cite{nasa}
@@ -76,15 +88,44 @@ sis on locomotion for wheeled robots.
 \end{comment}
 
 
+%  No mean feat, this makes
+%mobile robotics as interdisciplinary a field as there can be. To solve locomotion problems,
+%the mobile roboticist must understand mechanism and kinematics, dynamics and control
+%theory. To create robust perceptual systems, the mobile roboticist must leverage the fields
+%of signal analysis and specialized bodies of knowledge such as computer vision to properly
+%employ a multitude of sensor technologies. Localization and navigation demand knowl-
+%edge of computer algorithms, information theory, artificial intelligence, a
   
-  
-  \citeonline{Intro_auto} classifica os robôs móveis em duas categorias relacionadas à locomoção: 
-Robôs com pernas (\textit{legged robots}) e robôs com rodas (\textit{wheeled robots}). Os robôs com rodas serão os alvos de 
-estudo deste trabalho. (pagina 
+\citeonline{Intro_auto} classifica os robôs móveis em duas categorias relacionadas à locomoção: 
+\begin{itemize}
+ 
+ \item Robôs terrestres (\textit{legged robots}): Tem como vantagem a manipulação de objetos e a locomoção em terrenos 
+acidentados, mas tem alta complexidade mecânica e energética. A Figura \ref{fig:boston} mostra o 
+\textit{Legged Squad Support Systems} (\sigla{LS3}{\textit{Legged Squad Support Systems}}) da Boston Dynamics, 
+projetado para atuar nos mesmos terrenos acidentados utilizados por \textit{marines} e soldados norte-americanos, 
+ajudando a carregar equipamentos \cite{bostondyn}. 
+\begin{figure}[h]
+ \centering
+ \captionsetup{width=0.5\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[scale=0.6]{figuras/nasa.png}
+ \includegraphics[scale=0.4]{figuras/bostondyn.png}
+ \caption{Robô terrestre  L3S\label{fig:boston}}
+ \vspace{-0.3cm}
+ \caption*{Fonte: \cite{bostondyn}}
+\end{figure}
 
 
-\subsection{Robôs seguidores de linha}
+\item Robôs com rodas (\textit{wheeled robots}): É tipo de locomoção mais utilizado em robôs móveis e veículos. Normalmente o 
+equilíbrio não é levado em consideração, visto que na maior parte dos projetos as rodas são consideradas em contato com o solo 
+o tempo todo. O robô Sojourner da Figura \cite{nasa} é um exemplo de robô com rodas.
 
+\end{itemize}
+
+%Dentre os robôs com rodas, a categoria dos seguidores de linha tem destaque.
+Os seguidores de linha, categoria pertencente aos robôs com rodas, serão abordados na próxima subseção.
+
+
+\subsubsection{Robôs seguidores de linha}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}

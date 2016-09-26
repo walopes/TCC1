@@ -17,6 +17,14 @@ Dispon{\'\i}vel em:
 {CASSANDRAS, C.~G.; LAFORTUNE, S. \textbf{Introduction to Discrete Event
   Systems}. 2. ed. New York: Springer US, 2008.}
 
+\bibitem[Dynamics 2016]{bostondyn}
+\abntrefinfo{Dynamics}{DYNAMICS}{2016}
+{DYNAMICS, B. \textbf{LS3 - Legged Squad Support System}. 2016.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.bostondynamics\-.com\-/robot\underline{\
+  }ls3\-.html$>$}{http://www.bostondynamics.com/robot_ls3.html}. Acesso em: 25
+  set. 2016.}
+
 \bibitem[Guadagnin 2014]{allan}
 \abntrefinfo{Guadagnin}{GUADAGNIN}{2014}
 {GUADAGNIN, A.~J. \textbf{Controle Híbrido de um Robô Seguidor de Linha}.
@@ -26,8 +34,12 @@ Trabalho de Conclusão de Curso. Universidade Tecnológica Federal do Paraná.}
 \bibitem[Jenkin 2010]{dudek_mobile}
 \abntrefinfo{Jenkin}{JENKIN}{2010}
 {JENKIN, G. D.~M. \textbf{Computational principles of mobile robotics}. 2. ed.
-  Cambridge University Press, 2010. Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/gen\-.lib\-.rus\-.ec\-/book\-/index\-.php?md5=FCF0F4E452EC55632B18C18863BCB6FA$>$}{http://gen.lib.rus.ec/book/index.php?md5=FCF0F4E452EC55632B18C18863BCB6FA}.}
+  [S.l.]: Cambridge University Press, 2010.}
+
+\bibitem[Li e Yao 2003]{embedded}
+\abntrefinfo{Li e Yao}{LI; YAO}{2003}
+{LI, Q.; YAO, C. \textbf{Real-Time Concepts for Embedded Systems}. San
+  Francisco: CMP books, 2003.}
 
 \bibitem[MAUÁ 2016]{maua}
 \abntrefinfo{MAUÁ}{MAUÁ}{2016}
@@ -37,9 +49,9 @@ Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/maua\-.br\-/imprensa\-/press-releases\-/instituto-maua-tecnologia-sedia-evento-robotica-winter-challenge-2016$>$}{http://maua.br/imprensa/press-releases/instituto-maua-tecnologia-sedia-evento-robotica-winter-challenge-2016}.
   Acesso em: 23 ago. 2016.}
 
-\bibitem[Nasa 2016]{nasa}
-\abntrefinfo{Nasa}{NASA}{2016}
-{NASA. \textbf{Mars Pathfinder/ Sojourner Rover}. 2016.
+\bibitem[Nasa 1997]{nasa}
+\abntrefinfo{Nasa}{NASA}{1997}
+{NASA. \textbf{Mars Pathfinder/ Sojourner Rover}. 1997.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/www\-.jpl\-.nasa\-.gov\-/missions\-/mars-pathfinder-sojourner-rover$>$}{http://www.jpl.nasa.gov/missions/mars-pathfinder-sojourner-rover}.
   Acesso em: 24 set. 2016.}
@@ -123,6 +135,11 @@ Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/cdn\-.sparkfun\-.com\-/datasheets\-/Sensors\-/Proximity\-/QRE1113\-.pdf$>$}{http://cdn.sparkfun.com/datasheets/Sensors/Proximity/QRE1113.pdf}.
   Acesso em: 01 set. 2016.}
 
+\bibitem[Siegwart et al. 2011]{Intro_auto}
+\abntrefinfo{Siegwart et al.}{SIEGWART et al.}{2011}
+{SIEGWART, R.; NOURBAKHSH, I.~R.; SCARAMUZZA, D. \textbf{Introduction to
+  autonomous mobile robots}. Cambridge: The MIT Press, 2011.}
+
 \bibitem[STMicroelectronics 2016]{stm303}
 \abntrefinfo{STMicroelectronics}{STMICROELECTRONICS}{2016}
 {STMICROELECTRONICS. \textbf{STM32F303x6/x8 datasheet}. 2016.
@@ -151,5 +168,14 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   $<$https:\-/\-/www\-.pollin\-.de\-/shop\-/downloads\-/D351434D\-.PDF$>$.
   Acesso em: 01 set. 2016.}
+
+\bibitem[Yiacho et al. 2012]{lfchina}
+\abntrefinfo{Yiacho et al.}{YIACHO et al.}{2012}
+{YIACHO, L. et al. An improved line following optimization algorithm for mobile
+  robot.
+\textbf{7th International Conference on Computing and Convergence Technology
+  (ICCCT)}, IEEE, p. 84--87, 2012.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/ieeexplore\-.ieee\-.org\-/document\-/6530304$>$}{http://ieeexplore.ieee.org/document/6530304}.}
 
 \end{thebibliography}

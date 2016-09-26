@@ -12,18 +12,17 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: bibliografia.bib.bib
-You're missing a field name---line 30 of file bibliografia.bib.bib
+You're missing a field name---line 57 of file bibliografia.bib.bib
  : 
  : %   title =     {Computational principles of mobile robotics},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 265 of file bibliografia.bib.bib
+You're missing a field name---line 292 of file bibliografia.bib.bib
  :   
  :   %url={https://books.google.com.br/books?id=aPa0AAAACAAJ},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "abnt-etal-list=99"
-Warning--I didn't find a database entry for "embedded"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -35,45 +34,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 26 entries,
+You've used 30 entries,
             6522 wiz_defined-function locations,
-            1272 strings with 12050 characters,
-and the built_in function-call counts, 60965 in all, are:
-= -- 9508
-> -- 352
-< -- 1811
-+ -- 1972
-- -- 117
-* -- 2697
-:= -- 5798
-add.period$ -- 101
-call.type$ -- 28
-change.case$ -- 154
-chr.to.int$ -- 37
-cite$ -- 22
-duplicate$ -- 8849
-empty$ -- 1534
-format.name$ -- 530
-if$ -- 12062
+            1296 strings with 12637 characters,
+and the built_in function-call counts, 64818 in all, are:
+= -- 9852
+> -- 482
+< -- 1842
++ -- 2052
+- -- 156
+* -- 2958
+:= -- 6291
+add.period$ -- 115
+call.type$ -- 32
+change.case$ -- 197
+chr.to.int$ -- 41
+cite$ -- 26
+duplicate$ -- 9114
+empty$ -- 1778
+format.name$ -- 722
+if$ -- 12941
 int.to.chr$ -- 6
 int.to.str$ -- 2
-missing$ -- 413
-newline$ -- 114
-num.names$ -- 110
-pop$ -- 632
+missing$ -- 489
+newline$ -- 133
+num.names$ -- 130
+pop$ -- 740
 preamble$ -- 1
-purify$ -- 79
+purify$ -- 96
 quote$ -- 0
-skip$ -- 9188
+skip$ -- 9469
 stack$ -- 1
-substring$ -- 2268
-swap$ -- 2058
-text.length$ -- 27
+substring$ -- 2386
+swap$ -- 2155
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 161
+while$ -- 189
 width$ -- 0
-write$ -- 333
+write$ -- 392
 (There were 2 error messages)
