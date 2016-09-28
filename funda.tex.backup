@@ -60,7 +60,7 @@ medições do ambiente \cite{nasa}.
  \caption{Veículo exploratório Sojourner \label{fig:nasa}}
  \vspace{-0.3cm}
  %\caption*{Fonte: Disponível em \url{https://mars.jpl.nasa.gov/MPF/rover/sim2.jpg}.}
- \caption*{Fonte: Disponível em <https://mars.jpl.nasa.gov/MPF/rover/sim2.jpg>}
+ \caption*{Fonte: Disponível em $<$https://mars.jpl.nasa.gov/MPF/rover/sim2.jpg$>$}
 \end{figure}
 
 
@@ -106,7 +106,7 @@ projetado para atuar nos mesmos terrenos acidentados utilizados por \textit{mari
 ajudando a carregar equipamentos \cite{bostondyn}. 
 \begin{figure}[h]
  \centering
- \captionsetup{width=0.5\textwidth,font=footnotesize,textfont=bf}
+ \captionsetup{width=0.44\textwidth,font=footnotesize,textfont=bf}
  %\includegraphics[scale=0.6]{figuras/nasa.png}
  \includegraphics[scale=0.4]{figuras/bostondyn.png}
  \caption{Robô terrestre  L3S\label{fig:boston}}
@@ -117,7 +117,7 @@ ajudando a carregar equipamentos \cite{bostondyn}.
 
 \item Robôs com rodas (\textit{wheeled robots}): É tipo de locomoção mais utilizado em robôs móveis e veículos. Normalmente o 
 equilíbrio não é levado em consideração, visto que na maior parte dos projetos as rodas são consideradas em contato com o solo 
-o tempo todo. O robô Sojourner da Figura \cite{nasa} é um exemplo de robô com rodas.
+o tempo todo. O robô Sojourner da Figura \ref{fig:nasa} é um exemplo de robô com rodas.
 
 \end{itemize}
 
@@ -126,6 +126,30 @@ Os seguidores de linha, categoria pertencente aos robôs com rodas, serão abord
 
 
 \subsubsection{Robôs seguidores de linha}
+
+Os robôs seguidores de linha são projetados para seguirem um trajeto, o qual normalmente é feito por marcações no solo. 
+Estes veículos são bastante utilizados devido ao seu baixo custo e simplicidade de projeto \cite{lfchina}.
+
+
+
+%% Colocar somente os robôs do marcio em subfloat
+\begin{figure*}[t!]
+    \centering
+    \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[height=1.2in]{figuras/marcio1.png}
+        \caption{Lorem ipsum}
+    \end{subfigure}%
+    ~ 
+    \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[height=1.2in]{figuras/pololu.png}
+        \caption{Lorem ipsum, lorem ipsum,Lorem ipsum, lorem ipsum,Lorem ipsum}
+    \end{subfigure}
+    \caption{Caption place holder}
+\end{figure*}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}

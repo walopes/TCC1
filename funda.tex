@@ -132,6 +132,33 @@ Estes veículos são bastante utilizados devido ao seu baixo custo e simplicidad
 
 
 
+%% Colocar somente os robôs do marcio em subfloat
+\begin{figure*}[h!]
+    \centering
+    %\raggedright
+    \captionsetup{width=0.74\textwidth,font=footnotesize,textfont=bf}
+    \begin{subfigure}[t]{0.4\textwidth}
+        \centering
+        %%\raggedleft
+        \includegraphics[scale=0.5]{figuras/marcio1.png}
+        %\caption{Protótipo final \label{fig:marcio}}
+        \caption{ \label{fig:marcio}}
+        %\caption*{Fonte: \cite[p.56]{alemao}}
+    \end{subfigure}%
+    %~\hspace{1cm} 
+    ~\hspace{0.4cm}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \centering
+        %\raggedleft
+        \includegraphics[scale=0.53]{figuras/polulumod.png}
+        %\caption{Robô 3pi \label{fig:pololu}}
+        \caption{ \label{fig:pololu}}
+        %\caption*{Fonte: \cite[p.58]{alemao}}
+    \end{subfigure}
+    \caption{Robôs utilizados por \cite{alemao}. \ref{fig:marcio} é o robô \textit{Alpha Project} e \ref{fig:pololu} é o 
+    Pololu 3pi modificado.}
+\end{figure*}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
