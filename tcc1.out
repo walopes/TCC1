@@ -10,20 +10,22 @@
 \BOOKMARK [2][-]{subsection.2.1.1}{Rob\363tica m\363vel}{section.2.1}% 10
 \BOOKMARK [3][-]{subsubsection.2.1.1.1}{Rob\364s seguidores de linha}{subsection.2.1.1}% 11
 \BOOKMARK [1][-]{section.2.2}{Sistema embarcado}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Regras da Robocore para rob\364s seguidores de linha}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.3.1}{Especifica\347\343o dos rob\364s}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.2}{Especifica\347\365es do Percurso}{section.2.3}% 15
-\BOOKMARK [0][-]{chapter.3}{Materiais}{}% 16
-\BOOKMARK [1][-]{section.3.1}{Microcontrolador}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.2}{Motores CC}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.3}{Ponte H}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.4}{Encoder magn\351tico}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.5}{Sensores de reflet\342ncia}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.6}{Placa de circuito impresso}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.7}{M\363dulo bluetooth}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.8}{Rodas}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.9}{Bateria Lipo}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.10}{Conversor Step-Up}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.11}{Esfera deslizante}{chapter.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Cronograma Preliminar}{}% 28
-\BOOKMARK [0][-]{quadro.caption.8}{REFER\312NCIAS}{}% 29
+\BOOKMARK [2][-]{subsection.2.2.1}{Microcontroladores}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Sistemas de Controle}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Regras da Robocore para rob\364s seguidores de linha}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{Especifica\347\343o dos rob\364s}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.2}{Especifica\347\365es do Percurso}{section.2.4}% 17
+\BOOKMARK [0][-]{chapter.3}{Materiais}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Microcontrolador}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Motores CC}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{Ponte H}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Encoder magn\351tico}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.5}{Sensores de reflet\342ncia}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.6}{Placa de circuito impresso}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.7}{M\363dulo bluetooth}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.8}{Rodas}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.9}{Bateria Lipo}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.10}{Conversor Step-Up}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.11}{Esfera deslizante}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Cronograma Preliminar}{}% 30
+\BOOKMARK [0][-]{quadro.caption.8}{REFER\312NCIAS}{}% 31
