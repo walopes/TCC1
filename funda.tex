@@ -115,16 +115,41 @@ ajudando a carregar equipamentos \cite{bostondyn}.
 \end{figure}
 
 
-\item Robôs com rodas (\textit{wheeled robots}): É tipo de locomoção mais utilizado em robôs móveis e veículos. Normalmente o 
+\item Robôs com rodas (\textit{wheeled robots}): É o tipo de locomoção mais utilizado em robôs móveis e veículos. Normalmente o 
 equilíbrio não é levado em consideração, visto que na maior parte dos projetos as rodas são consideradas em contato com o solo 
-o tempo todo. O robô Sojourner da Figura \ref{fig:nasa} é um exemplo de robô com rodas.
+o tempo todo. O robô Sojourner da Figura \ref{fig:nasa} é um exemplo de robô com rodas.\par
+
+Na revisão bibliográfica a seguir são mostradas técnicas desenvolvidas para o sistema de navegação de robôs móveis autônomos.
+
+///////// AQUIIIIII
+
+%\citeonline{ufrj} propôs o desenvolvimento de uma arquitetura híbrida
+% ufrj -> Dissertação da UFRJ
+O objetivo do trabalho de \citeonline{ufrj} foi o desenvolvimento de um sistema robótico autônomo em uma 
+arquitetura híbrida de três camadas, composta pela implementação das camadas Planejador e Executivo. 
+O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore} (SIGNIFICADO DE OFFSHORE) guiado por trilhos, 
+desenvolvido pela COPPE/UFRJ em parceria com a Petrobras e a Statoil, para a inspeção de plataformas de petróleo. O veículo 
+tem como funcionalidades a detecção de anomalias por vídeo, áudio, vibração, temperatura e por câmera de infravermelho e o 
+mapeamento 3D do ambiente.
+
+
+
+
+Marin (2010) propôs uma arquitetura de controle inteligente que dispõe de
+um método de aprendizado adaptativo de um mapa topológico para navegação de
+robôs móveis, com recursos limitados de sensores, memórias e processamento.
+Nesse trabalho foram integradas técnicas de inteligência artificial, tais como, redes
+neurais artificiais e aprendizagem por reforço. O sistema provê a habilidade de
+executar tarefas de navegação em labirintos do tipo T desconhecidos e modificáveis
+durante seu tempo de operação.
+
 
 \end{itemize}
 
 %Dentre os robôs com rodas, a categoria dos seguidores de linha tem destaque.
 Os seguidores de linha, categoria pertencente aos robôs com rodas, serão abordados na próxima subseção.
 
-
+\begin{comment}
 \subsubsection{Robôs seguidores de linha}
 
 Os robôs seguidores de linha são projetados para seguirem um trajeto, o qual normalmente é feito por marcações no solo. 
@@ -161,6 +186,8 @@ Estes veículos são bastante utilizados devido ao seu baixo custo e simplicidad
 
 %% Colocar o robô do Hirai
 
+Na revisão bibliográfica a seguir são mostradas as técnicas 
+\end{comment}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -179,6 +206,10 @@ Os sistemas embarcados podem ser separados em duas categorias: Os de lógica rec
 xxxxxxxxxxxxxxxxxxx
 
 
+
+Para (Stallings-arquitetura), o termo sistema embarcado combina de \textit{hardware} e \texit{software} de computador (fjdslfsjdj)
+
+
 \subsection{Microcontroladores}
 
 Os microcontroladores são dispositivos xxxxx (referenciar alguém).
@@ -190,21 +221,52 @@ São compostos por CPU, ADC xxxxxxxx xxxxxx.
 \vspace{1cm}
 \section{Sistemas de Controle} \label{cap:controle}
 
+Para que o robô seja autônomo, um dos requisitos para que este seja móvel, é necessário que este apresente uma resposta desejada para as 
+as mais diversas situações. Para tanto se utiliza de um sistema de controle, que para \citeonline{nise} consiste em subsistemas e 
+processos, conhecidos como plantas, dos quais se obtém uma saída com desempenho desejado para uma dada entrada.
 
-Para \citeonline{nise}, um Sistema de Controle consiste em subsistemas e processos, dos quais se obtém uma saída com desempenho 
-desejado para uma dada entrada. 
-Desta forma, utiliza-se de um sistema de controle para que o robô seja autônomo, um dos requisitos dos robõs móveis.
+No caso do robô, mui
+
+\begin{comment}
+Para \citeonline{nise}, um Sistema de Controle consiste em subsistemas e processos, conhecidos como plantas, dos quais se obtém uma 
+saída com desempenho desejado para uma dada entrada.
+%Desta forma, utiliza-se de um sistema de controle para que o robô seja autônomo, um dos requisitos dos robõs móveis.
+%Este subsistema é chamado de planta
+Para que seja possível de controlar um sistema, é necessário saber o que se deseja controlar
+\end{comment}
+
+
+//PEGUEI INTERNET
+The common denominator in all of these questions is that there is some physical quantity that must be somehow controlled in a way 
+that ensures that the physical quantity takes on the value that is specified.  There are even times when the physical quantity should 
+take on some pre-determined values that follow a function of time.  (An example of that would be landing an airplane where you want the 
+plane to meet the ground following a specified curve.)  We need to think about how to control physical quantities in general, and to 
+determine what can be done - in a general way - to implement any schem we devise.
+
+What is clear is that if you want to control a system, you need to know what you want it to do, and you need to know how well it
+is doing.  That implies a couple of things.  First, you need to know what you want the system to do.  There are lots of ways you can 
+do that.  For example, in your home you set a temperature by dialing it into the thermostat.  That's the way you tell the system 
+what you want it to do.  When an airplane is landing there is a radar beacon at the far end of the runway that tells the aircraft 
+if it is too high or too low, too far right or too far left, and how much in all those cases.  There are any number of ways you can 
+tell a system what you want it to do.  You can turn a dial, type a number into a computer program, or you can use some other physical 
+quantity.  (An example of that is trying to point an antenna at a weather or communications satellite.  The satellite's position - 
+which might be predictable with an astronomical formula - gives the system the information it needs on where the antenna has to point.) 
+One way or another, the control system has to know what it has to do. 
 
 
 
 
 
 
+\begin{comment}
 
 // ESSE AQUI EH PARA CONTROLE DIGITAL
 
 Para Ogata(discreto ), os controladores digitais são utilizados para obter desempenho ótimo, como por exemplo a máxima produtividade ou 
 menor uso de energia.
+
+\end{comment}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\vspace{1cm}

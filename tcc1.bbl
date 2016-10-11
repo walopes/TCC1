@@ -36,11 +36,6 @@ Trabalho de Conclusão de Curso. Universidade Tecnológica Federal do Paraná.}
 {JENKIN, G. D.~M. \textbf{Computational principles of mobile robotics}. 2. ed.
   [S.l.]: Cambridge University Press, 2010.}
 
-\bibitem[Li e Yao 2003]{embedded}
-\abntrefinfo{Li e Yao}{LI; YAO}{2003}
-{LI, Q.; YAO, C. \textbf{Real-Time Concepts for Embedded Systems}. San
-  Francisco: CMP books, 2003.}
-
 \bibitem[MAUÁ 2016]{maua}
 \abntrefinfo{MAUÁ}{MAUÁ}{2016}
 {MAUÁ, I. \textbf{Instituto Mauá de Tecnologia sedia o evento de Robótica
@@ -55,6 +50,11 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/www\-.jpl\-.nasa\-.gov\-/missions\-/mars-pathfinder-sojourner-rover$>$}{http://www.jpl.nasa.gov/missions/mars-pathfinder-sojourner-rover}.
   Acesso em: 24 set. 2016.}
+
+\bibitem[Nise 2012]{nise}
+\abntrefinfo{Nise}{NISE}{2012}
+{NISE, N.~S. \textbf{Engenharia de Sistemas de Controle}. 6. ed. Rio de
+  Janeiro: LTC, 2012.}
 
 \bibitem[Petry 2016]{alemao}
 \abntrefinfo{Petry}{PETRY}{2016}

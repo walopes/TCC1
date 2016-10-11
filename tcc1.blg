@@ -12,12 +12,12 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: bibliografia.bib.bib
-You're missing a field name---line 57 of file bibliografia.bib.bib
+You're missing a field name---line 66 of file bibliografia.bib.bib
  : 
  : %   title =     {Computational principles of mobile robotics},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 292 of file bibliografia.bib.bib
+You're missing a field name---line 301 of file bibliografia.bib.bib
  :   
  :   %url={https://books.google.com.br/books?id=aPa0AAAACAAJ},
 (Error may have been on previous line)
@@ -36,37 +36,37 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 30 entries,
             6522 wiz_defined-function locations,
-            1296 strings with 12637 characters,
-and the built_in function-call counts, 64818 in all, are:
-= -- 9852
-> -- 482
-< -- 1842
-+ -- 2052
-- -- 156
-* -- 2958
-:= -- 6291
-add.period$ -- 115
+            1296 strings with 12608 characters,
+and the built_in function-call counts, 64683 in all, are:
+= -- 9838
+> -- 466
+< -- 1843
++ -- 2045
+- -- 151
+* -- 2942
+:= -- 6276
+add.period$ -- 116
 call.type$ -- 32
-change.case$ -- 197
-chr.to.int$ -- 41
+change.case$ -- 194
+chr.to.int$ -- 44
 cite$ -- 26
 duplicate$ -- 9114
 empty$ -- 1778
-format.name$ -- 722
-if$ -- 12941
+format.name$ -- 698
+if$ -- 12910
 int.to.chr$ -- 6
 int.to.str$ -- 2
 missing$ -- 489
 newline$ -- 133
 num.names$ -- 130
-pop$ -- 740
+pop$ -- 735
 preamble$ -- 1
-purify$ -- 96
+purify$ -- 95
 quote$ -- 0
-skip$ -- 9469
+skip$ -- 9463
 stack$ -- 1
-substring$ -- 2386
-swap$ -- 2155
+substring$ -- 2387
+swap$ -- 2156
 text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
@@ -74,5 +74,5 @@ type$ -- 0
 warning$ -- 0
 while$ -- 189
 width$ -- 0
-write$ -- 392
+write$ -- 393
 (There were 2 error messages)

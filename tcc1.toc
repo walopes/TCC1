@@ -10,12 +10,10 @@
 \contentsline {section}{\numberline {2.1}\MakeUppercase {Rob\IeC {\'o}tica}}{7}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Rob\IeC {\'o}tica m\IeC {\'o}vel}{8}{subsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.1.1}Rob\IeC {\^o}s seguidores de linha}{9}{subsubsection.2.1.1.1}
-\contentsline {section}{\numberline {2.2}\MakeUppercase {Sistema embarcado}}{9}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Microcontroladores}{10}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}\MakeUppercase {Sistemas de Controle}}{10}{section.2.3}
-\contentsline {section}{\numberline {2.4}\MakeUppercase {Regras da Robocore para rob\IeC {\^o}s seguidores de linha}}{10}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Especifica\IeC {\c c}\IeC {\~a}o dos rob\IeC {\^o}s}{10}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Especifica\IeC {\c c}\IeC {\~o}es do Percurso}{11}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.2}\MakeUppercase {Sistemas de Controle}}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}\MakeUppercase {Regras da Robocore para rob\IeC {\^o}s seguidores de linha}}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Especifica\IeC {\c c}\IeC {\~a}o dos rob\IeC {\^o}s}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Especifica\IeC {\c c}\IeC {\~o}es do Percurso}{10}{subsection.2.3.2}
 \contentsline {chapter}{\numberline {3}\MakeUppercase {Materiais}}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}\MakeUppercase {Microcontrolador}}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}\MakeUppercase {Motores CC}}{13}{section.3.2}
