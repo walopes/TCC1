@@ -48,7 +48,8 @@ de mobilidade. %Algumas atividades necessitam que o dispositivo trafeguem atrav�
 Algumas atividades não seriam realizadas sem a utilização destes dispositivos, como a 
 \textit{Mars Pathfinder}, missão exploratória da 
 \sigla{NASA}{ \textit{National Aeronautics and Space Administration}} para o reconhecimento da atmosfera de Marte. O 
-veículo Sojourner (Figura \ref{fig:nasa}) que foi utilizado nesta missão, explorou o território marciano por 83 dias, 
+%veículo Sojourner (Figura \ref{fig:nasa}) que foi utilizado nesta missão, explorou o território marciano por 83 dias, 
+veículo Sojourner (Figura \ref{fig:nasa}) que foi utilizado nesta missão, explorou o território marciano por oitenta e três dias, 
 tirando fotografias e realizando 
 medições do ambiente \cite{nasa}.
 
@@ -117,16 +118,49 @@ ajudando a carregar equipamentos \cite{bostondyn}.
 
 \item Robôs com rodas (\textit{wheeled robots}): É o tipo de locomoção mais utilizado em robôs móveis e veículos. Normalmente o 
 equilíbrio não é levado em consideração, visto que na maior parte dos projetos as rodas são consideradas em contato com o solo 
-o tempo todo. O robô Sojourner da Figura \ref{fig:nasa} é um exemplo de robô com rodas.\par
+o tempo todo. O robô Sojourner da Figura \ref{fig:nasa} é um exemplo de robô com rodas.%\par
 
 Na revisão bibliográfica a seguir são mostradas técnicas desenvolvidas para o sistema de navegação de robôs móveis autônomos.
 
+%///////// AQUIIIIII
+
+%\citeonline{ufrj} propôs o desenvolvimento de uma arquitetura híbrida
+% ufrj -> Dissertação da UFRJ
+O objetivo do trabalho de \citeonline{ufrj} foi o desenvolvimento de um sistema robótico autônomo em uma 
+arquitetura híbrida de três camadas, composta pela implementação das camadas Planejador e Executivo. 
+%O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore} (no mar a uma certa distância 
+%da orla) guiado por trilhos, 
+O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore} (localizado no mar a uma certa distância da costa) 
+guiado por trilhos, desenvolvido pela COPPE/\sigla{UFRJ}{Universidade Federal do Rio de Janeiro}, 
+em parceria com a Petrobras e a Statoil, para a inspeção de plataformas de petróleo. O veículo 
+tem como funcionalidades a detecção de anomalias por vídeo, áudio, vibração, temperatura e por câmera de infravermelho e o 
+mapeamento 3D do ambiente.
+
+%\citeonline{heinen} propôs um sistema de controle robusto capaz de se adaptar e operar em diferentes ambientes e condições.
+%\citeonline{heinen} também propôs uma arquitetura de controle híbrida (COHBRA), integrando as técnicas de controle deliberativo e 
+\citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
+reativo em uma abordagem de três camadas: 
+\begin{itemize}
+ \item Deliberativa: Determina um trajeto até o objetivo e evita colisões com obstáculos já conhecidos;
+ \item Vital: Utiliza de comportamentos reativos para guiar o robô ao seu objetivo e evitar colisões com obstáculos (sejam estes 
+estáticos ou dinâmicos); 
+  \item Funcional: Faz a integração das camadas vital e deliberativa, fornecendo parâmetros reativos para a camada vital.
+\end{itemize}
+O sistema de controle proposto foi implementado no simulador SimRob3D, o qual permite a utilização de modelos de ambiente 
+tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes possam ser alterados em tempo real.
+
+% Agora falar do Pessim
+%Em \citeonline{pessin} foi feita uma busca por uma técnica
+A pesquisa de \citeonline{pessin} se concentra na busca por soluções inteligentes aplicadas em robôs móveis autônomos visando a operação 
+destes em ambientes dinâmicos. Através da aplicação de aprendizado de máquina, buscou-se uma nova visão sobre a operação destes 
+dispositivos em três desafios da área: navegação, localização e operações com grupos de robôs. em que foi visado estender o estado da 
+arte
 
 
 \end{itemize}
 
 %Dentre os robôs com rodas, a categoria dos seguidores de linha tem destaque.
-Os seguidores de linha, categoria pertencente aos robôs com rodas, serão abordados na próxima subseção.
+%Os seguidores de linha, categoria pertencente aos robôs com rodas, serão abordados na próxima subseção.
 
 \begin{comment}
 \subsubsection{Robôs seguidores de linha}
@@ -168,7 +202,7 @@ Estes veículos são bastante utilizados devido ao seu baixo custo e simplicidad
 Na revisão bibliográfica a seguir são mostradas as técnicas 
 \end{comment}
 
-
+\begin{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}
 \section{Sistema embarcado}
@@ -194,7 +228,7 @@ Para (Stallings-arquitetura), o termo sistema embarcado combina de \textit{hardw
 Os microcontroladores são dispositivos xxxxx (referenciar alguém).
 São compostos por CPU, ADC xxxxxxxx xxxxxx.
 
-
+\end{comment}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}

@@ -23,6 +23,9 @@ You're missing a field name---line 301 of file bibliografia.bib.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "abnt-etal-list=99"
+Warning--I didn't find a database entry for "ufrj"
+Warning--I didn't find a database entry for "heinen"
+Warning--I didn't find a database entry for "pessin"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -34,45 +37,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 30 entries,
+You've used 29 entries,
             6522 wiz_defined-function locations,
-            1296 strings with 12608 characters,
-and the built_in function-call counts, 64683 in all, are:
-= -- 9838
-> -- 466
-< -- 1843
-+ -- 2045
-- -- 151
-* -- 2942
-:= -- 6276
-add.period$ -- 116
-call.type$ -- 32
-change.case$ -- 194
-chr.to.int$ -- 44
-cite$ -- 26
-duplicate$ -- 9114
-empty$ -- 1778
-format.name$ -- 698
-if$ -- 12910
+            1292 strings with 12319 characters,
+and the built_in function-call counts, 61712 in all, are:
+= -- 9418
+> -- 425
+< -- 1754
++ -- 1940
+- -- 139
+* -- 2778
+:= -- 5968
+add.period$ -- 112
+call.type$ -- 31
+change.case$ -- 180
+chr.to.int$ -- 43
+cite$ -- 25
+duplicate$ -- 8724
+empty$ -- 1716
+format.name$ -- 637
+if$ -- 12331
 int.to.chr$ -- 6
 int.to.str$ -- 2
-missing$ -- 489
-newline$ -- 133
-num.names$ -- 130
-pop$ -- 735
+missing$ -- 470
+newline$ -- 127
+num.names$ -- 125
+pop$ -- 706
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 90
 quote$ -- 0
-skip$ -- 9463
+skip$ -- 9072
 stack$ -- 1
-substring$ -- 2387
-swap$ -- 2156
-text.length$ -- 30
+substring$ -- 2262
+swap$ -- 2047
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 189
+while$ -- 179
 width$ -- 0
-write$ -- 393
+write$ -- 376
 (There were 2 error messages)
