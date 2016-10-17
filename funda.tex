@@ -140,8 +140,7 @@ em parceria com a Petrobras e a Statoil, para a inspeção de plataformas de pet
 tem como funcionalidades a detecção de anomalias por vídeo, áudio, vibração, temperatura e por câmera de infravermelho e o 
 mapeamento 3D do ambiente.
 
-%\citeonline{heinen} propôs um sistema de controle robusto capaz de se adaptar e operar em diferentes ambientes e condições.
-%\citeonline{heinen} também propôs uma arquitetura de controle híbrida (COHBRA), integrando as técnicas de controle deliberativo e 
+\begin{comment}
 \citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
 reativo em uma abordagem de três camadas: 
 \begin{itemize}
@@ -152,9 +151,17 @@ estáticos ou dinâmicos);
 \end{itemize}
 O sistema de controle proposto foi implementado no simulador SimRob3D, o qual permite a utilização de modelos de ambiente 
 tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes possam ser alterados em tempo real.
+\end{comment}
 
-% Agora falar do Pessim
-%Em \citeonline{pessin} foi feita uma busca por uma técnica
+\citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
+reativo em uma abordagem de três camadas: Deliberativa, a qual determina um trajeto até o objetivo e evita colisões com obstáculos 
+já conhecidos, Vital, que utiliza de comportamentos reativos para guiar o robô ao seu objetivo e evitar colisões com obstáculos 
+(sejam estes estáticos ou dinâmicos), e Funcional, que faz a integração das camadas vital e deliberativa, fornecendo parâmetros 
+reativos para a camada vital. O sistema de controle proposto foi implementado no simulador SimRob3D, o qual permite a utilização de 
+modelos de ambiente 
+tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes possam ser alterados em tempo real.
+
+
 A pesquisa de \citeonline{pessin} se concentra na busca por soluções inteligentes aplicadas em robôs móveis autônomos visando a operação 
 destes em ambientes dinâmicos. Através da aplicação de aprendizado de máquina, buscou-se uma nova visão sobre a operação destes 
 dispositivos em três desafios da área: navegação, localização e operações com grupos de robôs. 
@@ -166,7 +173,15 @@ apresentado o desenvolvimento de um veículo autônomo de grande porte, funciona
 
 
 
+Nas Figuras \ref{fig:marcio}, \ref{fig:pololu} e \ref{fig:allan} são mostrados os dois protótipos desenvolvidos por \citeonline{alemao} e 
+o de \citeonline{allan}, respectivamente, os quais já foram discutidos anteriormente. Na Figura \ref{fig:hirai} é mostrado o 
+Cartisx04, robô seguidor de linha de \citeonline{Hirai}, um dos melhores do segmento mundialmente.
+
+Estes veículos irão fomentar a base de conhecimento deste trabalho.
+
+
 \begin{comment}
+%%% NÃO ESTÁ FUNCIONANDO!! DANGER
 \begin{figure*}[t!]
    \centering
    \captionsetup{width=0.74\textwidth,font=footnotesize,textfont=bf}
@@ -203,7 +218,8 @@ apresentado o desenvolvimento de um veículo autônomo de grande porte, funciona
 \end{figure*}
 \end{comment}
 
-\begin{figure}
+
+\begin{figure}[h]
     \centering
     \captionsetup{width=0.83\textwidth,font=footnotesize,textfont=bf}
     \begin{subfigure}[b]{0.4\textwidth}
@@ -217,8 +233,6 @@ apresentado o desenvolvimento de um veículo autônomo de grande porte, funciona
         \caption{\centering \label{fig:pololu}}
     \end{subfigure}
     
-    %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-    %(or a blank line to force the subfigure onto a new line)
     \begin{subfigure}[b]{0.4\textwidth}
         \includegraphics[width=\textwidth,height=0.25\textheight]{figuras/allan.png}
         \caption{\centering \label{fig:allan}}
@@ -231,75 +245,10 @@ apresentado o desenvolvimento de um veículo autônomo de grande porte, funciona
         \caption{\centering \label{fig:hirai}}
     \end{subfigure}
     
-    \caption{Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; (b) Pololu 3pi modificado \cite{alemao}; 
-(c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
+    \caption{\label{fig:segLinha} Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; 
+    (b) Pololu 3pi modificado \cite{alemao}; (c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
 \end{figure}
 
-
-\begin{comment}
-\begin{figure}
- \centering
- \begin{tabular}[b]{c}
-  \includegraphics[width=0.3\linewidth]{{figuras/marcio1.png}
-  \small (a)
- \end{tabular} \qquad
- \begin{tabular}[b][c]
-  \includegraphics[width=0.3\linewidth]{{figuras/polulumod.png}
-  \small (b)
- \end{tabular}
- \caption{LALALALALALALALA}
-\end{figure}
-
-\end{comment}
-
-
-
-
-
-
-
-%Dentre os robôs com rodas, a categoria dos seguidores de linha tem destaque.
-%Os seguidores de linha, categoria pertencente aos robôs com rodas, serão abordados na próxima subseção.
-
-\begin{comment}
-\subsubsection{Robôs seguidores de linha}
-
-Os robôs seguidores de linha são projetados para seguirem um trajeto, o qual normalmente é feito por marcações no solo. 
-Estes veículos são bastante utilizados devido ao seu baixo custo e simplicidade de projeto \cite{lfchina}.
-
-
-
-%% Colocar somente os robôs do marcio em subfloat
-\begin{figure*}[h!]
-    \centering
-    %\raggedright
-    \captionsetup{width=0.74\textwidth,font=footnotesize,textfont=bf}
-    \begin{subfigure}[t]{0.4\textwidth}
-        \centering
-        %%\raggedleft
-        \includegraphics[scale=0.5]{figuras/marcio1.png}
-        %\caption{Protótipo final \label{fig:marcio}}
-        \caption{ \label{fig:marcio}}
-        %\caption*{Fonte: \cite[p.56]{alemao}}
-    \end{subfigure}%
-    %~\hspace{1cm} 
-    ~\hspace{0.4cm}
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
-        %\raggedleft
-        \includegraphics[scale=0.53]{figuras/polulumod.png}
-        %\caption{Robô 3pi \label{fig:pololu}}
-        \caption{ \label{fig:pololu}}
-        %\caption*{Fonte: \cite[p.58]{alemao}}
-    \end{subfigure}
-    \caption{Robôs utilizados por \cite{alemao}. \ref{fig:marcio} é o robô \textit{Alpha Project} e \ref{fig:pololu} é o 
-    Pololu 3pi modificado.}
-\end{figure*}
-
-%% Colocar o robô do Hirai
-
-Na revisão bibliográfica a seguir são mostradas as técnicas 
-\end{comment}
 
 \begin{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -329,42 +278,65 @@ São compostos por CPU, ADC xxxxxxxx xxxxxx.
 
 \end{comment}
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}
-\section{Sistemas de Controle} \label{cap:controle}
+\section{Sistemas de Controle para robôs móveis} \label{cap:controle}
 
 Para que o robô seja autônomo, %um dos requisitos para que este seja móvel, é necessário que este apresente uma resposta desejada para as 
 é necessário que este apresente uma resposta desejada para as 
-as mais diversas situações. Para tanto se utiliza de um sistema de controle, que para \citeonline{nise} consiste em subsistemas e 
-processos, conhecidos como plantas, dos quais se obtém uma saída com desempenho desejado para uma dada entrada.
+as mais diversas situações. 
+Para tanto se utiliza de um sistema de controle, que consoante a \citeonline{nise} consiste em subsistemas e 
+processos, conhecidos como plantas, dos quais se obtém uma saída com desempenho desejado para uma dada entrada. Na Figura 
+\ref{fig:basicdiag} é mostrado um sistema de controle em uma forma simplificada, em que aplicando-se uma entrada a este, tem-se uma 
+resposta.
 
-No caso do robô, mui
+\begin{figure}[h]
+ \centering
+ \captionsetup{width=0.8\textwidth,font=footnotesize,textfont=bf}
+ \includegraphics[width=0.8\textwidth]{figuras/DiagramaNise.png}
+ \caption{Descrição de um sistema de controle \label{fig:basicdiag}}
+  \vspace{-0.3cm}
+ \caption*{Fonte: Adaptado de \cite[p.2]{nise}.}
+\end{figure}
 
-\begin{comment}
-Para \citeonline{nise}, um Sistema de Controle consiste em subsistemas e processos, conhecidos como plantas, dos quais se obtém uma 
-saída com desempenho desejado para uma dada entrada.
-%Desta forma, utiliza-se de um sistema de controle para que o robô seja autônomo, um dos requisitos dos robõs móveis.
-%Este subsistema é chamado de planta
-Para que seja possível de controlar um sistema, é necessário saber o que se deseja controlar
-\end{comment}
+
+Segundo \citeonline{Intro_auto}, o controle de movimento de 
+um sistema não-holomônico\footnote{Sistemas não-holomônicos são sistemas não integráveis} não é trivial, no entanto estão disponíveis 
+soluções adequadas para contornar este contratempo:
+
+\begin{itemize}
+ \item Controle por malha aberta ( \textit{Open loop control} ): Não utiliza de sensores, logo o veículo segue uma trajetória descrita por 
+ sua posição e velocidade como uma função de tempo e a sua posição não retorna (\textit{feedback}) para o controle da velocidade e 
+ controle. Mesmo sendo de mais fácil implementação, apresenta várias restrições, como a impossibilidade de se adaptar 
+ automaticamente ao ambiente caso aconteçam mudanças dinâmicas neste.
+ \item Controle por Malha fechada ( \textit{feedback control} ): É uma abordagem mais apropriada para o controle de movimento, visto que 
+os sensores são continuamente monitorados e os atuadores\footnote{Atuadores são dispositivos capazes de alterar 
+o estado do sistema controlado com base em sinais de controle, como por exemplo os motores elétricos.} são ajustados com base nestes 
+valores \cite{heinen}. 
+\end{itemize}
 
 
-//PEGUEI INTERNET
-The common denominator in all of these questions is that there is some physical quantity that must be somehow controlled in a way 
-that ensures that the physical quantity takes on the value that is specified.  There are even times when the physical quantity should 
-take on some pre-determined values that follow a function of time.  (An example of that would be landing an airplane where you want the 
-plane to meet the ground following a specified curve.)  We need to think about how to control physical quantities in general, and to 
-determine what can be done - in a general way - to implement any schem we devise.
 
-What is clear is that if you want to control a system, you need to know what you want it to do, and you need to know how well it
-is doing.  That implies a couple of things.  First, you need to know what you want the system to do.  There are lots of ways you can 
-do that.  For example, in your home you set a temperature by dialing it into the thermostat.  That's the way you tell the system 
-what you want it to do.  When an airplane is landing there is a radar beacon at the far end of the runway that tells the aircraft 
-if it is too high or too low, too far right or too far left, and how much in all those cases.  There are any number of ways you can 
-tell a system what you want it to do.  You can turn a dial, type a number into a computer program, or you can use some other physical 
-quantity.  (An example of that is trying to point an antenna at a weather or communications satellite.  The satellite's position - 
-which might be predictable with an astronomical formula - gives the system the information it needs on where the antenna has to point.) 
-One way or another, the control system has to know what it has to do. 
+
+
+
+\begin{figure}[h]
+    \centering
+    \captionsetup{width=0.83\textwidth,font=footnotesize,textfont=bf}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,height=0.25\textheight]{figuras/MalhaAberta.png}
+        \caption{\centering \label{fig:Malhaaberta}}
+    \end{subfigure}
+    ~ 
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,height=0.25\textheight]{figuras/MalhaFechada.png}
+        \caption{\centering \label{fig:Malhafechada}}
+    \end{subfigure}
+    
+    \caption{\label{fig:Malhas} Técnicas de controle: (a) Malha aberta; (b) Malha fechada \cite{Intro_auto}} 
+\end{figure}
 
 
 
