@@ -26,6 +26,7 @@ Warning--I didn't find a database entry for "abnt-etal-list=99"
 Warning--I didn't find a database entry for "ufrj"
 Warning--I didn't find a database entry for "heinen"
 Warning--I didn't find a database entry for "pessin"
+Warning--I didn't find a database entry for "Hirai"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -39,7 +40,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 29 entries,
             6522 wiz_defined-function locations,
-            1292 strings with 12319 characters,
+            1294 strings with 12329 characters,
 and the built_in function-call counts, 61712 in all, are:
 = -- 9418
 > -- 425

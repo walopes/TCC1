@@ -119,6 +119,7 @@ ajudando a carregar equipamentos \cite{bostondyn}.
 \item Robôs com rodas (\textit{wheeled robots}): É o tipo de locomoção mais utilizado em robôs móveis e veículos. Normalmente o 
 equilíbrio não é levado em consideração, visto que na maior parte dos projetos as rodas são consideradas em contato com o solo 
 o tempo todo. O robô Sojourner da Figura \ref{fig:nasa} é um exemplo de robô com rodas.%\par
+\end{itemize}
 
 Na revisão bibliográfica a seguir são mostradas técnicas desenvolvidas para o sistema de navegação de robôs móveis autônomos.
 
@@ -130,7 +131,10 @@ O objetivo do trabalho de \citeonline{ufrj} foi o desenvolvimento de um sistema 
 arquitetura híbrida de três camadas, composta pela implementação das camadas Planejador e Executivo. 
 %O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore} (no mar a uma certa distância 
 %da orla) guiado por trilhos, 
-O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore} (localizado no mar a uma certa distância da costa) 
+O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore}\footnote{\textit{offshore} 
+significa estar afastado da costa; em alto mar.} 
+%\footnotetext{\textit{offshore} é quando algo está localizado no mar, a uma certa distância 
+%da costa (MELHORAR SIGNIFICADO)}
 guiado por trilhos, desenvolvido pela COPPE/\sigla{UFRJ}{Universidade Federal do Rio de Janeiro}, 
 em parceria com a Petrobras e a Statoil, para a inspeção de plataformas de petróleo. O veículo 
 tem como funcionalidades a detecção de anomalias por vídeo, áudio, vibração, temperatura e por câmera de infravermelho e o 
@@ -153,11 +157,58 @@ tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes poss
 %Em \citeonline{pessin} foi feita uma busca por uma técnica
 A pesquisa de \citeonline{pessin} se concentra na busca por soluções inteligentes aplicadas em robôs móveis autônomos visando a operação 
 destes em ambientes dinâmicos. Através da aplicação de aprendizado de máquina, buscou-se uma nova visão sobre a operação destes 
-dispositivos em três desafios da área: navegação, localização e operações com grupos de robôs. em que foi visado estender o estado da 
-arte
+dispositivos em três desafios da área: navegação, localização e operações com grupos de robôs. 
+No estudo das operações com grupos de robôs, foi utilizada uma aplicação de combate a 
+incêndios, com a avaliação por quatro técnicas: Algoritmos Genéticos, 
+Otimização por Enxame de Partículas, \textit{Hill Climbing} e \textit{Simulated Annealing}. Na investigação sobre a navegação, é 
+apresentado o desenvolvimento de um veículo autônomo de grande porte, funcional para ambientes externos. Relacionado com a localização, 
+é mostrado um método que provê informações de localização para os robôs com base em dados obtidos por redes sem fio.
 
 
-\end{itemize}
+
+\begin{comment}
+\begin{figure*}[t!]
+   \centering
+   \captionsetup{width=0.74\textwidth,font=footnotesize,textfont=bf}
+    \begin{subfigure}[t]{.5\linewidth}
+        \raggedright
+        \includegraphics[width=7cm]{figuras/marcio1.png}
+        \caption{\centering \label{fig:marcio}}
+    \end{subfigure}
+    %~\hspace{0.4cm}
+    ~
+    \begin{subfigure}[t]{0.5\linewidth}
+        \raggedleft
+        \includegraphics[width=7cm,height=7cm]{figuras/polulumod.png}
+        \caption{ \label{fig:pololu}}
+    \end{subfigure}[1ex]
+    \vspace{0.4cm}
+    ~\hspace{0.4cm}
+    
+    \begin{subfigure}[t]{0.2\linewidth}
+        \centering
+        \includegraphics[width=7cm,height=3cm]{figuras/allan.png}
+        \caption{ \label{fig:allan}}
+    \end{subfigure}
+    ~\hspace{0.4cm}
+    \begin{subfigure}[t]{0.3\linewidth}
+        \centering
+        \includegraphics[width=7cm,height=3cm,keepaspectratio]{figuras/Hirai.png}
+        %\caption{Robô 3pi \label{fig:pololu}}
+        \caption{ \label{fig:hirai}}
+        %\caption*{Fonte: \cite[p.58]{alemao}}
+    \end{subfigure}
+    \caption{Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; (b) Pololu 3pi modificado \cite{alemao}; 
+(c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
+\end{figure*}
+\end{comment}
+
+
+
+
+
+
+
 
 %Dentre os robôs com rodas, a categoria dos seguidores de linha tem destaque.
 %Os seguidores de linha, categoria pertencente aos robôs com rodas, serão abordados na próxima subseção.
@@ -234,7 +285,8 @@ São compostos por CPU, ADC xxxxxxxx xxxxxx.
 \vspace{1cm}
 \section{Sistemas de Controle} \label{cap:controle}
 
-Para que o robô seja autônomo, um dos requisitos para que este seja móvel, é necessário que este apresente uma resposta desejada para as 
+Para que o robô seja autônomo, %um dos requisitos para que este seja móvel, é necessário que este apresente uma resposta desejada para as 
+é necessário que este apresente uma resposta desejada para as 
 as mais diversas situações. Para tanto se utiliza de um sistema de controle, que para \citeonline{nise} consiste em subsistemas e 
 processos, conhecidos como plantas, dos quais se obtém uma saída com desempenho desejado para uma dada entrada.
 

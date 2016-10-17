@@ -9,21 +9,21 @@
 \contentsline {chapter}{\numberline {2}\MakeUppercase {Referencial Te\IeC {\'o}rico}}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}\MakeUppercase {Rob\IeC {\'o}tica}}{7}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Rob\IeC {\'o}tica m\IeC {\'o}vel}{8}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}\MakeUppercase {Sistemas de Controle}}{10}{section.2.2}
+\contentsline {section}{\numberline {2.2}\MakeUppercase {Sistemas de Controle}}{11}{section.2.2}
 \contentsline {section}{\numberline {2.3}\MakeUppercase {Regras da Robocore para rob\IeC {\^o}s seguidores de linha}}{11}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Especifica\IeC {\c c}\IeC {\~a}o dos rob\IeC {\^o}s}{11}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Especifica\IeC {\c c}\IeC {\~o}es do Percurso}{11}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {3}\MakeUppercase {Materiais}}{14}{chapter.3}
-\contentsline {section}{\numberline {3.1}\MakeUppercase {Microcontrolador}}{14}{section.3.1}
-\contentsline {section}{\numberline {3.2}\MakeUppercase {Motores CC}}{14}{section.3.2}
-\contentsline {section}{\numberline {3.3}\MakeUppercase {Ponte H}}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}\MakeUppercase {Encoder magn\IeC {\'e}tico}}{15}{section.3.4}
-\contentsline {section}{\numberline {3.5}\MakeUppercase {Sensores de reflet\IeC {\^a}ncia}}{15}{section.3.5}
-\contentsline {section}{\numberline {3.6}\MakeUppercase {Placa de circuito impresso}}{15}{section.3.6}
-\contentsline {section}{\numberline {3.7}\MakeUppercase {M\IeC {\'o}dulo bluetooth}}{15}{section.3.7}
-\contentsline {section}{\numberline {3.8}\MakeUppercase {Rodas}}{16}{section.3.8}
-\contentsline {section}{\numberline {3.9}\MakeUppercase {Bateria Lipo}}{16}{section.3.9}
-\contentsline {section}{\numberline {3.10}\MakeUppercase {Conversor Step-Up}}{16}{section.3.10}
-\contentsline {section}{\numberline {3.11}\MakeUppercase {Esfera deslizante}}{16}{section.3.11}
-\contentsline {chapter}{\numberline {4}\MakeUppercase {Cronograma Preliminar}}{17}{chapter.4}
-\contentsline {chapter}{REFER\^ENCIAS}{18}{quadro.caption.7}
+\contentsline {subsection}{\numberline {2.3.1}Especifica\IeC {\c c}\IeC {\~a}o dos rob\IeC {\^o}s}{12}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Especifica\IeC {\c c}\IeC {\~o}es do Percurso}{12}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}\MakeUppercase {Materiais}}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}\MakeUppercase {Microcontrolador}}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}\MakeUppercase {Motores CC}}{15}{section.3.2}
+\contentsline {section}{\numberline {3.3}\MakeUppercase {Ponte H}}{16}{section.3.3}
+\contentsline {section}{\numberline {3.4}\MakeUppercase {Encoder magn\IeC {\'e}tico}}{16}{section.3.4}
+\contentsline {section}{\numberline {3.5}\MakeUppercase {Sensores de reflet\IeC {\^a}ncia}}{16}{section.3.5}
+\contentsline {section}{\numberline {3.6}\MakeUppercase {Placa de circuito impresso}}{16}{section.3.6}
+\contentsline {section}{\numberline {3.7}\MakeUppercase {M\IeC {\'o}dulo bluetooth}}{16}{section.3.7}
+\contentsline {section}{\numberline {3.8}\MakeUppercase {Rodas}}{17}{section.3.8}
+\contentsline {section}{\numberline {3.9}\MakeUppercase {Bateria Lipo}}{17}{section.3.9}
+\contentsline {section}{\numberline {3.10}\MakeUppercase {Conversor Step-Up}}{17}{section.3.10}
+\contentsline {section}{\numberline {3.11}\MakeUppercase {Esfera deslizante}}{17}{section.3.11}
+\contentsline {chapter}{\numberline {4}\MakeUppercase {Cronograma Preliminar}}{18}{chapter.4}
+\contentsline {chapter}{REFER\^ENCIAS}{19}{quadro.caption.8}
