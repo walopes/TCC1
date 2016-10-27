@@ -17,6 +17,11 @@ Dispon{\'\i}vel em:
 {CASSANDRAS, C.~G.; LAFORTUNE, S. \textbf{Introduction to Discrete Event
   Systems}. 2. ed. New York: Springer US, 2008.}
 
+\bibitem[Dudek e Jenkin 2010]{dudek_mobile}
+\abntrefinfo{Dudek e Jenkin}{DUDEK; JENKIN}{2010}
+{DUDEK, G.; JENKIN, M. \textbf{Computational principles of mobile robotics}. 2.
+  ed. [S.l.]: Cambridge University Press, 2010.}
+
 \bibitem[Dynamics 2016]{bostondyn}
 \abntrefinfo{Dynamics}{DYNAMICS}{2016}
 {DYNAMICS, B. \textbf{LS3 - Legged Squad Support System}. 2016.
@@ -25,16 +30,32 @@ Dispon{\'\i}vel em:
   }ls3\-.html$>$}{http://www.bostondynamics.com/robot_ls3.html}. Acesso em: 25
   set. 2016.}
 
+\bibitem[Freitas 2016]{ufrj}
+\abntrefinfo{Freitas}{FREITAS}{2016}
+{FREITAS, R.~S. de.
+\textbf{Arquitetura híbrida e controle de missão de robôs autônomos}.
+Disserta\c{c}\~ao (Mestrado) --- Universidade Federal do Rio de Janeiro, Rio de
+  Janeiro, 2016.}
+
 \bibitem[Guadagnin 2014]{allan}
 \abntrefinfo{Guadagnin}{GUADAGNIN}{2014}
 {GUADAGNIN, A.~J. \textbf{Controle Híbrido de um Robô Seguidor de Linha}.
   2014.
 Trabalho de Conclusão de Curso. Universidade Tecnológica Federal do Paraná.}
 
-\bibitem[Jenkin 2010]{dudek_mobile}
-\abntrefinfo{Jenkin}{JENKIN}{2010}
-{JENKIN, G. D.~M. \textbf{Computational principles of mobile robotics}. 2. ed.
-  [S.l.]: Cambridge University Press, 2010.}
+\bibitem[Heinen 2002]{heinen}
+\abntrefinfo{Heinen}{HEINEN}{2002}
+{HEINEN, F.~J.
+\textbf{Sistema de Controle híbrido para Robôs Móveis Autônomos}.
+Disserta\c{c}\~ao (Mestrado) --- Universidade do Vale do Rio dos Sinos, São
+  Leopoldo, 2002.}
+
+\bibitem[Hirai 2014]{Hirai}
+\abntrefinfo{Hirai}{HIRAI}{2014}
+{HIRAI, A. \textbf{Cartisx04}. 2014.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/anikinonikki\-.cocolog-nifty\-.com\-/blog\-/2014\-/11\-/cartisx04\-.html$>$}{http://anikinonikki.cocolog-nifty.com/blog/2014/11/cartisx04.html}.
+  Acesso em: 13 out. 2016.}
 
 \bibitem[MAUÁ 2016]{maua}
 \abntrefinfo{MAUÁ}{MAUÁ}{2016}
@@ -55,6 +76,19 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Nise}{NISE}{2012}
 {NISE, N.~S. \textbf{Engenharia de Sistemas de Controle}. 6. ed. Rio de
   Janeiro: LTC, 2012.}
+
+\bibitem[Ogata 2010]{ogata}
+\abntrefinfo{Ogata}{OGATA}{2010}
+{OGATA, K. \textbf{Engenharia de Controle Moderno}. 5. ed. São Paulo: Pearson
+  Prentice Hall, 2010.}
+
+\bibitem[Pessin 2013]{pessin}
+\abntrefinfo{Pessin}{PESSIN}{2013}
+{PESSIN, G.
+\textbf{Estratégias inteligentes aplicadas em robôs móveis autônomos e em
+  coordenação de grupos de robôs}.
+Disserta\c{c}\~ao (Mestrado) --- Universidade de São Paulo, São Carlos,
+  2013.}
 
 \bibitem[Petry 2016]{alemao}
 \abntrefinfo{Petry}{PETRY}{2016}

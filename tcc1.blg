@@ -12,21 +12,18 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: bibliografia.bib.bib
-You're missing a field name---line 66 of file bibliografia.bib.bib
+You're missing a field name---line 123 of file bibliografia.bib.bib
  : 
  : %   title =     {Computational principles of mobile robotics},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 301 of file bibliografia.bib.bib
+You're missing a field name---line 358 of file bibliografia.bib.bib
  :   
  :   %url={https://books.google.com.br/books?id=aPa0AAAACAAJ},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "abnt-etal-list=99"
-Warning--I didn't find a database entry for "ufrj"
-Warning--I didn't find a database entry for "heinen"
-Warning--I didn't find a database entry for "pessin"
-Warning--I didn't find a database entry for "Hirai"
+Warning--I didn't find a database entry for "lima"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -38,45 +35,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 29 entries,
+You've used 34 entries,
             6522 wiz_defined-function locations,
-            1294 strings with 12329 characters,
-and the built_in function-call counts, 61712 in all, are:
-= -- 9418
-> -- 425
-< -- 1754
-+ -- 1940
-- -- 139
-* -- 2778
-:= -- 5968
-add.period$ -- 112
-call.type$ -- 31
-change.case$ -- 180
-chr.to.int$ -- 43
-cite$ -- 25
-duplicate$ -- 8724
-empty$ -- 1716
-format.name$ -- 637
-if$ -- 12331
+            1317 strings with 12929 characters,
+and the built_in function-call counts, 67795 in all, are:
+= -- 10161
+> -- 518
+< -- 1887
++ -- 2104
+- -- 169
+* -- 3117
+:= -- 6676
+add.period$ -- 130
+call.type$ -- 36
+change.case$ -- 215
+chr.to.int$ -- 51
+cite$ -- 30
+duplicate$ -- 9404
+empty$ -- 1976
+format.name$ -- 776
+if$ -- 13568
 int.to.chr$ -- 6
 int.to.str$ -- 2
-missing$ -- 470
-newline$ -- 127
-num.names$ -- 125
-pop$ -- 706
+missing$ -- 558
+newline$ -- 154
+num.names$ -- 150
+pop$ -- 805
 preamble$ -- 1
-purify$ -- 90
+purify$ -- 106
 quote$ -- 0
-skip$ -- 9072
+skip$ -- 9759
 stack$ -- 1
-substring$ -- 2262
-swap$ -- 2047
-text.length$ -- 27
+substring$ -- 2479
+swap$ -- 2253
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 9
 warning$ -- 0
-while$ -- 179
+while$ -- 211
 width$ -- 0
-write$ -- 376
+write$ -- 454
 (There were 2 error messages)
