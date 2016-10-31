@@ -228,7 +228,8 @@ Estes veículos irão fomentar a base de conhecimento deste trabalho.
     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
       %(or a blank line to force the subfigure onto a new line)
     \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/polulumod.png}
+	\centering
+        \includegraphics[width=0.75\textwidth,height=0.18\textheight]{figuras/polulumod.png}
         \caption{\centering \label{fig:pololu}}
     \end{subfigure}
     
@@ -295,93 +296,111 @@ dos quais se obtém uma saída com desempenho desejado para uma dada entrada \ci
 \ref{fig:basicdiag} é mostrado o diagrama de blocos\footnote{Diagrama de blocos é uma representação gráfica do sistema que mostra o 
 fluxo de sinais que ocorre entre os componentes deste.} de 
 um sistema de controle em uma forma simplificada, em que aplicando-se uma entrada a este, obtêm-se uma 
-resposta.
+resposta. 
+%Duas medidas de desempenho importantes para os sistemas de controle são: A resposta transitória do sistema,,
+%e o erro de estado estacionário, .
 
 \begin{figure}[h]
  \centering
  \captionsetup{width=0.6\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[width=0.6\textwidth]{figuras/DiagramaNise.png}
  \includegraphics[width=0.6\textwidth]{figuras/DiagramaNise.png}
  \caption{Descrição de um sistema de controle \label{fig:basicdiag}}
   \vspace{-0.3cm}
  \caption*{Fonte: Adaptado de \cite[p.2]{nise}.}
 \end{figure}
 
-VERIFICAR MELHOR ESTE PEDAÇO DAS MALHAS
-_________________________________________________
-%\citeonline{nise} classifica os sistemas de controle em duas configurações:
 
+\begin{comment}
 Segundo \citeonline{Intro_auto}, o controle de movimento de 
 um sistema não-holomônico\footnote{Sistemas não-holomônicos são sistemas não integráveis} não é trivial, no entanto estão disponíveis 
 soluções adequadas para contornar este contratempo:
-
 \begin{itemize}
  \item Controle por malha aberta (\textit{Open loop control}): Não utiliza de sensores, logo o veículo segue uma trajetória descrita por 
  sua posição e velocidade como uma função de tempo e a sua posição não retorna (\textit{feedback}) para o controle da velocidade e 
  controle. Mesmo sendo de mais fácil implementação, apresenta várias restrições, como a impossibilidade de se adaptar 
  automaticamente ao ambiente caso aconteçam mudanças dinâmicas neste.
- 
  \item Controle por Malha fechada (\textit{Closed loop control}): É uma abordagem mais apropriada para o controle de movimento, visto que 
 os sensores são continuamente monitorados e os atuadores\footnote{Atuadores são dispositivos capazes de alterar 
 o estado do sistema controlado com base em sinais de controle, como por exemplo os motores elétricos.} são ajustados com base nestes 
 valores \cite{heinen}. 
 \end{itemize}
+\end{comment}
+
+%\citeonline{nise} classifica os sitemas de controle em duas configurações principais:
+Para \citeonline{nise} os sistemas de controle podem ser classificados em duas configurações principais:
+\begin{itemize}
+ \item Controle por malha aberta (\textit{Open loop control}): É a configuração mais simples, onde o sinal 
+ de saída não exerce nenhuma ação de controle no sistema \cite{ogata}. Desta forma, um sistema de controle de malha aberta 
+ não é medido e nem comparado com a entrada, como pode ser visto na Figura \ref{fig:Malhaaberta}, não sendo capaz de compensar 
+ distúrbios que possam ser adicionados ao sistema \cite{nise}.
+ 
+ \item Controle por Malha fechada (\textit{Closed loop control}): Nesta configuração, a saída ou a resposta influencia a entrada do 
+ sistema \cite{controle}. Logo após a Resposta Desejada, na Figura \ref{fig:Malhafechada}, tem-se um ponto de soma, em que será feita 
+ a soma algébrica dos sinais associados. % \citeonline{nise} diz que
+ %este ponto de soma adiciona o sinal da entrada (também conhecido como referência) ao sinal 
+ %da saída do sistema, o qual chega através de um caminho de retorno (\textit{feedback path}). 
+ %
+ %O erro do sistema é obtido subtraindo-se o 
+ %sinal de saída pelo de entrada do sistema. Esta configuração permite que sejam compensados distúrbios no sistema, visto que se caso haja 
+ %divergência entre as duas respostas, o sistema aciona a planta pelo erro
+ Segundo \citeonline{ogata}, o sinal de erro atuante, que é a diferença entre o sinal de entrada e o sinal de realimentação (o qual é 
+ calculado logo após o ponto de soma, como pode ser visto na Figura \ref{fig:controlador}), 
+ realimenta o controlador que tende a minimizar o erro e deixar a saída com o valor desejado.
+\end{itemize}
+
 
 \begin{figure}[h]
     \centering
-    \captionsetup{width=0.83\textwidth,font=footnotesize,textfont=bf}
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.2\textheight,keepaspectratio]{figuras/MalhaAberta.png}
+    \captionsetup{width=0.8\textwidth,font=footnotesize,textfont=bf}
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figuras/MalhaAberta.png}
         \caption{\centering \label{fig:Malhaaberta}}
     \end{subfigure}
-    ~ 
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.2\textheight,keepaspectratio]{figuras/MalhaFechada.png}
+    %~ 
+    
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figuras/MalhaFechada.png}
         \caption{\centering \label{fig:Malhafechada}}
     \end{subfigure}
     
-    \caption{\label{fig:Malhas} Técnicas de controle: (a) Malha aberta; (b) Malha fechada \cite{Intro_auto}} 
+    %\caption{\label{fig:Malhas} Técnicas de controle: (a) Malha aberta; (b) Malha fechada \cite{Intro_auto}} 
+    \caption{\label{fig:Malhas} Configurações de sistemas de controle: (a) Malha aberta; (b) Malha fechada \cite{controle}} 
 \end{figure}
-
-
-%AGORA FALTA FALAR SOBRE A DECOMPOSIÇÃO VERTICAL (DUDEK, PAGINA 213)
-
-
-
-
-
-%EM SEGUIDA JÁ ENTRAR COM OS CONTROLADORES
 
 
 \subsection{Ações de controle}
 
-LIVRO: (OGATA 5a ED.)
-	(Aquivo X Fabio Lima Pg. 57)
-	(KUO Pg. 617 - NÃO SEI SE VOU UTILIZAR, MAS FICA AI IGUAL)
-	    -> pd: pg 492
-	    -> PI: pg 511
-	    ->PID: pg 528
-Although the systems illustrated in Fig. 9-2 are all for continuous-data control, the
-same configurations can be applied to discrete-data control, in which case the controllers
-are all digital, with the necessary interfacings and signal converters.
-
----------------------------------------------------------------------------------------------
-	
-	
-Conforme \citeonline{ogata}, um controlador automático compara o valor de saída da planta com o valor desejado (entrada do sistema), 
+Conforme \citeonline{ogata}, um controlador automático compara o valor de saída da planta com a entrada do sistema, 
 determinando o desvio e produzindo um sinal de controle que reduzirá este desvio a um valor pequeno. É chamada de ação de controle a 
-maneira que o controlador produz o sinal de controle.
+maneira pela qual o controlador produz o sinal de controle. Na Figura \ref{fig:controlador} é mostrado o diagrama de blocos 
+de um sistema de controle, composto por um controlador automático, um atuador, uma planta e um sensor, o qual é 
+o elemento de medição. Os atuadores são dispositivos capazes de alterar 
+o estado do sistema controlado com base em sinais de controle, como os motores elétricos. O sensor é um elemento que 
+converte a variável de saída em uma outra variável pertinente, que possa ser mensurável pelo sistema.
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.8\textwidth,font=footnotesize,textfont=bf}
+ \includegraphics[width=0.8\textwidth,height=0.5\textheight,keepaspectratio]{figuras/Controlador.png}
+ \caption{Diagrama de blocos de um controlador automático \label{fig:controlador}}
+ \vspace{-0.2cm}
+ \caption*{Fonte: Adaptado de \cite[p.18]{ogata}.}
+\end{figure}
 
 \citeonline{ogata} classifica os controladores industriais de acordo com as suas ações de controle:
 \begin{itemize}
- \item Controladores de duas posições ou \textit{on-off}; %(OBS.: TALVEZ DE PROBLEMA NESSE TEXTIT ANTERIOR)
- \item Controladores Proporcionais;
- \item Controladores Integrais;
- \item Controladores Proporcionais-Integrais (\sigla{PI}{Proporcional-Integral});
- \item Controladores Proporcionais-Derivativos (\sigla{PD}{Proporcional-Diferencial});
- \item Controladores Proporcionais-Integrais-Derivativos (\sigla{PID}{Proporcional-Integral-Diferencial})
+ \item Controlador de duas posições ou \textit{on-off}; %(OBS.: TALVEZ DE PROBLEMA NESSE TEXTIT ANTERIOR)
+ \item Controlador Proporcional;
+ \item Controlador Integral;
+ \item Controlador Proporcional-Integral (\sigla{PI}{Proporcional-Integral});
+ \item Controlador Proporcional-Derivativo (\sigla{PD}{Proporcional-Derivativo});
+ \item Controlador Proporcional-Integral-Derivativo (\sigla{PID}{Proporcional-Integral-Derivativo})
 \end{itemize}
 
-\subsubsection{Controladores \textit{on-off}}
+\subsubsection{Controlador \textit{on-off}}
 
 Em controladores de duas posições ou \textit{on-off}, o elemento atuante tem somente duas posições, as quais são fixas, geralmente sendo 
 \textit{on} (ligado) e \textit{off} (desligado) \cite{ogata}. Tem grande aplicabilidade em sistemas de controle industriais e 
@@ -391,7 +410,7 @@ Considerando-se o sinal de saída do controlador $u(t)$ % $ é indicativo para e
 e o sinal de erro atuante $e(t)$, o sinal $u(t)$ apresenta um valor máximo ou mínimo, caso o erro atuante seja negativo ou positivo, 
 respectivamente. Assim, tem-se que:
 \begin{comment}
-\begin{align*}
+\begin{align*}  %%Utiliza-se o align quando não deseja ter numeração nas equações
  u(t) = U_1, \quad para \ e(t) \ > \ 0, \\
  u(t) = U_2, \quad para \ e(t) \ < \ 0,
 \end{align*}
@@ -409,99 +428,108 @@ muitas oscilações e \textit{offset} (COLOCAR NOTA RODAPE PARA OFFSET).
 
 \subsubsection{Controlador Proporcional}
 
-%Segundo \citeonline{kuo}, a ação de controle proporcional tem essa denominação devido ao sinal de controle da saída do controlador 
-%ser relacionado com entrada deste por uma constante.
 
-Na ação de controle proporcional, a relação entre a saída do controlador $u(t)$ e o sinal de erro $e(t)$ é apenas um ganho \cite{lima}. 
-A equação \ref{eq:prop} mostra a equação do controlador proporcional.
+Na ação de controle proporcional, a relação entre a saída do controlador $u(t)$ e o sinal de erro $e(t)$ 
+é apenas um ganho: 
+%A equação \ref{eq:prop} mostra a equação do controlador proporcional.
 
 \begin{equation}\label{eq:prop}
  u(t) = K_pe(t),	
 \end{equation}
-em que $K_p$ é o ganho do controlador proporcional.
-
+em que $K_p$ é o ganho do controlador proporcional. 
+Para \citeonline{controle} quanto maior o ganho, menor será o erro $e(t)$, no entanto o sistema pode perder estabilidade 
+devido ao aumento do 
+tempo de acomodação\footnote{Tempo de acomodação (\textit{settling time}) é o tempo para que a curva de resposta alcance 
+valores em uma faixa (2\% a 5\%) em relação ao valor final, permanecendo nesta faixa interminavelmente \cite{ogata}.}.
 
 \subsubsection{Controlador Integral}
 
-Segundo \citeonline{lima}, na ação de controle integral, o valor da saída $u(t)$ é proporcional à entrada de erro atuante $e(t)$. 
-Conforme a equação \ref{eq:int}, 
+Segundo \citeonline{ogata}, na ação de controle integral, o valor da saída $u(t)$ é alterado a uma taxa de variação proporcional 
+ao sinal de erro atuante $e(t)$:
 
 \begin{equation}
  %u(t) = K_i \int_{lower}^{upper}
  u(t) = K_i \int_{0}^{t}e(t)dt,
 \end{equation}
-em que $K_i$ é a constante de ganho integral. Este controlador ainda zera o erro em regime permanente (?).
 
-
-%\subsubsection{Controlador Diferencial}
-%KUO/LIMA
+em que $K_i$ é a constante de ganho integral. 
 
 \subsubsection{Controlador Proporcional-Integral (PI)}
 
-O controlador Proporcional-Integral reúne as características das ações de controle Proporcional e Integral em uma ação de controle, 
-sendo definido por:
+Para \citeonline{nise}, um controlador Proporcional-Integral pode ser chamado de compensador integral ideal, visto que 
+as ações de controle Proporcional e Integral alimentam o erro e a integral do erro para a planta, respectivamente, desta forma 
+tendendo a eliminar o erro em regime permanente\footnote{Segundo \citeonline{ogata} a resposta temporal de um sistema consiste em duas 
+partes: da resposta transitória e da resposta estacionária ou em regime permanente}. 
+A sua ação de controle é definida por: 
 
 \begin{equation}
  u(t) = K_pe(t) + \frac{K_p}{T_i}\int_{0}^{t}e(t)dt,
 \end{equation}
-em que $T_i$ é chamado de tempo integrativo \cite{ogata}.
-
-NISE PG 459
-_________________
-
-%A ação de controle Proporcional-Integral \sigla{PI}{Proporcional-Integral}, ou 
-%combina as ações Proporcional e Integral a um mesmo controlador, esta produzindo um sinal que é proporcional 
-
-
-
+em que $T_i$ é chamado de tempo integrativo. 
 
 
 \subsubsection{Controlador Proporcional-Derivativo (PD)}
 
-Pegar do lima.
+%\citeonline{nise} denomina o controlador Proporcional-Derivativo um compensador derivativo ideal, o qual compreende as 
+%ações proporcional, consistindo na alimentação do erro, e derivativa, a qual é proporcional à derivada do erro. 
 
+Segundo \citeonline{controle}, as ações proporcional e derivativa deste controlador 
+contribuem com o regime transitório, %\footnote{A resposta transitória de um sistema é aquela que vai do estado inicial ao final}, 
+tendendo a aumentar a estabilidade do sistema e reduzir o tempo de acomodação. 
+A ação de controle deste controlador é definida por:
+\begin{equation}
+ u(t) = K_pe(t) + K_pT_d\frac{de(t)}{dt}
+\end{equation}
+onde $T_d$ é chamado de tempo derivativo \cite{ogata}.
 
-We see from Section 9-2 that the PD controller can improve the damping and rise time of a
-control system at the expense of higher bandwidth and resonant frequency, and the steady-
-state error is not affected unless it varies with time, which is typically not the case for step-
-function inputs. Thus, the PD controller may not fulfill the compensation objectives in
-many situations.
-
-
-NISE PG 469
-_________________
 
 \subsubsection{Controlador Proporcional-Integral-Derivativo (PID)}
 
-NISE PG 482
-____________________
+O controlador Proporcional-Integral-Derivativo reúne a ação das três ações de controle, atuando na melhoria do 
+regime permanente e da resposta transitória. 
+A equação do controlador é dada por:
 
-One of the commonly used controllers in the compensation schemes just described is a
-PID controller, which applies a signal to the process that is proportional to the actuating
-signal in addition to adding integral and derivative of the actuating signal. Because these
-signal components are easily realized and visualized in the time domain, PID controllers
-are commonly designed using time-domain methods. In addition to the PID-type controllers, lead, lag, lead-lag, and notch controllers are also frequently used. The names of these
-controllers come from properties of their respective frequency-domain characteristics. As a
-result, these controllers are often designed using frequency-domain concepts. Despite these
-design tendencies, however, all control system designs will benefit by viewing the resulting
-design from both time- and frequency-domain viewpoints. Thus, both methods will be used
-extensively in this chapter
+\begin{equation}
+ u(t) = K_pe(t) + \frac{K_p}{T_i}\int_{0}^{t}e(t)dt + K_pT_d\frac{de(t)}{dt}
+\end{equation}
+onde  $K_p$ é o ganho proporcional, $T_i$ é o tempo integrativo e $T_d$ é o tempo derivativo \cite{ogata}.
 
 
-\begin{comment}
+%%%%%%
+%
+%  Este aqui ta bacana:
+%  http://www.dca.ufrn.br/~meneghet/FTP/Controle/scv20071.pdf
+%
+%%%%%%
 
-// ESSE AQUI EH PARA CONTROLE DIGITAL
-
-Para Ogata(discreto ), os controladores digitais são utilizados para obter desempenho ótimo, como por exemplo a máxima produtividade ou 
-menor uso de energia.
-
-\end{comment}
-
-%% // CONTROLE DISCCRETO
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\vspace{1cm}
-%\section{} \label{cap:}
+\vspace{1cm}
+\section{Sistemas a Eventos Discretos} \label{cap:sed}
+
+%O sistema de controle híbrido a ser implementado é composto pelo sistema de controle discreto, 
+%Os sistemas podem ser classificados em relação à natureza do espaço de estados selecionado, podendo ser 
+
+Para \citeonline{cassandras}, os sistemas podem ser classificados em duas categorias quanto à natureza do espaço de estados 
+selecionado: 
+\begin{itemize}
+ \item Estado contínuo: O espaço de estados $X$ é uma continuidade, compreendendo todos os vetores $n$-dimensionais de números reais ou 
+ complexos, eventualmente;
+ 
+ \item Estado discreto: O espaço de estados é um conjunto discreto. As variáveis de estado deslocam-se em pontos discretos no tempo, de 
+ um valor estado discreto para outro.
+\end{itemize}
+
+\citeonline{torrico} define um Sistema a Eventos Discretos (\sigla{SED}{Sistema a Eventos Discretos}) 
+como um sistema dinâmico a estado discreto que evolui à proporção assíncrona de eventos. %Um evento, segundo \citeonline{teixeira}, 
+Eventos são transições discretas, como a chegada de uma peça em uma esteira e a transmissão de uma mensagem em uma comunicação, por 
+exemplo.
+
+\subsection{Modelagem do SED}
+
+
+
+
 
 
 

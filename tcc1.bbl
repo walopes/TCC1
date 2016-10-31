@@ -12,6 +12,11 @@ Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/www\-.robotics\-.org\-/product-catalog-detail\-.cfm\-/productid\-/2953$>$}{http://www.robotics.org/product-catalog-detail.cfm/productid/2953}.
   Acesso em: 15 ago. 2016.}
 
+\bibitem[Ara{\'u}jo 2007]{controle}
+\abntrefinfo{Ara{\'u}jo}{ARA{\'U}JO}{2007}
+{ARA{\'U}JO, F. M.~U. de. \textbf{Sistemas de Controle}. Natal: DCA-UFRN, 2007.
+  Apostila.}
+
 \bibitem[Cassandras e Lafortune 2008]{cassandras}
 \abntrefinfo{Cassandras e Lafortune}{CASSANDRAS; LAFORTUNE}{2008}
 {CASSANDRAS, C.~G.; LAFORTUNE, S. \textbf{Introduction to Discrete Event
@@ -180,6 +185,14 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/www\-.mouser\-.com\-/ds\-/2\-/389\-/DM00092070-524505\-.pdf$>$}{http://www.mouser.com/ds/2/389/DM00092070-524505.pdf}.
   Acesso em: 01 set. 2016.}
+
+\bibitem[Torrico 2003]{torrico}
+\abntrefinfo{Torrico}{TORRICO}{2003}
+{TORRICO, C. R.~C.
+\textbf{Controle Supervisório Hierárquico de Sistemas a Eventos Discretos:
+  Uma Abordagem Baseada na Agregação de Estados}.
+Tese (Doutorado) --- Universidade Federal de Santa Catarina, Florianópolis,
+  2003.}
 
 \bibitem[Toshiba 2016]{ponte}
 \abntrefinfo{Toshiba}{TOSHIBA}{2016}
