@@ -19,11 +19,8 @@ A \textit{Robotic Industries Association} (\sigla{RIA}{\textit{Robotic Industrie
 entidade norte-americana responsável pela indústria de robótica, define um robô industrial como
  \textit{um manipulador multipropósito reprogramável, controlado automaticamente, programado em três 
  ou mais eixos, os quais podem ser fixos em um lugar ou móveis para aplicações em automação industrial} \cite{RIAdef}.
-%\footnote{Fonte em \url{http://www.robotics.org/product-catalog-detail.cfm/productid/2953}. Acesso em: 15 agosto 2016}. 
-%Diferentemente do que foi imaginado por Capek, hoje máquinas fazem o trabalho destes seres-humanos.
 Diferentemente do que foi imaginado por Capek, são máquinas que realizam o trabalho.
 
-%\begin{comment}
 \citeonline{secchi2012} classifica os robôs em três tipos:
 \begin{itemize}
  \item Industriais: São formados por estruturas mecâncias articuladas, as quais se movem pelas ordens de um sistema de 
@@ -32,23 +29,21 @@ Diferentemente do que foi imaginado por Capek, são máquinas que realizam o tra
  precisão, assim como as próteses inteligentes, que visam manter a aparência e funcionalidade do membro de pessoas com 
  deficiência.;
  \item Móveis: São plataformas mecânicas, que se locomovem através de um certo ambiente e apresentam certa autonomia.
-São empregados principalmente em tarefas onde se tem risco à vida humana, como na manutenção de reatores nucleares ou 
+São empregados principalmente em tarefas em que se tem risco à vida humana, como na manutenção de reatores nucleares ou 
 exploração de 
 minérios, mas também podem ser aplicados na agricultura e no transporte de cargas.
 \end{itemize}
 
 
 \vspace{1cm}
-%\subsection{Robôs móveis}
 \subsection{Robótica móvel}	
 
 
 Mesmo que os robôs industriais apresentem alta precisão e velocidade, estes possuem uma grande desvantagem, que é a falta 
-de mobilidade. %Algumas atividades necessitam que o dispositivo trafeguem através de uma planta industrial
+de mobilidade. 
 Algumas atividades não seriam realizadas sem a utilização destes dispositivos, como a 
 \textit{Mars Pathfinder}, missão exploratória da 
 \sigla{NASA}{ \textit{National Aeronautics and Space Administration}} para o reconhecimento da atmosfera de Marte. O 
-%veículo Sojourner (Figura \ref{fig:nasa}) que foi utilizado nesta missão, explorou o território marciano por 83 dias, 
 veículo Sojourner (Figura \ref{fig:nasa}) que foi utilizado nesta missão, explorou o território marciano por oitenta e três dias, 
 tirando fotografias e realizando 
 medições do ambiente \cite{nasa}.
@@ -60,8 +55,7 @@ medições do ambiente \cite{nasa}.
  \includegraphics[scale=0.4]{figuras/nasa.png}
  \caption{Veículo exploratório Sojourner \label{fig:nasa}}
  \vspace{-0.3cm}
- %\caption*{Fonte: Disponível em \url{https://mars.jpl.nasa.gov/MPF/rover/sim2.jpg}.}
- \caption*{Fonte: Disponível em $<$https://mars.jpl.nasa.gov/MPF/rover/sim2.jpg$>$}
+ \caption*{Fonte: \cite{nasarover}}
 \end{figure}
 
 
@@ -71,8 +65,6 @@ do robô. O espaço em larga escala é de extrema importância para um robô mó
 o seu movimento, compreensão e raciocínio nesta área, sendo estes três subproblemas essenciais para este campo de pesquisa
 \cite{dudek_mobile}.
 
-%\cite{nasa}
-%É uma área de pesquisa interdisciplinar, consistindo de ...
 
 \begin{comment}
 % Retirado do livro do dudek
@@ -121,9 +113,13 @@ equilíbrio não é levado em consideração, visto que na maior parte dos proje
 o tempo todo. O robô Sojourner da Figura \ref{fig:nasa} é um exemplo de robô com rodas.%\par
 \end{itemize}
 
-Na revisão bibliográfica a seguir são mostradas técnicas desenvolvidas para o sistema de navegação de robôs móveis autônomos.
+\begin{comment}
 
-%///////// AQUIIIIII
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 	ESTA PARTE VAI NO FINAL COMO TRABALHOS RELACIONADOS
+
+%% Na revisão bibliográfica a seguir são mostradas técnicas desenvolvidas para o sistema de navegação de robôs móveis autônomos.
+
 
 %\citeonline{ufrj} propôs o desenvolvimento de uma arquitetura híbrida
 % ufrj -> Dissertação da UFRJ
@@ -140,18 +136,6 @@ em parceria com a Petrobras e a Statoil, para a inspeção de plataformas de pet
 tem como funcionalidades a detecção de anomalias por vídeo, áudio, vibração, temperatura e por câmera de infravermelho e o 
 mapeamento 3D do ambiente.
 
-\begin{comment}
-\citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
-reativo em uma abordagem de três camadas: 
-\begin{itemize}
- \item Deliberativa: Determina um trajeto até o objetivo e evita colisões com obstáculos já conhecidos;
- \item Vital: Utiliza de comportamentos reativos para guiar o robô ao seu objetivo e evitar colisões com obstáculos (sejam estes 
-estáticos ou dinâmicos); 
-  \item Funcional: Faz a integração das camadas vital e deliberativa, fornecendo parâmetros reativos para a camada vital.
-\end{itemize}
-O sistema de controle proposto foi implementado no simulador SimRob3D, o qual permite a utilização de modelos de ambiente 
-tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes possam ser alterados em tempo real.
-\end{comment}
 
 \citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
 reativo em uma abordagem de três camadas: Deliberativa, a qual determina um trajeto até o objetivo e evita colisões com obstáculos 
@@ -178,44 +162,6 @@ o de \citeonline{allan}, respectivamente, os quais já foram discutidos anterior
 Cartisx04, robô seguidor de linha de \citeonline{Hirai}, um dos melhores do segmento mundialmente. 
 Estes veículos irão fomentar a base de conhecimento deste trabalho.
 
-
-\begin{comment}
-%%% NÃO ESTÁ FUNCIONANDO!! DANGER
-\begin{figure*}[t!]
-   \centering
-   \captionsetup{width=0.74\textwidth,font=footnotesize,textfont=bf}
-    \begin{subfigure}[t]{.5\linewidth}
-        \raggedright
-        \includegraphics[width=7cm]{figuras/marcio1.png}
-        \caption{\centering \label{fig:marcio}}
-    \end{subfigure}
-    %~\hspace{0.4cm}
-    ~
-    \begin{subfigure}[t]{0.5\linewidth}
-        \raggedleft
-        \includegraphics[width=7cm,height=7cm]{figuras/polulumod.png}
-        \caption{ \label{fig:pololu}}
-    \end{subfigure}[1ex]
-    \vspace{0.4cm}
-    ~\hspace{0.4cm}
-    
-    \begin{subfigure}[t]{0.2\linewidth}
-        \centering
-        \includegraphics[width=7cm,height=3cm]{figuras/allan.png}
-        \caption{ \label{fig:allan}}
-    \end{subfigure}
-    ~\hspace{0.4cm}
-    \begin{subfigure}[t]{0.3\linewidth}
-        \centering
-        \includegraphics[width=7cm,height=3cm,keepaspectratio]{figuras/Hirai.png}
-        %\caption{Robô 3pi \label{fig:pololu}}
-        \caption{ \label{fig:hirai}}
-        %\caption*{Fonte: \cite[p.58]{alemao}}
-    \end{subfigure}
-    \caption{Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; (b) Pololu 3pi modificado \cite{alemao}; 
-(c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
-\end{figure*}
-\end{comment}
 
 
 \begin{figure}[h]
@@ -249,8 +195,15 @@ Estes veículos irão fomentar a base de conhecimento deste trabalho.
     (b) Pololu 3pi modificado \cite{alemao}; (c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END OF FILE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{comment}
+
+
+
 
 \begin{comment}
+		  TENTAR APROVEITAR ESTA PARTE!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}
 \section{Sistema embarcado}
@@ -284,21 +237,15 @@ São compostos por CPU, ADC xxxxxxxx xxxxxx.
 \vspace{1cm}
 \section{Sistemas de Controle para robôs móveis} \label{cap:controle}
 
-Para que o robô seja autônomo, %um dos requisitos para que este seja móvel, é necessário que este apresente uma resposta desejada para as 
-é necessário que este apresente uma resposta desejada para as 
+Para que o robô seja autônomo, 
+é necessário que este apresente uma resposta desejada para 
 as mais diversas situações. 
-%Para tanto se utiliza de um sistema de controle, que consoante a \citeonline{nise} consiste em subsistemas e 
-%processos, conhecidos como plantas, dos quais se obtém uma saída com desempenho desejado para uma dada entrada. Na Figura 
-%\ref{fig:basicdiag} é mostrado um sistema de controle em uma forma simplificada, em que aplicando-se uma entrada a este, obtêm-se uma 
-%resposta.
 Para tanto se utiliza de um sistema de controle, que consiste em subsistemas e processos, conhecidos como plantas, 
 dos quais se obtém uma saída com desempenho desejado para uma dada entrada \cite{nise}. Na Figura 
 \ref{fig:basicdiag} é mostrado o diagrama de blocos\footnote{Diagrama de blocos é uma representação gráfica do sistema que mostra o 
 fluxo de sinais que ocorre entre os componentes deste.} de 
 um sistema de controle em uma forma simplificada, em que aplicando-se uma entrada a este, obtêm-se uma 
 resposta. 
-%Duas medidas de desempenho importantes para os sistemas de controle são: A resposta transitória do sistema,,
-%e o erro de estado estacionário, .
 
 \begin{figure}[h]
  \centering
@@ -327,7 +274,6 @@ valores \cite{heinen}.
 \end{itemize}
 \end{comment}
 
-%\citeonline{nise} classifica os sitemas de controle em duas configurações principais:
 Para \citeonline{nise} os sistemas de controle podem ser classificados em duas configurações principais:
 \begin{itemize}
  \item Controle por malha aberta (\textit{Open loop control}): É a configuração mais simples, onde o sinal 
@@ -409,12 +355,12 @@ domésticos, devido ao baixo custo e simplicidade de implementação.
 Considerando-se o sinal de saída do controlador $u(t)$ % $ é indicativo para equação
 e o sinal de erro atuante $e(t)$, o sinal $u(t)$ apresenta um valor máximo ou mínimo, caso o erro atuante seja negativo ou positivo, 
 respectivamente. Assim, tem-se que:
-\begin{comment}
-\begin{align*}  %%Utiliza-se o align quando não deseja ter numeração nas equações
- u(t) = U_1, \quad para \ e(t) \ > \ 0, \\
- u(t) = U_2, \quad para \ e(t) \ < \ 0,
-\end{align*}
-\end{comment}
+
+%begin{align*}  %%Utiliza-se o align quando não deseja ter numeração nas equações
+% u(t) = U_1, \quad para \ e(t) \ > \ 0, \\
+% u(t) = U_2, \quad para \ e(t) \ < \ 0,
+%\end{align*}
+
 \begin{equation}
  u(t) = U_1, \quad para \ e(t) \ > \ 0, \\ 
 \end{equation}
@@ -422,7 +368,7 @@ respectivamente. Assim, tem-se que:
  u(t) = U_2, \quad para \ e(t) \ < \ 0,
 \end{equation}
 
-onde $U_1$ e $U_2$ são constantes.
+em que $U_1$ e $U_2$ são constantes.
 Em problemas de controle mais complexos, se faz necessária a utilização de outros controladores, devido ao \textit{on-off} apresentar 
 muitas oscilações e \textit{offset} (COLOCAR NOTA RODAPE PARA OFFSET).
 
@@ -520,17 +466,55 @@ selecionado:
  um valor estado discreto para outro.
 \end{itemize}
 
+\citeonline{teixeira} diz que a modelagem computacional de um sistema pode ser estruturada em dois fundamentos:
+\begin{itemize}
+ \item Estado, que determina o \textit{status} do sistema em determinada situação;
+ %\item Noção de estado, que determina o \textit{status} do sistema em determinada situação;
+ %Teixeira, Pg 37
+ \item Transição de estados, o qual caracteriza o crescimento do sistema.
+ %\item Técnica de transição de estados, o qual caracteriza o crescimento do sistema.
+\end{itemize}
+
+Alguns sistemas são mapeados continuamente e suas estruturas de transição são regidas pelo tempo, 
+enquanto que em outros sistemas seus estados podem não ser contínuos e as transições não dependem do tempo, mas de 
+eventos instantâneos e assíncronos, como o processamento de um dado em um equipamento computacional, em que o conjunto de estados é 
+discreto e as transições não são feitas por tempo, mas por eventos como \textit{clock} e interrupções 
+\cite{teixeira}. 
+%No exemplo apresentado por \citeonline{teixeira}, do processamento de dado em algum 
+%equipamento computacional, em que o conjunto 
+
+%Segundo \citeonline{teixeira}, 
+%alguns sistemas são mapeados continuamente e suas estruturas de transição são regidas pelo tempo, sendo geralmente modelados através de 
+%equações diferenciais. Em outros sistemas, em que o espaço de estados pode não ser contínuo e as transições de estados não dependa de 
+%tempo, mas de eventos instantâneos e assíncronos, a modelagem por equações diferenciais pode não ser a mais conveniente. 
+
 \citeonline{torrico} define um Sistema a Eventos Discretos (\sigla{SED}{Sistema a Eventos Discretos}) 
-como um sistema dinâmico a estado discreto que evolui à proporção assíncrona de eventos. %Um evento, segundo \citeonline{teixeira}, 
-Eventos são transições discretas, como a chegada de uma peça em uma esteira e a transmissão de uma mensagem em uma comunicação, por 
-exemplo.
+como um sistema dinâmico a estado discreto que evolui à proporção assíncrona de eventos. 
+Deste modo, os SEDs tem como características o espaço de estados ser discreto e o mecanismo de transição de estados ser 
+dirigido por eventos.
 
-\subsection{Modelagem do SED}
+Alguns exemplos dos Sistemas a Eventos Discretos, conforme \citeonline{cassandras}, são os Sistemas de Filas, os Sistemas 
+de Computador, Sistemas de Comunicação e Sistemas de Manufatura. 
+
+%\subsection{Modelagem do SED}
+\subsection{Linguagens e Autômatos}
 
 
+Uma das maneiras formais de se estudar o comportamento lógico de um SED é baseado nas teorias de linguagens e autômatos, que se dá pelo 
+fato de qualquer Sistema a Eventos Discretos tem um conjunto implícito $E$ associado a ele. \citeonline{cassandras} chama esse 
+conjunto $E$ e a sequência de eventos como 
+\textquotedblleft alfabeto \textquotedblright e \textquotedblleft palavras \textquotedblright de linguagem, respectivamente. Para 
+demonstrar estes conceitos, o autor fala do exemplo de uma máquina que é ligada uma ou duas vezes ao dia, como um carro ou um computador 
+pessoal, e deseja-se projetar um sistema que realize a simples tarefa: Quando a máquina estiver ligada, esta primeiramente deve 
+indicar que está ligada e depois reportar este fato (como no caso de \textquotedblleft checar óleo\textquotedblright, caso seja um 
+carro). Neste caso, cada um destes sinais define um evento, enquanto que todos os sinais possíveis que a máquina possa emitir são 
+definidos como uma sequência de eventos, ou alfabeto.
 
-
-
+\citeonline{teixeira}
+ 
+ 
+\subsubsection{Autômato de Moore} 
+\subsubsection{Autômato de Mealy} 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
