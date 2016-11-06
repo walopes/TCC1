@@ -35,32 +35,11 @@ Dispon{\'\i}vel em:
   }ls3\-.html$>$}{http://www.bostondynamics.com/robot_ls3.html}. Acesso em: 25
   set. 2016.}
 
-\bibitem[Freitas 2016]{ufrj}
-\abntrefinfo{Freitas}{FREITAS}{2016}
-{FREITAS, R.~S. de.
-\textbf{Arquitetura híbrida e controle de missão de robôs autônomos}.
-Disserta\c{c}\~ao (Mestrado) --- Universidade Federal do Rio de Janeiro, Rio de
-  Janeiro, 2016.}
-
 \bibitem[Guadagnin 2014]{allan}
 \abntrefinfo{Guadagnin}{GUADAGNIN}{2014}
 {GUADAGNIN, A.~J. \textbf{Controle Híbrido de um Robô Seguidor de Linha}.
   2014.
 Trabalho de Conclusão de Curso. Universidade Tecnológica Federal do Paraná.}
-
-\bibitem[Heinen 2002]{heinen}
-\abntrefinfo{Heinen}{HEINEN}{2002}
-{HEINEN, F.~J.
-\textbf{Sistema de Controle híbrido para Robôs Móveis Autônomos}.
-Disserta\c{c}\~ao (Mestrado) --- Universidade do Vale do Rio dos Sinos, São
-  Leopoldo, 2002.}
-
-\bibitem[Hirai 2014]{Hirai}
-\abntrefinfo{Hirai}{HIRAI}{2014}
-{HIRAI, A. \textbf{Cartisx04}. 2014.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/anikinonikki\-.cocolog-nifty\-.com\-/blog\-/2014\-/11\-/cartisx04\-.html$>$}{http://anikinonikki.cocolog-nifty.com/blog/2014/11/cartisx04.html}.
-  Acesso em: 13 out. 2016.}
 
 \bibitem[MAUÁ 2016]{maua}
 \abntrefinfo{MAUÁ}{MAUÁ}{2016}
@@ -70,8 +49,15 @@ Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/maua\-.br\-/imprensa\-/press-releases\-/instituto-maua-tecnologia-sedia-evento-robotica-winter-challenge-2016$>$}{http://maua.br/imprensa/press-releases/instituto-maua-tecnologia-sedia-evento-robotica-winter-challenge-2016}.
   Acesso em: 23 ago. 2016.}
 
+\bibitem[Nasa 1997]{nasarover}
+\abntrefinfo{Nasa}{NASA}{1997a}
+{NASA. 1997.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/mars\-.jpl\-.nasa\-.gov\-/MPF\-/rover\-/sim2\-.jpg$>$. Acesso
+  em: 24 set. 2016.}
+
 \bibitem[Nasa 1997]{nasa}
-\abntrefinfo{Nasa}{NASA}{1997}
+\abntrefinfo{Nasa}{NASA}{1997b}
 {NASA. \textbf{Mars Pathfinder/ Sojourner Rover}. 1997.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/www\-.jpl\-.nasa\-.gov\-/missions\-/mars-pathfinder-sojourner-rover$>$}{http://www.jpl.nasa.gov/missions/mars-pathfinder-sojourner-rover}.
@@ -86,14 +72,6 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Ogata}{OGATA}{2010}
 {OGATA, K. \textbf{Engenharia de Controle Moderno}. 5. ed. São Paulo: Pearson
   Prentice Hall, 2010.}
-
-\bibitem[Pessin 2013]{pessin}
-\abntrefinfo{Pessin}{PESSIN}{2013}
-{PESSIN, G.
-\textbf{Estratégias inteligentes aplicadas em robôs móveis autônomos e em
-  coordenação de grupos de robôs}.
-Disserta\c{c}\~ao (Mestrado) --- Universidade de São Paulo, São Carlos,
-  2013.}
 
 \bibitem[Petry 2016]{alemao}
 \abntrefinfo{Petry}{PETRY}{2016}
@@ -185,6 +163,14 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/www\-.mouser\-.com\-/ds\-/2\-/389\-/DM00092070-524505\-.pdf$>$}{http://www.mouser.com/ds/2/389/DM00092070-524505.pdf}.
   Acesso em: 01 set. 2016.}
+
+\bibitem[Teixeira 2013]{teixeira}
+\abntrefinfo{Teixeira}{TEIXEIRA}{2013}
+{TEIXEIRA, M.
+\textbf{Explorando o uso de Distinguidores e de Autômatos Finitos Estendidos
+  na teoria do Controle Supervisório de Sistemas a Eventos Discretos}.
+Tese (Doutorado) --- Universidade Federal de Santa Catarina, Florianópolis,
+  2013.}
 
 \bibitem[Torrico 2003]{torrico}
 \abntrefinfo{Torrico}{TORRICO}{2003}

@@ -2,66 +2,19 @@
 \chapter{Introdução} \label{cap:Introducao}
 
 \vspace{-1.5cm} %%%%%%%% Para deixar a introdução no formato padrão
-Este capítulo está dividido da seguinte forma: A Seção \ref{Consideracoes_iniciais} traz uma visão geral do tema abordado, 
+Este capítulo está dividido da seguinte forma: A Seção \ref{Consideracoes_iniciais} apresenta uma visão geral do tema abordado, 
 a Seção \ref{Justi} trata da justificativa desta pesquisa, a Seção \ref{limitacoes} trata as limitações do 
-projeto e a Seção \ref{objetivos} trata dos objetivos a serem alcançados neste trabalho. 
+projeto e a Seção \ref{objetivos} apresenta os objetivos a serem alcançados neste trabalho. 
 % e a seção \ref{organizacao} traz uma visão geral sobre os capítulos posteriores.
 
 %%%%%%%% Utilizar para dar os dois 'enter' antes de seção/ parágrafo
 \begin{spacing}{2}\end{spacing} % Está funcionando
 \section{Considerações iniciais} \label{Consideracoes_iniciais}    
 
-
-\begin{comment}
-A robótica é uma das áreas mais promissoras da engenharia, tendo aplicabilidade em várias áreas da indústria, de médicas a 
-aeroespaciais, sempre oferecendo produtividade e flexibilidade à sua aplicação. 
-Tanto que se torna difícil encontrar atividades industriais atuais que não possuam um sistema robótico ou 
-automatizado, seja totalmente ou parcialmente.\par
-\end{comment}
-
 A robótica é uma das áreas mais promissoras da engenharia, tendo aplicabilidade em várias áreas: de médicas a 
-aeroespaciais, sempre oferecendo produtividade e flexibilidade à sua aplicação. 
-Tanto que se torna difícil encontrar atividades industriais atuais que não possuam um sistema robótico ou 
-automatizado, seja total ou parcialmente.\par
-
-\begin{comment}
- A robótica é uma das áreas mais promissoras da engenharia, tendo aplicabilidade em várias áreas da indústria: de médicas a 
-aeroespaciais, sempre oferecendo produtividade e flexibilidade à sua aplicação. 
-Tanto que se torna difícil encontrar atividades industriais atuais que não possuam um sistema robótico ou 
-automatizado, seja totalmente ou parcialmente.\par
-\end{comment}
-
-
-\begin{comment}
-Devido à imensa aplicabilidade e utilidade que os robôs apresentam, foram criadas competições que visam estimular e 
-contribuir com a pesquisa na robótica, 
-como a \citeonline{robocup}, que neste ano foi sediada em Leipzig, Alemanha, a \citeonline{robotrace}, 
-realizada no Japão, 
-% Robotrace: Disponível em http://www.ntf.or.jp/mouse/micromouse2014/kitei_trace_since2014-EN.html.
-assim como a \citeonline{robocore}, com eventos realizados no Brasil. O WinterChallenge, realizado pela Robocore, 
-é um dos maiores eventos mundiais de robótica, contando com a participação de vários países da América Latina e teve 
-mais de mil competidores e cerca de quinhentos robôs em sua última edição \cite{maua}.\par
-\end{comment}
-
-\begin{comment}
-Devido à imensa aplicabilidade e utilidade que os robôs apresentam, foram criadas competições que visam estimular e 
-contribuir com a pesquisa na robótica, como a \citeonline{robogames}, também conhecida como ``Olimpíada dos robôs'', em 
-que são disputadas mais de cinquenta categorias, a VEX \citeonline{vex}, 
-a maior competição de robótica do mundo, que contou com 1075 times e mais de 15.000 participantes em sua 
-última edição \cite{vex_guiness}, a \citeonline{robocup}, que neste ano foi sediada em Leipzig, Alemanha, 
-assim como a \citeonline{robocore}, com eventos realizados no Brasil. O WinterChallenge, realizado 
-anualmente pela Robocore, em São Paulo, 
-é um dos maiores eventos de robótica da América Latina, contando com a participação de vários países e teve 
-mais de mil competidores e cerca de quinhentos robôs em sua última edição \cite{maua}.\par
-Uma das categorias disputadas é a dos seguidores de linha, na qual os robôs devem seguir, de maneira autônoma, 
-um trajeto que é determinado por uma linha. Nessa categoria, se destacam os competidores do Japão, na competição Robogames, 
-e do México, na Robocore, estes obtendo os três 
-primeiros lugares na competição WinterChallenge na categoria Seguidor de Linha - Pro. Na mesma modalidade, 
-a equipe Patobots, da Universidade Tecnológica Federal do Paraná 
-(\sigla{UTFPR}{Universidade Tecnológica Federal do Paraná}) - 
-Câmpus Pato Branco, conquistou o 5º e 6º lugar, com os robôs \textit{Alpha project} e 
-\textit{Robbie 3.0}, respectivamente.\par
-\end{comment}
+aeroespaciais, buscando oferecer produtividade e flexibilidade à sua aplicação. 
+Atualmente é difícil encontrar atividades industriais que não possuam um sistema robótico ou 
+automatizado, seja total ou parcial.\par
 
 
 Devido à ampla aplicabilidade e utilidade que os robôs apresentam foram criadas competições, que visam estimular e 
@@ -88,63 +41,34 @@ a equipe Patobots, da Universidade Tecnológica Federal do Paraná
 Câmpus Pato Branco, conquistou o 5º e 6º lugar, com os robôs \textit{Alpha project} e 
 \textit{Robbie 3.0}, respectivamente.\par
 
-\begin{comment}
- %% Deixar isto aqui no stand-by
-Para que os robôs sejam flexíveis, reprogramáveis e sobretudo confiáveis, sendo capazes de atuar nas mais diversas áreas, 
-estes precisam ser inteligentes. Para \citeonline{murphy2000}, um robô não é inteligente, entretanto, este pode pode agir 
-de maneira inteligente se utilizar inteligência artificial (\sigla{IA}{Inteligência artificial}).
-% Ver parte inteligência: Livro Princípios da mecatrônica, Rosário, Pagina 145 -> 629.8
-\end{comment}
-
-
-\begin{comment}
-Com base nesse contexto, este trabalho propõe o desenvolvimento de um protótipo de um robô seguidor de linha
-e o seu respectivo controle, 
-visando participar de competições nacionais de robótica, como a Robocore.
-\end{comment}
 Com base nesse contexto, este trabalho propõe a construção de um protótipo de um robô seguidor de linha
 e o seu respectivo controle, 
-visando participar de competições nacionais de robótica, como a Robocore.
-
-\begin{comment}
-Este trabalho visa contribuir com a 
-pesquisa que é feita na Universidade Tecnológica Federal do Paraná 
-- Câmpus Pato Branco, na área de robótica móvel, onde já foram produzidos 
-os trabalhos de \citeonline{allan} e \citeonline{alemao}, os quais servem de base para este trabalho.
-\end{comment}
+visando participar de competições de robótica, como a Robocore.
 
 %% Ficou um pouco forte, eu acho, mas foi solicitação da prof. Kathya para deixar desta forma.
 O desenvolvimento deste trabalho contribuirá com a pesquisa que é feita na Universidade Tecnológica Federal do Paraná 
-- Câmpus Pato Branco, na área de robótica móvel, onde já foram produzidos 
+- Câmpus Pato Branco, na área de robótica móvel, em que já foram produzidos 
 os trabalhos de \citeonline{allan} e \citeonline{alemao}, os quais servem de base para este trabalho.
 
 \begin{spacing}{2}\end{spacing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Justificativa} \label{Justi}
 
-O trabalho de \citeonline{allan}, %o qual também contribuiu para \citeonline{alemao}, utilizou-se de controle híbrido, a qual 
+O trabalho de \citeonline{allan},
 utilizou-se de controle híbrido, o qual 
-integrou dinâmicas de controle discreto, como detecção de marcas laterias e a faixa central na pista, e contínuo, 
+integrou dinâmicas de controle discreto, como detecção de marcas laterais e a faixa central na pista, e contínuo, 
 como o controlador Proporcional Integral Derivativo (\sigla{PID}{Proporcional Integral Derivativo}). Segundo o autor, 
 o robô funcionou de acordo com o esperado para um percurso dentro das normas da Robocore, 
 tendo alguns problemas relacionados à detecção das marcas laterais quando a pista estava com uma inclinação 
 maior que 5º (graus).
 
-\begin{comment}
-O trabalho de \citeonline{alemao} desenvolveu um robô híbrido, realizando um estudo sobre os resultados obtidos por controladores
- PID e \textit{Fuzzy} (lógica difusa), sendo que o controlador PID apresentou um melhor desempenho. Segundo o autor, não foi 
-obtido sucesso considerável com a técnica \textit{Fuzzy}, sendo que foram necessários ajustes para esta funcionar, 
-o que acarretou em um sistema mais lento.
- Devido à baixa capacidade de armazenamento, a comparação dos métodos foi 
-realizada no robô 3pi, da Pololu\textregistered, no qual o autor conseguiu uma velocidade de 2 m/s em retas.
-\end{comment}
 O trabalho de \citeonline{alemao} desenvolveu um robô híbrido, realizando um estudo sobre os resultados obtidos por controladores
  PID e \textit{Fuzzy} (lógica difusa), sendo que o controlador PID apresentou melhor desempenho. Segundo o autor, não foi 
 obtido sucesso considerável com a técnica \textit{Fuzzy}, que necessitava de um processador com poder computacional maior 
 do qual foi utilizado, com memória suficiente para implementar as variáveis de controle.
  Devido às dificuldades encontradas, a comparação dos métodos foi 
 realizada no robô 3pi, da Pololu, %\textsuperscript{TM}, %%% comando para o símbolo TM (Trademark)
-no qual o autor conseguiu uma velocidade de 2 m/s em retas. \par
+em que o autor conseguiu uma velocidade de 1 m/s em retas. \par
 
 Comparando os sistemas de controle desenvolvidos verificou-se que o Fuzzy
 necessita de um processador bem mais eficiente comparado ao PID, com memória
@@ -163,14 +87,6 @@ que exigem maior poder computacional e memória.
 \begin{spacing}{2}\end{spacing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Limitações do Trabalho}\label{limitacoes}
-
-
-
- %\item O projeto do robô seguidor de linha se aterá ao funcionamento em pistas que seguem as normas da Robocore, podendo 
- %apresentar restrições de desempenho e até mesmo não funcionar, caso a pista não esteja no padrão estabelecido. 
-
- %\item Devido à dificuldade em encontrar e adquirir peças de alto desempenho, poderão ser utilizadas peças de menor custo, as 
- %quais podem reduzir o desempenho do robô;
 
  
 Este trabalho apresenta as seguintes limitações:
@@ -193,18 +109,13 @@ Este trabalho apresenta as seguintes limitações:
 \begin{spacing}{2}\end{spacing}
 \subsection{Objetivo geral}
 
-Projetar e implementar um protótipo de um robô seguidor de linha, com velocidade próxima a 2 m/s, que seja autônomo,
+Projetar e implementar um protótipo de um robô seguidor de linha, com velocidade máxima próxima a 2 m/s, que seja autônomo,
 através da utilização de controle 
 híbrido, aperfeiçoando as técnicas desenvolvidas por \citeonline{alemao}.
 
 \begin{spacing}{2}\end{spacing}
 \subsection{Objetivos específicos}
 
-%\begin{comment}
- %\item Projetar o condicionamento de sinais para os dispositivos a serem utilizados, permitindo a exata e eficaz leitura dos 
- %sensores;
- %\end{comment}
- 
 \begin{itemize}
 
  \item Projetar e confeccionar a estrutura do protótipo, visando atender as dimensões especificadas pela Robocore;
@@ -224,6 +135,4 @@ híbrido, aperfeiçoando as técnicas desenvolvidas por \citeonline{alemao}.
  %\item Estudar a viabilidade de aplicação de inteligência artificial.
 \end{itemize}
 
-%\begin{spacing}{2}\end{spacing}
-%\section{Organização do documento}
 

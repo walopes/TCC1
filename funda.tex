@@ -501,20 +501,115 @@ de Computador, Sistemas de Comunicação e Sistemas de Manufatura.
 
 
 Uma das maneiras formais de se estudar o comportamento lógico de um SED é baseado nas teorias de linguagens e autômatos, que se dá pelo 
-fato de qualquer Sistema a Eventos Discretos tem um conjunto implícito $E$ associado a ele. \citeonline{cassandras} chama esse 
+fato de qualquer Sistema a Eventos Discretos ter um conjunto implícito $E$ associado a ele. \citeonline{cassandras} chama esse 
 conjunto $E$ e a sequência de eventos como 
-\textquotedblleft alfabeto \textquotedblright e \textquotedblleft palavras \textquotedblright de linguagem, respectivamente. Para 
+\textquotedblleft alfabeto\textquotedblright e \textquotedblleft palavras\textquotedblright de linguagem, respectivamente. Para 
 demonstrar estes conceitos, o autor fala do exemplo de uma máquina que é ligada uma ou duas vezes ao dia, como um carro ou um computador 
-pessoal, e deseja-se projetar um sistema que realize a simples tarefa: Quando a máquina estiver ligada, esta primeiramente deve 
-indicar que está ligada e depois reportar este fato (como no caso de \textquotedblleft checar óleo\textquotedblright, caso seja um 
+pessoal, e deseja-se projetar um sistema que realize uma simples tarefa: Quando a máquina estiver ligada, esta primeiramente deve 
+indicar que está ligada e depois reportar este fato (como \textquotedblleft checar óleo\textquotedblright, caso seja um 
 carro). Neste caso, cada um destes sinais define um evento, enquanto que todos os sinais possíveis que a máquina possa emitir são 
 definidos como uma sequência de eventos, ou alfabeto.
 
-\citeonline{teixeira}
- 
- 
-\subsubsection{Autômato de Moore} 
+%\citeonline{teixeira} define um Autônomo Finito (\sigla{AF}{Autônomo Finito}) como uma estrutura formal de 
+\citeonline{cassandras} define um autômato como um dispositivo apropriado para representar a linguagem de acordo com regras bem 
+definidas. Caso o conjunto de estados do autômato seja finito e caso este seja determinístico, ou seja, que este não possua 
+duas ou mais transições com o mesmo nome saindo de um estado, o autômato é chamado de Autômato Finito Determinístico 
+(\sigla{AFD}{Autômato Finito Determinístico}). \citeonline{torrico} diz que um autômato pode ser representado por uma tabela ou 
+por um diagrama de transição de estados, sendo que neste os estados e as transições 
+da máquina podem ser representados por vértices do diagrama e por arcos que conectam estes vértices, respectivamente.
+Duas variantes dos autômatos são os Autômatos de Mealy e de Moore, as quais serão clarificadas a seguir.
+%Duas variantes dos autômatos são:
+%Os autômatos podem ser divididos em duas variações, as quais são:
+
+
+\subsubsection{Autômato de Moore}
+
+O modelo de Moore são autômatos com saídas de estados, em que há uma função de saída a qual especifica uma saída para cada estado 
+\cite{cassandras}. %As transições não possuem funções de saída, as quais neste caso estão associadas aos eventos. 
+%A saída depende somente do estado atual. 
+As ações são produzidas nos estados e a saída depende somente do estado atual. 
+Um exemplo do Autômato de Moore pode ser visto na Figura \ref{fig:Moore}, em que a saída associada a cada estado é 
+mostrada em negrito (cada saída é acionada pelo autômato quando este entra no estado).
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.5\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[scale=0.6]{figuras/nasa.png}
+ \includegraphics[scale=0.4]{figuras/moore.png}
+ \caption{Autômato de Moore \label{fig:Moore}}
+ \vspace{-0.3cm}
+ \caption*{Fonte: \cite[p.73]{cassandras}}
+\end{figure}
+
 \subsubsection{Autômato de Mealy} 
+\begin{comment}
+O modelo de Mealy são autômatos de entrada e saída, em que as transições são denominadas por \textquotedblleft eventos\textquotedblright 
+na forma de eventos de entrada e saída \cite{cassandras}.
+
+produz um resultado (saída de dados) baseando-se no estado em que se encontra e na entrada de dados. Isto significa que o 
+diagrama de estados irá incluir tanto o sinal de entrada como o de saída para cada vértice de transição.
+
+Já   a   Máquina   de   Mealy   é   um   
+Autômato  Finito  modificado  de  forma  a  
+gerar  uma  palavra  de  saída  para  cada  
+transição 
+entre os estados.
+
+Em uma máquina de Mealy a saída depende da entrada e do estado, representando a evolução de
+estados, numa sequência. Uma transição tem uma ação de saída e qualquer ação de saída pode ser
+usada em mais de uma transição. Ações de saída não são associadas a estados, que são passivos.
+Neste caso, as ações de saída podem ser associadas a mais de um estado.
+\end{comment}
+Diferentemente de Moore, o autômato de Mealy depende da entrada e da saída do estado, representando 
+sequencialmente o crescimento dos estados. Conforme mostra a Figura \ref{fig:Mealy}, as funções de saída estão nas transições. 
+Este modelo funciona da seguinte maneira para uma transição $e_i/e_o$ do estado $x$ para o estado $y$: Quando o sistema estiver no 
+estado $x$, o autômato receberá o evento de entrada $e_i$ e expedirá o evento de saída $e_o$ durante a transição para $y$ 
+\cite{cassandras}.
+
+
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.5\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[scale=0.6]{figuras/nasa.png}
+ \includegraphics[scale=0.4]{figuras/mealy.png}
+ \caption{Autômato de Mealy \label{fig:Mealy}}
+ \vspace{-0.3cm}
+ \caption*{Fonte: \cite[p.73]{cassandras}}
+\end{figure}
+
+\begin{comment}
+
+
+\begin{itemize}
+ \item Autômato de Moore (autômatos com saídas): Neste modelo, 
+há uma função de saída que garante uma saída para cada estado \cite{cassandras}. As transições não apresentam uma ação de saída.
+Um exemplo pode ser visto na Figura \ref{fig:Moore}, em que a saída associada a cada 
+estado é mostrada em negrito.
+ \item Autômato de Mealy (autômatos de entrada e saída): As transições são nomeadas por eventos da forma de entrada e saída... 
+A saída depende do valor da entrada e do estado, reproduzindo sequencialmente a evolução dos estados. As ações de saída são 
+associadas %%%%%
+Em uma máquina de Mealy a saída depende da entrada e do estado, representando a evolução de
+estados, numa sequência. Uma transição tem uma ação de saída e qualquer ação de saída pode ser
+usada em mais de uma transição. Ações de saída não são associadas a estados, que são passivos.
+Neste caso, as ações de saída podem ser associadas a mais de um estado.
+A Figura abaixo apresenta uma máquina de Mealy. Observe que os valores de entrada (input)
+resultam em valores na saída (output). Inicialmente, a máquina inicia no estado 0 (estado inicial). Ao entrar
+um caractere ‘a’, ocorre uma transição do estado 0 para o estado 1, sendo que na transição a ação, ou
+seja, a saída é definida como sendo 0. Na sequencia, um novo caractere ‘a’ entra e provoca uma transição
+do estado 1 para o estado 3, gerando uma saída igual a 1, e assim por diante.
+ %%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+\end{comment}
+ 
+%\subsubsection{Autômato de Moore} 
+%\subsubsection{Autômato de Mealy} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Sensores para robôs móveis} \label{cap:sensores}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
