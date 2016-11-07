@@ -1,7 +1,7 @@
 
 \chapter{Referencial Teórico} \label{cap:funda}
 
-\vspace{-2cm} %Deixar no formato certo, 1 'ENTER' após e a seção e 2 'ENTERs' antes da seção
+\vspace{-1cm} %Deixar no formato certo, 1 'ENTER' após e a seção e 2 'ENTERs' antes da seção
 
 Neste capítulo são apresentados os principais conceitos teóricos relacionados ao desenvolvimento deste trabalho.
 
@@ -370,7 +370,11 @@ respectivamente. Assim, tem-se que:
 
 em que $U_1$ e $U_2$ são constantes.
 Em problemas de controle mais complexos, se faz necessária a utilização de outros controladores, devido ao \textit{on-off} apresentar 
-muitas oscilações e \textit{offset} (COLOCAR NOTA RODAPE PARA OFFSET).
+muitas oscilações e \textit{offset}\footnote{\textit{Offset} é um erro entre o valor desejado e o valor obtido.}.
+
+s defined as the voltage that must be applied between the two input
+terminals of the op amp to obtain zero volts at the output. Ideally the output of the op amp should
+be at zero volts when the inputs are grounded. 
 
 \subsubsection{Controlador Proporcional}
 
@@ -386,7 +390,7 @@ em que $K_p$ é o ganho do controlador proporcional.
 Para \citeonline{controle} quanto maior o ganho, menor será o erro $e(t)$, no entanto o sistema pode perder estabilidade 
 devido ao aumento do 
 tempo de acomodação\footnote{Tempo de acomodação (\textit{settling time}) é o tempo para que a curva de resposta alcance 
-valores em uma faixa (2\% a 5\%) em relação ao valor final, permanecendo nesta faixa interminavelmente \cite{ogata}.}.
+valores em uma faixa (2\% a 5\%) em relação ao valor final, permanecendo nesta faixa interminavelmente.}.
 
 \subsubsection{Controlador Integral}
 
@@ -404,7 +408,7 @@ em que $K_i$ é a constante de ganho integral.
 
 Para \citeonline{nise}, um controlador Proporcional-Integral pode ser chamado de compensador integral ideal, visto que 
 as ações de controle Proporcional e Integral alimentam o erro e a integral do erro para a planta, respectivamente, desta forma 
-tendendo a eliminar o erro em regime permanente\footnote{Segundo \citeonline{ogata} a resposta temporal de um sistema consiste em duas 
+tendendo a eliminar o erro em regime permanente\footnote{A resposta temporal de um sistema consiste em duas 
 partes: da resposta transitória e da resposta estacionária ou em regime permanente}. 
 A sua ação de controle é definida por: 
 
@@ -426,7 +430,7 @@ A ação de controle deste controlador é definida por:
 \begin{equation}
  u(t) = K_pe(t) + K_pT_d\frac{de(t)}{dt}
 \end{equation}
-onde $T_d$ é chamado de tempo derivativo \cite{ogata}.
+em que $T_d$ é chamado de tempo derivativo \cite{ogata}.
 
 
 \subsubsection{Controlador Proporcional-Integral-Derivativo (PID)}
@@ -438,7 +442,7 @@ A equação do controlador é dada por:
 \begin{equation}
  u(t) = K_pe(t) + \frac{K_p}{T_i}\int_{0}^{t}e(t)dt + K_pT_d\frac{de(t)}{dt}
 \end{equation}
-onde  $K_p$ é o ganho proporcional, $T_i$ é o tempo integrativo e $T_d$ é o tempo derivativo \cite{ogata}.
+em que  $K_p$ é o ganho proporcional, $T_i$ é o tempo integrativo e $T_d$ é o tempo derivativo \cite{ogata}.
 
 
 %%%%%%
@@ -611,17 +615,16 @@ do estado 1 para o estado 3, gerando uma saída igual a 1, e assim por diante.
 %\vspace{1cm}
 \vspace{2cm} %% VERIFICAR MELHOR ISTO AQUI DEPOIS
 %\section{Sensores para robôs móveis} \label{cap:sensores}
-\section{Sensores e atuadores} \label{cap:sensores}
-%\section{Estrutura de um robô móvel} \label{cap:sensores}
+%\section{Sensores e atuadores} \label{cap:sensores}
+\section{Estrutura de um robô móvel} \label{cap:sensores}
 
 %Conforme \citeonline{dudek_mobile}, para que um robô possa 
 %\citeonline{dudek_mobile} diz que para um robô deve ser capaz de mover e sentir
 
 
-%Os sistemas de controle, abordados na seção \ref{cap:controle}
-O controle de malha fechada, o qual foi abordado anteriormente, necessariamente precisa do sinal de sensores para realizar o 
-\textit{feedback} (realimentação) do sistema. 
-Em vista disso, esta seção se preocupa com os sensores e atuadores necessários para o projeto de um robô móvel.\par
+%O controle de malha fechada, o qual foi abordado anteriormente, necessariamente precisa do sinal de sensores para realizar o 
+%\textit{feedback} (realimentação) do sistema. 
+%Em vista disso, esta seção se preocupa com os sensores e atuadores necessários para o projeto de um robô móvel.\par
 
 %\citeonline{dudek_mobile} diz que os robôs podem ser divididos em 
 %\textit{hardware} e \textit{software}, os quais representam, nesta ordem, os componentes físicos e computacionais da máquina. 
@@ -641,8 +644,8 @@ Em vista disso, esta seção se preocupa com os sensores e atuadores necessário
  
 \end{itemize}
 
-Com suporte nessa divisão e no restante da literatura, tem-se os seguintes dispositivos necessários para o projeto de um robô móvel:
-
+Com suporte nessa divisão e no restante da literatura, tem-se os seguintes elementos necessários para o projeto de um robô móvel:
+%% elementos estava anteriormente como "dispositivos"
 \begin{itemize}
 
 %%% BATERIAS 
@@ -660,16 +663,21 @@ São os responsáveis por fazer com que o veículo \textquotedblleft ande\textqu
 %, visto que estes convertem energia 
 %elétrica em mecânica. Dentre os motores, 
 Muitos robôs utilizam a bateria para acionar os motores de passo ou servomotores, os quais convertem energia 
-elétrica em mecânica (\citeonline{dudek}). No entanto existem outros dispositivos, capazes de gerar energia mecânica em movimento, 
+elétrica em mecânica (\citeonline{dudek_mobile}). No entanto existem outros dispositivos, capazes de gerar energia mecânica em movimento, 
 como os piezoelétricos e os pneumáticos.\par
-O motor de passo (\textit{stepper motor}) é um motor elétrico em que o eixo move uma quantidade contralada a cada pulso, assim, 
+\begin{itemize}
+ \item O motor de passo (\textit{stepper motor}) é um motor elétrico em que o eixo move uma quantidade contralada a cada pulso, assim, 
 controlando estes pulsos obtém-se a saída desejada \cite{dudek_mobile}.\par
-O servomotor (\textit{servo motor}) combina um motor elétrico de corrente contínua 
+ \item O servomotor (\textit{servo motor}) combina um motor elétrico de corrente contínua 
 (\sigla{CC}{Corrente Contínua}) ou corrente alternada (\sigla{CA}{Corrente Alternada}) com um sensor de orientação de eixo 
 \cite{dudek_mobile}. 
 O autor diz ainda que controle dos servomotores é mais complexo que os motores de passo, sendo necessário utilizar um controlador de 
 motor mais complexo, os quais variam em complexidade e que geralmente trabalham com parâmetros como posição, velocidade ou 
 movimento de saída.
+\end{itemize}
+
+
+
 
 %%% SERVO MOTOR CONTROL
 \item[] \textbf{Controle de um servomotor}: Podem ser utilizadas as abordagens de malha aberta e malha fechada. No controle 
@@ -683,37 +691,68 @@ uma tarefa foi concluída, \citeonline{dudek_mobile} relata que os robôs utiliz
 por comunicação sem-fio (\textit{wireless}), como o \textit{bluetooth} (padrão sem-fio de curto alcance), 802.11 (padrão da IEEE 
 \sigla{IEEE}{\textit{Institute of Electrical and Electronics Engineers}} para redes locais sem-fio) ou infravermelho.
 
+%%% PROCESSAMENTO
+\item[] \textbf{Processamento}: O processamento é um componente principal dos robôs móveis, tanto que \citeonline{dudek_mobile} 
+discute em que lugar o processamento do veículo deve estar. O autor chega na conclusão que a melhor forma do processamento ser feito é 
+a de separar as tarefas em \textit{on-board} (dentro do veículo) e \textit{off-board} (fora do veículo), responsáveis, 
+respectivamente, pelas tarefas de tempo crítico e as que não são de tempo crítico. Este modelo tem como vantagens a redução no consumo 
+de energia do dispositivo.
 
+\item[] \textbf{Sensores}: Os sensores serão abordados na próxima seção.
 
+\end{itemize}
 
+\subsubsection{Sensores não-visuais}
 
+%O controle de malha fechada, o qual foi abordado anteriormente, necessariamente precisa do sinal de sensores para realizar o 
+%\textit{feedback} (realimentação) do sistema. 
+%Em vista disso, esta seção se preocupa com os sensores e atuadores necessários para o projeto de um robô móvel.\par
+\citeonline{secchi2012} diz que os robôs devem ser capazes de realizar três tarefas essenciais: estimar a sua posição e orientação 
+(pose), manter o mapa do ambiente atualizado e identificar os possíveis obstáculos deste. %do ambiente.
+Desta forma, para que o robô conheça o seu ambiente de trabalho e possa se adaptar a este, é necessário coletar informações e 
+adequá-las ao sistema de controle. Assim, O controle de malha fechada, o qual foi abordado anteriormente, 
+necessariamente precisa do sinal de sensores para realizar o \textit{feedback} (realimentação) do sistema.\par
 
+\citeonline{dudek_mobile} classifica os sensores em duas variantes: visuais e não-visuais. 
+A seguir serão mostrados os principais sensores não-visuais 
+dos robôs móveis. Para informações sobre os sensores visuais, consultar \cite{dudek_mobile}, \cite{Intro_auto} e \cite{secchi2012}.
 
-
-
-
-
-
-
-
-
+\begin{itemize}
+ \item[] \textbf{Sensores inerciais}: São sensores externos que fazem referência com o mundo externo, ou seja, medem variáveis de 
+posição do robô.
+  \begin{itemize}
+   \item Encoder óptico: Estes dispositivos medem a velocidade e a posição angular em um \textit{driver} de motor ou no eixo de uma 
+   roda. Este sensor, segundo \citeonline{Intro_auto}, é um interruptor de luz, que produz uma quantidade de pulsos para cada revolução 
+   do eixo. Os pulsos gerados pela diferença de fase entre os canais A e B é utilizada determinar a direção de rotação, como pode 
+   ser visto na Figura \ref{fig:optical}.
+   
+   \item Giroscópios: São sensores que preservam a orientação em relação a um referencial fixo, provendo a medida absoluta. Podem ser 
+   mecânicos ou ópticos. Na Figura \ref{fig:giro} pode ser visto um giroscópio de dois eixos.
+   
+   \item Acelerômetros: \citeonline{Intro_auto} diz que estes sensores são capazes de medir todas as forças externas que estejam 
+   agindo sobre ele, inclusive a gravidade. 
+   São baseados em sistemas pendulares, em que a primeira integração das acelerações proporciona a velocidade e a 
+   segunda, a posição \cite{secchi2012}. A precisão deste dispositivo é de grande importância, visto que pequenos erros podem 
+   influenciar na posição estimada, devido à dupla integração das acelerações. O diagrama deste dispositivo pode ser visto na Figura 
+   \ref{fig:acel}.
+  \end{itemize}
+  
+ \item[] \textbf{Sensores de infravermelho}: São sensores de proximidade rápidos e baratos, que basicamente consistem na emissão de 
+ um pulso infravermelho e detecção do sinal refletido, com a distância aproximada calculada através da 
+ força do sinal \cite{dudek_mobile}.
 
 \end{itemize}
 
 
+%\subsubsection{Sensores e atuadores}
+%\subsubsection{Sensores e atuadores}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1cm}
+%\section{Trabalhos relacionados} \label{cap:trabalhos}
 
 
-
-
-
-
-
-
-
-\subsubsection{Sensores e atuadores}
-\subsubsection{Sensores e atuadores}
 
 
 
@@ -763,8 +802,12 @@ inclinações de até 5º.\par
 
 
 
-A área que se estende entre o ponto de partida e o ponto de chegada, considerando 200mm da linha e 200mm a esquerda da linha
+%A área que se estende entre o ponto de partida e o ponto de chegada, considerando 200mm da linha e 200mm a esquerda da linha
+% é denominada ``área de partida-chegada'', conforme pode ser visto na Figura \ref{fig:percurso2}.\par
+ A área que se estende entre o ponto de partida e o ponto de chegada, considerando 200mm a direita da linha e 
+ 200mm a esquerda da linha
  é denominada ``área de partida-chegada'', conforme pode ser visto na Figura \ref{fig:percurso2}.\par
+ 
 
 \vspace{0.6cm}
 \begin{figure}[h!]

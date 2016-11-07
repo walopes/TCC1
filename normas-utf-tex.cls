@@ -897,6 +897,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % NUMERACAO
 
+%%% SÓ DIGO UMA COISA: NÃO DIGO NADA
+%%% E DIGO MAIS: ESSE CÓDIGO TÁ UMA LOUCURAAAAAAA xD
 % Define o tipo de numeracao de Fs, tabelas e equacoes
 \AddAbsoluteCounter{figure}
 \setcounter{absfigure}{-3} % Não sei o pq, mas  ta funcionando
@@ -911,7 +913,7 @@
 \setcounter{absgrafico}{0}
 \renewcommand{\thegrafico}{\arabic{absgrafico}}
 \AddAbsoluteCounter{equation}
-\setcounter{absequation}{0}
+\setcounter{absequation}{-3}
 \renewcommand{\theequation}{\arabic{absequation}}
 
 % Define o tipo de numeracao das paginas
