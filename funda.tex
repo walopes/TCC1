@@ -608,8 +608,113 @@ do estado 1 para o estado 3, gerando uma saída igual a 1, e assim por diante.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{1cm}
-\section{Sensores para robôs móveis} \label{cap:sensores}
+%\vspace{1cm}
+\vspace{2cm} %% VERIFICAR MELHOR ISTO AQUI DEPOIS
+%\section{Sensores para robôs móveis} \label{cap:sensores}
+\section{Sensores e atuadores} \label{cap:sensores}
+%\section{Estrutura de um robô móvel} \label{cap:sensores}
+
+%Conforme \citeonline{dudek_mobile}, para que um robô possa 
+%\citeonline{dudek_mobile} diz que para um robô deve ser capaz de mover e sentir
+
+
+%Os sistemas de controle, abordados na seção \ref{cap:controle}
+O controle de malha fechada, o qual foi abordado anteriormente, necessariamente precisa do sinal de sensores para realizar o 
+\textit{feedback} (realimentação) do sistema. 
+Em vista disso, esta seção se preocupa com os sensores e atuadores necessários para o projeto de um robô móvel.\par
+
+%\citeonline{dudek_mobile} diz que os robôs podem ser divididos em 
+%\textit{hardware} e \textit{software}, os quais representam, nesta ordem, os componentes físicos e computacionais da máquina. 
+%O autor classifica 
+%Em 
+%relação aos componentes de \textit{hardware} do dispositivo, o autor classifica da seguinte forma:
+\citeonline{dudek_mobile} classifica os componentes físicos (\textit{hardware}) dos robôs móveis em quatro partes:
+
+\begin{itemize}
+ \item Locomoção: É como o robô se move pelo ambiente; 
+ 
+ \item Percepção: É como o robô percebe propriedades do ambiente e dele mesmo;
+ 
+ \item Raciocínio: É como o robô transforma a suas medidas em ações;
+ 
+ \item Comunicação: É como que o robô se comunica com um agente externo.
+ 
+\end{itemize}
+
+Com suporte nessa divisão e no restante da literatura, tem-se os seguintes dispositivos necessários para o projeto de um robô móvel:
+
+\begin{itemize}
+
+%%% BATERIAS 
+\item[] \textbf{Bateria}: É um componente essencial do sistema, visto que o robô móvel precisa se locomover pelo espaço e não pode 
+ser dependente de uma fonte externa de energia elétrica. \citeonline{dudek_mobile} diz que baterias com bom desempenho e baixo custo são 
+as baseadas em células de gel (\textit{gell cell}), 
+mas por serem pesadas não são utilizadas com veículos 
+leves. Para estes, são utilizadas tecnologias baseadas em Íons de Lítio (\textit{lithium-ion}), 
+Níquel-Cádmio (\sigla{NiCad}{Níquel-Cádmio}) e as de Hidreto Metálico de Níquel (\sigla{NiMH}{Hidreto Metálico de Níquel}), as quais são 
+originalmente projetadas para serem utilizadas em dispositivos sem-fio, como \textit{laptops} e \textit{smartphones}.
+
+%%%% MOTORES pg 33
+\item[] \textbf{Motores}: 
+São os responsáveis por fazer com que o veículo \textquotedblleft ande\textquotedblright. 
+%, visto que estes convertem energia 
+%elétrica em mecânica. Dentre os motores, 
+Muitos robôs utilizam a bateria para acionar os motores de passo ou servomotores, os quais convertem energia 
+elétrica em mecânica (\citeonline{dudek}). No entanto existem outros dispositivos, capazes de gerar energia mecânica em movimento, 
+como os piezoelétricos e os pneumáticos.\par
+O motor de passo (\textit{stepper motor}) é um motor elétrico em que o eixo move uma quantidade contralada a cada pulso, assim, 
+controlando estes pulsos obtém-se a saída desejada \cite{dudek_mobile}.\par
+O servomotor (\textit{servo motor}) combina um motor elétrico de corrente contínua 
+(\sigla{CC}{Corrente Contínua}) ou corrente alternada (\sigla{CA}{Corrente Alternada}) com um sensor de orientação de eixo 
+\cite{dudek_mobile}. 
+O autor diz ainda que controle dos servomotores é mais complexo que os motores de passo, sendo necessário utilizar um controlador de 
+motor mais complexo, os quais variam em complexidade e que geralmente trabalham com parâmetros como posição, velocidade ou 
+movimento de saída.
+
+%%% SERVO MOTOR CONTROL
+\item[] \textbf{Controle de um servomotor}: Podem ser utilizadas as abordagens de malha aberta e malha fechada. No controle 
+de malha aberta, o valor desejado do eixo é utilizado para projetar um controlador oportuno, no entanto fica 
+suscetível a distúrbios, pois não apresenta realimentação. No controle por malha fechada, a realimentação do sistema é utilizada para 
+ajustar o movimento do disposito, sendo que um controlador amplamente utilizado é o PID \cite{dudek_mobile}.
+
+%%% COMUNICAÇÃO
+\item[] \textbf{Dispositivo de comunicação}: Devido à necessidade em interagir com um operador humano, como no caso de reportar que 
+uma tarefa foi concluída, \citeonline{dudek_mobile} relata que os robôs utilizam de um meio físico para a comunicação, como por cabo, ou 
+por comunicação sem-fio (\textit{wireless}), como o \textit{bluetooth} (padrão sem-fio de curto alcance), 802.11 (padrão da IEEE 
+\sigla{IEEE}{\textit{Institute of Electrical and Electronics Engineers}} para redes locais sem-fio) ou infravermelho.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Sensores e atuadores}
+\subsubsection{Sensores e atuadores}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
