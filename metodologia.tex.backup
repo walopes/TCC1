@@ -50,23 +50,14 @@ O trabalho será composto por seis etapas:
 Neste capítulo são descritas as etapas do trabalho proposto e como as quais serão executadas. %Em seguida, é dada uma visão 
 A metodologia utilizada será baseada no método de prototipação, de Engenharia de \textit{Software}, 
 descrito em \cite{pressman}, em que o sistema é melhorado 
-continuamente, como pode ser visto na Figura \ref{fig:prototipacao}. % (DESENHAR A FIGURA DESSA BAGAÇA AQUI!). 
+continuamente, como pode ser visto na Figura \ref{fig:prototipacao} (DESENHAR A FIGURA DESSA BAGAÇA AQUI!). 
 A primeira etapa é a de coleta e análise de requisitos, em que serão definidos os componentes e materiais necessários para o 
 desenvolvimento do projeto; em seguida, no \textquotedblleft projeto rápido\textquotedblright, é feito o projeto de forma a 
 fazer com que o protótipo seja funcional; em seguida serão feitos os testes e os refinamentos necessários para obter um produto final 
 que melhor atenda aos requisitos esperados. 
 Com base nesta abordagem, são definidas as seguintes etapas:
 
-\begin{figure}[h]
- \centering
- \captionsetup{width=0.45\textwidth,font=footnotesize,textfont=bf}
- \includegraphics[width=0.45\textwidth,height=0.45\textheight,keepaspectratio]{figuras/prototipacao.png}
- \caption{Ciclo da prototipação \label{fig:prototipacao}}
- \vspace{-0.3cm}
- \caption*{Fonte: Adaptado de \cite[p.36]{pressman}.}
-\end{figure}
-
-%As etapas estão divididas da seguinte maneira:
+As etapas estão divididas da seguinte maneira:
 \begin{enumerate}
 
  \item Definição dos componentes: %Com base na análise dos requisitos do sistema, xxxx em \citeonline{pressman}
@@ -109,12 +100,9 @@ dispositivos. Com base nisso, serão escolhidos os componentes que façam com qu
  \item Testes de desempeho: Serão realizados testes de desempenho de modo a verificar o que pode ou o que precisa ser 
  melhorado no protótipo. Podem ser feitos ajustes tanto de \textit{hardware} 
  (como a substituição de componentes) quanto de \textit{software} (alterações no código do microcontrolador). Pode ser necessário 
- retornar a etapas anteriores para realizar estas correções.
+ retornar a etapas anteriores para corrigir estes erros.
  
- \item Implementação do projeto final: Com os testes de desempenho e as alterações necessárias feitas, é implementado o projeto final de 
- forma a validar este trabalho. Na versão final do veículo espera-se atingir os objetivos que foram propostos na Seção 
- \ref{objetivos}.
- 
+ \item Implementação do projeto final
 \end{enumerate}
 
 
