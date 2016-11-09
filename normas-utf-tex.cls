@@ -675,16 +675,21 @@
 \newcommand{\listadesiglas}
 {
 	\pretextualchapter{LISTA DE SIGLAS}
-	\begin{espacosimples}  
-	\@starttoc{lsg}
-	\end{espacosimples}
+	\begin{spacing}  
+	 \taxaespacosimples
+	 \@starttoc{lsg}
+	 %\par
+	\end{spacing}
+
+	%
+	%\end{espacosimples}
 }
 
 \newcommand{\sigla}[2] {{\addcontentsline{lsg}{sigla}{\numberline{#1}{#2}}}#1}
 
 \newcommand{\l@sigla}[2]
 {
-	\vspace{-0.15cm}
+	\vspace{-0.52cm} %%% O ??? eu ja não sei
 	\leftskip 0em
         \parindent -1.1em
 	\@tempdima 5em

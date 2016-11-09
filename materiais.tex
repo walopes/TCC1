@@ -1,6 +1,5 @@
 
-%\chapter{Recursos de Hardware e Software} \label{cap:materiais}
-%\chapter{Materiais} \label{cap:materiais}
+
 \chapter{Materiais} \label{cap:materiais}
 \vspace{-2cm}
 Neste capítulo serão apresentados os materiais a serem utilizados neste projeto.\newline
@@ -10,29 +9,77 @@ Neste capítulo serão apresentados os materiais a serem utilizados neste projet
 \section{Microcontrolador} \label{cap:micro}
 
 Será utilizado o \textit{Kit} de desenvolvimento NUCLEO-F303K8, da ST Microelectronics, %\textsuperscript{TM}, 
-que possui as seguintes especificações básicas \cite{stm303}:
+o qual pode ser visto na Figura \ref{fig:nucleo}. Esta placa utiliza o microcontrolador STM32F303K8, que possui como processador 
+ARM Cortex-M4. Este processador dispõe de uma FPU, a qual facilita o processamento dos cálculos em ponto flutuante que são 
+necessários para o controle do veículo. As principais informações deste dispositivo estão na Tabela \ref{tab:micro}.
 
-\begin{itemize}
- \item Microprocessador de arquitetura \textit{Advanced RISC Machine} (\sigla{ARM}{\textit{Advanced RISC Machine}}) Cortex-M4 de 32 bits com FPU;
- \item 72 MHz de frequência máxima de operação;
- \item Instruções de \textit{Digital Signal Processor} (\sigla{DSP}{\textit{Digital Signal Processor}});
- \item 90 DMIPS de desempenho;
- \item 64KB de memória \textit{Flash};
- \item 16KB de SRAM;
- \item 2 módulos \textit{Analog to Digital Converter} (\sigla{ADC}{\textit{Analog to Digital Converter}}) com até 21 canais;
- \item 11 módulos de temporizadores (\textit{timers}).
-\end{itemize}%\newline
-\vspace{0.5cm}
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.4\textwidth,font=footnotesize,textfont=bf}
+ \includegraphics[width=0.4\textwidth,height=0.8\textheight,keepaspectratio]{figuras/nucleo.jpg}
+ \caption{\textit{Kit} de desenvolvimento STM32-F303K8 \label{fig:nucleo}}
+ \vspace{-0.3cm}
+ \caption*{Fonte: Autoria própria}.
+\end{figure}
+
+
+\begin{table}[h!]
+\centering
+\caption{Especificações do microcontrolador STM32F303K8 \label{tab:micro}}
+\begin{tabular}{llllllll}
+\cline{1-2}
+\bf Característica & \bf Descrição & & &  \\ \cline{1-2}
+Frequência de operação & 72MHz & & &  \\
+Desempenho & 90 \sigla{DMPIS}{\textit{Dhrystone Million Instructions per Second}}\protect\footnote{DMPIS é uma 
+medida de desempenho para avaliar um sistema embarcado.} & & &  \\
+\textit{Flash} & 64KB & & &  \\
+SRAM & 16KB & & &  \\
+Quantidade de temporizadores (\textit{timers}) & 11 & & &  \\
+Quantidade de canais do ADC & 21 & & &  \\
+Resolução do ADC & 12 \textit{bits} & & &  \\ \cline{1-2}
+\end{tabular}
+\caption*{\cite{stm303} }
+\end{table}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Motores CC} \label{cap:motores}
-Será utilizado o motor de corrente contínua (\sigla{CC}{Corrente contínua}) 
-\textit{High-Power Carbon Brush} (\sigla{HPCB}{\textit{High-Power Carbon Brush}}) modelo 3041 da Pololu, %\textsuperscript{TM} 
-\cite{pololu_motor}. Este motor possui alimentação de 12V, caixa de redução 10:1, 3000 
-\sigla{RPM}{\textit{Revolutions Per Minute}} e eixo estendido, o qual permite o acoplamento do encoder magnético. 
+Será utilizado o motor CC modelo 3041 da Pololu, %\textsuperscript{TM} 
+o qual pode ser visto na Figura \ref{fig:motor}. Estes motores são classificados pela fabricante como 
+\textit{High-Power Carbon Brush} (\sigla{HPCB}{\textit{High-Power Carbon Brush}}), os quais são motores 
+escovados \textit{brushed}\protect\footnote{Um motor escovado realiza a troca de fase do rotor através de escovas.}. 
+Este modelo possui o eixo estendido, possibilitando o acoplamento de um \textit{encoder}, a partir do qual é possível fazer o 
+mapeamento da pista. 
+As principais especificações técnicas deste dispositivo estão na Tabela \ref{tab:motor}.
+
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.4\textwidth,font=footnotesize,textfont=bf}
+ \includegraphics[width=0.4\textwidth,height=0.8\textheight,keepaspectratio]{figuras/motor.png}
+ \caption{Motor HPCB 3041 \label{fig:motor}}
+ \vspace{-0.3cm}
+ \caption*{\cite{pololu_motor}}.
+\end{figure}
+
+
+\begin{table}[h!]
+\centering
+\caption{Especificações do motor 3041 da Pololu \label{tab:motor}}
+\begin{tabular}{llllllll}
+\cline{1-2}
+\bf Característica & \bf Descrição & & &  \\ \cline{1-2}
+Tensão de alimentação & 12V & & &  \\
+Corrente de alimentação (sem carga) & 100mA  & & &  \\
+Corrente máxima de alimentação & 800mA & & &  \\
+Caixa de velocidade & 10:1 & & &  \\
+Rotação máxima & 3000 \sigla{RPM}{\textit{Revolutions Per Minute}} & & &  \\
+Torque máximo & 0.3kg-cm & & &  \\ \cline{1-2}
+\end{tabular}
+\caption*{\cite{pololu_motor} }
+\end{table}
 
 \vspace{0.5cm}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ponte H} \label{cap:ponteh}
 Será utilizada uma Ponte H para o controle de velocidade dos motores. O modelo que será utilizado é o TB6612FNG, da 
