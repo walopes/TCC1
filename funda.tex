@@ -113,94 +113,6 @@ equilíbrio não é levado em consideração, visto que na maior parte dos proje
 o tempo todo. O robô Sojourner da Figura \ref{fig:nasa} é um exemplo de robô com rodas.%\par
 \end{itemize}
 
-\begin{comment}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% 	ESTA PARTE VAI NO FINAL COMO TRABALHOS RELACIONADOS
-
-%% Na revisão bibliográfica a seguir são mostradas técnicas desenvolvidas para o sistema de navegação de robôs móveis autônomos.
-
-
-%\citeonline{ufrj} propôs o desenvolvimento de uma arquitetura híbrida
-% ufrj -> Dissertação da UFRJ
-O objetivo do trabalho de \citeonline{ufrj} foi o desenvolvimento de um sistema robótico autônomo em uma 
-arquitetura híbrida de três camadas, composta pela implementação das camadas Planejador e Executivo. 
-%O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore} (no mar a uma certa distância 
-%da orla) guiado por trilhos, 
-O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore}\footnote{\textit{offshore} 
-significa estar afastado da costa; em alto mar.} 
-%\footnotetext{\textit{offshore} é quando algo está localizado no mar, a uma certa distância 
-%da costa (MELHORAR SIGNIFICADO)}
-guiado por trilhos, desenvolvido pela COPPE/\sigla{UFRJ}{Universidade Federal do Rio de Janeiro}, 
-em parceria com a Petrobras e a Statoil, para a inspeção de plataformas de petróleo. O veículo 
-tem como funcionalidades a detecção de anomalias por vídeo, áudio, vibração, temperatura e por câmera de infravermelho e o 
-mapeamento 3D do ambiente.
-
-
-\citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
-reativo em uma abordagem de três camadas: Deliberativa, a qual determina um trajeto até o objetivo e evita colisões com obstáculos 
-já conhecidos, Vital, que utiliza de comportamentos reativos para guiar o robô ao seu objetivo e evitar colisões com obstáculos 
-(sejam estes estáticos ou dinâmicos), e Funcional, que faz a integração das camadas vital e deliberativa, fornecendo parâmetros 
-reativos para a camada vital. O sistema de controle proposto foi implementado no simulador SimRob3D, o qual permite a utilização de 
-modelos de ambiente 
-tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes possam ser alterados em tempo real.
-
-
-A pesquisa de \citeonline{pessin} se concentra na busca por soluções inteligentes aplicadas em robôs móveis autônomos visando a operação 
-destes em ambientes dinâmicos. Através da aplicação de aprendizado de máquina, buscou-se uma nova visão sobre a operação destes 
-dispositivos em três desafios da área: navegação, localização e operações com grupos de robôs. 
-No estudo das operações com grupos de robôs, foi utilizada uma aplicação de combate a 
-incêndios, com a avaliação por quatro técnicas: Algoritmos Genéticos, 
-Otimização por Enxame de Partículas, \textit{Hill Climbing} e \textit{Simulated Annealing}. Na investigação sobre a navegação, é 
-apresentado o desenvolvimento de um veículo autônomo de grande porte, funcional para ambientes externos. Relacionado com a localização, 
-é mostrado um método que provê informações de localização para os robôs com base em dados obtidos por redes sem fio.
-
-
-
-Nas Figuras \ref{fig:marcio}, \ref{fig:pololu} e \ref{fig:allan} são mostrados os dois protótipos desenvolvidos por \citeonline{alemao} e 
-o de \citeonline{allan}, respectivamente, os quais já foram discutidos anteriormente. Na Figura \ref{fig:hirai} é mostrado o 
-Cartisx04, robô seguidor de linha de \citeonline{Hirai}, um dos melhores do segmento mundialmente. 
-Estes veículos irão fomentar a base de conhecimento deste trabalho.
-
-
-
-\begin{figure}[h]
-    \centering
-    \captionsetup{width=0.83\textwidth,font=footnotesize,textfont=bf}
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/marcio1.png}
-        \caption{\centering \label{fig:marcio}}
-    \end{subfigure}
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[b]{0.4\textwidth}
-	\centering
-        \includegraphics[width=0.75\textwidth,height=0.18\textheight]{figuras/polulumod.png}
-        \caption{\centering \label{fig:pololu}}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/allan.png}
-        \caption{\centering \label{fig:allan}}
-    \end{subfigure}
-    % THE CAPTION PREVIOUSLY WAS HERE
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/Hirai.png}
-        \caption{\centering \label{fig:hirai}}
-    \end{subfigure}
-    
-    \caption{\label{fig:segLinha} Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; 
-    (b) Pololu 3pi modificado \cite{alemao}; (c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
-\end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END OF FILE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{comment}
-
-
-
 
 \begin{comment}
 		  TENTAR APROVEITAR ESTA PARTE!
@@ -313,7 +225,8 @@ Para \citeonline{nise} os sistemas de controle podem ser classificados em duas c
     \end{subfigure}
     
     %\caption{\label{fig:Malhas} Técnicas de controle: (a) Malha aberta; (b) Malha fechada \cite{Intro_auto}} 
-    \caption{\label{fig:Malhas} Configurações de sistemas de controle: (a) Malha aberta; (b) Malha fechada \cite{controle}} 
+    \caption{\label{fig:Malhas} Configurações de sistemas de controle: (a) Malha aberta; (b) Malha fechada.}
+    \caption*{\cite{controle}}
 \end{figure}
 
 
@@ -339,7 +252,7 @@ converte a variável de saída em uma outra variável pertinente, que possa ser 
 \citeonline{ogata} classifica os controladores industriais de acordo com as suas ações de controle:
 \begin{itemize}
  \item Controlador de duas posições ou \textit{on-off}; %(OBS.: TALVEZ DE PROBLEMA NESSE TEXTIT ANTERIOR)
- \item Controlador Proporcional;
+ \item Controlador Proporcional (\sigla{P}{Proporcional});
  \item Controlador Integral;
  \item Controlador Proporcional-Integral (\sigla{PI}{Proporcional-Integral});
  \item Controlador Proporcional-Derivativo (\sigla{PD}{Proporcional-Derivativo});
@@ -445,14 +358,6 @@ A equação do controlador é dada por:
 em que  $K_p$ é o ganho proporcional, $T_i$ é o tempo integrativo e $T_d$ é o tempo derivativo \cite{ogata}.
 
 
-%%%%%%
-%
-%  Este aqui ta bacana:
-%  http://www.dca.ufrn.br/~meneghet/FTP/Controle/scv20071.pdf
-%
-%%%%%%
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}
 \section{Sistemas a Eventos Discretos} \label{cap:sed}
@@ -537,7 +442,7 @@ mostrada em negrito (cada saída é acionada pelo autômato quando este entra no
 
 \begin{figure}[h!]
  \centering
- \captionsetup{width=0.5\textwidth,font=footnotesize,textfont=bf}
+ \captionsetup{width=0.4\textwidth,font=footnotesize,textfont=bf}
  %\includegraphics[scale=0.6]{figuras/nasa.png}
  \includegraphics[scale=0.4]{figuras/moore.png}
  \caption{Autômato de Moore \label{fig:Moore}}
@@ -574,7 +479,7 @@ estado $x$, o autômato receberá o evento de entrada $e_i$ e expedirá o evento
 
 \begin{figure}[h!]
  \centering
- \captionsetup{width=0.5\textwidth,font=footnotesize,textfont=bf}
+ \captionsetup{width=0.4\textwidth,font=footnotesize,textfont=bf}
  %\includegraphics[scale=0.6]{figuras/nasa.png}
  \includegraphics[scale=0.4]{figuras/mealy.png}
  \caption{Autômato de Mealy \label{fig:Mealy}}
@@ -608,6 +513,20 @@ do estado 1 para o estado 3, gerando uma saída igual a 1, e assim por diante.
  
 %\subsubsection{Autômato de Moore} 
 %\subsubsection{Autômato de Mealy} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Controle híbrido} \label{cap:hibrido}
+
+Para \citeonline{michaelis}, a palavra híbrido significa 
+\textquotedblleft Que ou o que é composto de elementos distintos ou disparatados\textquotedblright
+
+Para o dicionário \citeonline{webster}, a palavra \textit{hybrid} (híbrido para o português) significa 
+\textquotedblleft something that is formed by combining two or more things\textquotedblright, ou seja, é combinação de duas ou 
+mais coisas. Aplicando este conceito aos sistemas, tem-se CONTINUAR DAQUI ...................... 
+........................................
+
 
 
 
@@ -646,10 +565,11 @@ do estado 1 para o estado 3, gerando uma saída igual a 1, e assim por diante.
 
 Com suporte nessa divisão e no restante da literatura, tem-se os seguintes elementos necessários para o projeto de um robô móvel:
 %% elementos estava anteriormente como "dispositivos"
-\begin{itemize}
+
 
 %%% BATERIAS 
-\item[] \textbf{Bateria}: É um componente essencial do sistema, visto que o robô móvel precisa se locomover pelo espaço e não pode 
+%\item[] \textbf{Bateria}: É um componente essencial do sistema, visto que o robô móvel precisa se locomover pelo espaço e não pode 
+\noindent{\bf Bateria:} É um componente essencial do sistema, visto que o robô móvel precisa se locomover pelo espaço e não pode 
 ser dependente de uma fonte externa de energia elétrica. \citeonline{dudek_mobile} diz que baterias com bom desempenho e baixo custo são 
 as baseadas em células de gel (\textit{gell cell}), 
 mas por serem pesadas não são utilizadas com veículos 
@@ -658,7 +578,7 @@ Níquel-Cádmio (\sigla{NiCad}{Níquel-Cádmio}) e as de Hidreto Metálico de N�
 originalmente projetadas para serem utilizadas em dispositivos sem-fio, como \textit{laptops} e \textit{smartphones}.
 
 %%%% MOTORES pg 33
-\item[] \textbf{Motores}: 
+\noindent{\bf Motores:} 
 São os responsáveis por fazer com que o veículo \textquotedblleft ande\textquotedblright. 
 %, visto que estes convertem energia 
 %elétrica em mecânica. Dentre os motores, 
@@ -680,45 +600,39 @@ movimento de saída.
 
 
 %%% SERVO MOTOR CONTROL
-\item[] \textbf{Controle de um servomotor}: Podem ser utilizadas as abordagens de malha aberta e malha fechada. No controle 
+\noindent{\bf Controle de um servo motor:} Podem ser utilizadas as abordagens de malha aberta e malha fechada. No controle 
 de malha aberta, o valor desejado do eixo é utilizado para projetar um controlador oportuno, no entanto fica 
 suscetível a distúrbios, pois não apresenta realimentação. No controle por malha fechada, a realimentação do sistema é utilizada para 
 ajustar o movimento do disposito, sendo que um controlador amplamente utilizado é o PID \cite{dudek_mobile}.
 
 %%% COMUNICAÇÃO
-\item[] \textbf{Dispositivo de comunicação}: Devido à necessidade em interagir com um operador humano, como no caso de reportar que 
+\noindent{\bf Dispositivo de comunicação:} Devido à necessidade em interagir com um operador humano, como no caso de reportar que 
 uma tarefa foi concluída, \citeonline{dudek_mobile} relata que os robôs utilizam de um meio físico para a comunicação, como por cabo, ou 
 por comunicação sem-fio (\textit{wireless}), como o \textit{bluetooth} (padrão sem-fio de curto alcance), 802.11 (padrão da IEEE 
 \sigla{IEEE}{\textit{Institute of Electrical and Electronics Engineers}} para redes locais sem-fio) ou infravermelho.
 
 %%% PROCESSAMENTO
-\item[] \textbf{Processamento}: O processamento é um componente principal dos robôs móveis, tanto que \citeonline{dudek_mobile} 
+\noindent{\bf Processamento:} O processamento é um componente principal dos robôs móveis, tanto que \citeonline{dudek_mobile} 
 discute em que lugar o processamento do veículo deve estar. O autor chega na conclusão que a melhor forma do processamento ser feito é 
 a de separar as tarefas em \textit{on-board} (dentro do veículo) e \textit{off-board} (fora do veículo), responsáveis, 
 respectivamente, pelas tarefas de tempo crítico e as que não são de tempo crítico. Este modelo tem como vantagens a redução no consumo 
 de energia do dispositivo.
 
-\item[] \textbf{Sensores}: Os sensores serão abordados na próxima seção.
+\noindent{\bf Sensores:} \citeonline{secchi2012} diz que os robôs devem ser capazes de realizar três tarefas essenciais: estimar a sua posição e orientação 
+(pose), manter o mapa do ambiente atualizado e identificar os possíveis obstáculos deste. %do ambiente.
+Desta forma, para que o robô conheça o seu ambiente de trabalho e possa se adaptar a este, é necessário coletar informações e 
+adequá-las ao sistema de controle. Assim, o controle de malha fechada, o qual foi abordado anteriormente, 
+necessariamente precisa do sinal de sensores para realizar o \textit{feedback} (realimentação) do sistema.\par
+\citeonline{dudek_mobile} classifica os sensores em duas variantes: visuais e não-visuais.
+A seguir serão mostrados os principais sensores não-visuais 
+dos robôs móveis. Os sensores visuais, devido à não terem aplicação neste trabalho, não serão abordados. Para mais 
+informações sobre estes, consultar \cite{dudek_mobile}, \cite{Intro_auto} e \cite{secchi2012}.
 
-\end{itemize}
 
 \subsubsection{Sensores não-visuais}
 
-%O controle de malha fechada, o qual foi abordado anteriormente, necessariamente precisa do sinal de sensores para realizar o 
-%\textit{feedback} (realimentação) do sistema. 
-%Em vista disso, esta seção se preocupa com os sensores e atuadores necessários para o projeto de um robô móvel.\par
-\citeonline{secchi2012} diz que os robôs devem ser capazes de realizar três tarefas essenciais: estimar a sua posição e orientação 
-(pose), manter o mapa do ambiente atualizado e identificar os possíveis obstáculos deste. %do ambiente.
-Desta forma, para que o robô conheça o seu ambiente de trabalho e possa se adaptar a este, é necessário coletar informações e 
-adequá-las ao sistema de controle. Assim, O controle de malha fechada, o qual foi abordado anteriormente, 
-necessariamente precisa do sinal de sensores para realizar o \textit{feedback} (realimentação) do sistema.\par
 
-\citeonline{dudek_mobile} classifica os sensores em duas variantes: visuais e não-visuais. 
-A seguir serão mostrados os principais sensores não-visuais 
-dos robôs móveis. Para informações sobre os sensores visuais, consultar \cite{dudek_mobile}, \cite{Intro_auto} e \cite{secchi2012}.
-
-\begin{itemize}
- \item[] \textbf{Sensores inerciais}: São sensores externos que fazem referência com o mundo externo, ou seja, medem variáveis de 
+\noindent{\bf Sensores inerciais} São sensores externos que fazem referência com o mundo externo, ou seja, medem variáveis de 
 posição do robô.
   \begin{itemize}
    \item Encoder óptico: Estes dispositivos medem a velocidade e a posição angular em um \textit{driver} de motor ou no eixo de uma 
@@ -734,24 +648,36 @@ posição do robô.
    São baseados em sistemas pendulares, em que a primeira integração das acelerações proporciona a velocidade e a 
    segunda, a posição \cite{secchi2012}. A precisão deste dispositivo é de grande importância, visto que pequenos erros podem 
    influenciar na posição estimada, devido à dupla integração das acelerações. O diagrama deste dispositivo pode ser visto na Figura 
-   \ref{fig:acel}.
+   \ref{fig:acel}. (MELHORAR PARTE DO ACELEROMETRO)
   \end{itemize}
   
- \item[] \textbf{Sensores de infravermelho}: São sensores de proximidade rápidos e baratos, que basicamente consistem na emissão de 
+\noindent{\bf Sensores de infravermelho:} São sensores de proximidade rápidos e baratos, que basicamente consistem na emissão de 
  um pulso infravermelho e detecção do sinal refletido, com a distância aproximada calculada através da 
  força do sinal \cite{dudek_mobile}.
-
-\end{itemize}
-
-
-%\subsubsection{Sensores e atuadores}
-%\subsubsection{Sensores e atuadores}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\vspace{1cm}
-%\section{Trabalhos relacionados} \label{cap:trabalhos}
-
+ 
+\begin{figure}[h]
+    \centering
+    \captionsetup{width=0.8\textwidth,font=footnotesize,textfont=bf}
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{figuras/optical.png}
+        \caption{\centering \label{fig:optical}}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{figuras/giro.png}
+        \caption{\centering \label{fig:giro}}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=0.4\textwidth,height=0.4\textheight,keepaspectratio]{figuras/acel.png}
+        \caption{\centering \label{fig:acel}}
+    \end{subfigure}
+    \caption{\label{fig:Malhas} Sensores inerciais: (a) Sensor óptico; (b) Giroscópio; (c) Acelerômetro.}
+    \caption*{\cite{controle}}
+\end{figure}
 
 
 
@@ -792,14 +718,9 @@ inclinações de até 5º.\par
  \captionsetup{width=0.37\textwidth,font=footnotesize,textfont=bf}
  \includegraphics[scale=0.6]{figuras/Percurso1.png}
  \caption{Intersecções no percurso \label{fig:percurso1}}
- \vspace{-0.7cm}
+ \vspace{-0.3cm}
  \caption*{Fonte: Disponível em \cite[p.4]{RegrasRobocore}.}
 \end{figure}
-%\captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
-
-
-
-
 
 
 %A área que se estende entre o ponto de partida e o ponto de chegada, considerando 200mm da linha e 200mm a esquerda da linha
@@ -839,16 +760,160 @@ alteração na curvatura do percurso, deve haver uma marcação no lado esquerdo
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Trabalhos relacionados} \label{cap:trabRel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 	ESTA PARTE VAI NO FINAL COMO TRABALHOS RELACIONADOS
+Na revisão bibliográfica a seguir são mostradas técnicas desenvolvidas para o sistema de navegação de robôs móveis autônomos.
+
+O objetivo do trabalho de \citeonline{ufrj} foi o desenvolvimento de um sistema robótico autônomo em uma 
+arquitetura híbrida de três camadas, composta pela implementação das camadas Planejador e Executivo. 
+O estudo de caso foi feito pela sistema robótico DORIS, um robô 
+guiado por trilhos, desenvolvido pela COPPE/\sigla{UFRJ}{Universidade Federal do Rio de Janeiro}, 
+em parceria com a Petrobras e a Statoil, para a inspeção de plataformas de petróleo. O veículo 
+tem como funcionalidades a detecção de anomalias por vídeo, áudio, vibração, temperatura e por câmera de infravermelho e o 
+mapeamento 3D do ambiente.
+
+
+\citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
+reativo em uma abordagem de três camadas: Deliberativa, a qual determina um trajeto até o objetivo e evita colisões com obstáculos 
+já conhecidos; Vital, que utiliza de comportamentos reativos para guiar o robô ao seu objetivo e evitar colisões com obstáculos 
+(sejam estes estáticos ou dinâmicos); e Funcional, que faz a integração das camadas vital e deliberativa, fornecendo parâmetros 
+reativos para a camada vital. O sistema de controle proposto foi implementado no simulador SimRob3D, o qual permite a utilização de 
+modelos de ambiente 
+tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes possam ser alterados em tempo real.
+
+
+A pesquisa de \citeonline{pessin} se concentra na busca por soluções inteligentes aplicadas em robôs móveis autônomos visando a operação 
+destes em ambientes dinâmicos. Através da aplicação de aprendizado de máquina, buscou-se uma nova visão sobre a operação destes 
+dispositivos em três desafios da área: navegação, localização e operações com grupos de robôs. 
+No estudo das operações com grupos de robôs, foi utilizada uma aplicação de combate a 
+incêndios, com a avaliação por quatro técnicas: Algoritmos Genéticos, 
+Otimização por Enxame de Partículas, \textit{Hill Climbing} e \textit{Simulated Annealing}. Na investigação sobre a navegação, é 
+apresentado o desenvolvimento de um veículo autônomo de grande porte, funcional para ambientes externos. Relacionado com a localização, 
+é mostrado um método que provê informações de localização para os robôs com base em dados obtidos por redes sem fio.\par
+
+A seguir serão abordados os trabalhos relacionados aos robôs seguidores de linha.
+
+%%%%%
+\subsection{Robôs seguidores de linha}
+
+Nesta Seção serão abordados os trabalhos de \cite{allan}, \cite{alemao} e \cite{Hirai}:
+
+\begin{itemize}
+
+\item O trabalho de \citeonline{allan} foi pioneiro na Universidade Tecnológica Federal do Paraná - câmpus Pato Branco, sendo o 
+primeiro a ser feito sobre robôs seguidores de linha na instituição. 
+Em seu trabalho foi implementado um sistema de controle híbrido, o qual o autor define como sendo um sistema no qual ocorre interação 
+entre variáveis discretas e contínuas. Para o controle contínuo, que era o responsável pela posição do veículo, 
+foi utilizado um controlador P (ação de controle proporcional), 
+devido à planta já apresentar um integrador. O controle discreto, encarregado da detecção de marcas na pista, 
+foi implementado por um autômato de Moore, composto por dez estados e quinze transições. Este controlador definia a velocidade do 
+robô em 100\%, para retas, em 75\%, para curvas, e 0\%, quando parado (em seu estado inicial).
+Com os controladores contínuos e discretos 
+projetados, estes foram reunidos e implementados no microcontrolador. A detecção da pista foi feita por sensores de 
+refletância.\par
+Com o protótipo implementado, foram feitos testes em uma pista desenvolvida por \citeonline{allan}, a qual foi baseada em pistas da 
+competição Robocore. O percurso consistia de quatro curvas e dois cruzamentos. Primeiramente foram feitos cinco testes, sendo que 
+três destes o robô não reconheceu as marcas laterais devido à inclinação da pista não estar conforme a recomendada. Com a 
+inclinação da pista corrigida, foram feitos oito testes, sendo que destes em somente um as marcas não foram detectadas. Também foi 
+alterada a velocidade em curvas para 82\%, sendo que nesta situação o veículo não conseguiu realizar a curva. 
+O robô desenvolvido por \citeonline{allan} pode ser visto na Figura \ref{fig:allan}.
+
+\item O trabalho de \citeonline{alemao} teve como base o de \citeonline{allan}, logo nota-se a presença de várias 
+particularidades entre ambos, como o controle híbrido. Fora proposto para este projeto um \textit{hardware} mais 
+eficiente, com um novo sistema de sensoriamento, e a implementação da lógica \textit{fuzzy}, também conhecida como 
+lógica difusa, a qual foi integrada ao controlador discreto.\par %Falar da comparação fuzzy/ PID
+O sistema de controle discreto foi modelado por Moore, utilizando autômatos determinísticos 
+de estados finitos. Este controlador é muito semelhante ao projetado por \citeonline{allan}, com alteração na velocidade em 
+curvas, sendo utilizado 80\%. O controlador \textit{fuzzy} foi projetado com base no valor 
+dos sensores de refletância, comandando a velocidade dos motores de acordo com a base de regras desenvolvida. O controlador 
+contínuo escolhido foi o PID, que assim como o \textit{fuzzy} também utiliza as informações dos sensores de refletância para gerar a 
+ação de controle.\par
+%
+A estrutura do robô de \citeonline{alemao} foi feita utilizando uma placa de fenolite, a partir da qual os componentes são 
+soldados. Para a locomoção foram utilizados dois motores CC de 6V e 1000 RPM, da Pololu, duas rodas de pneus de silicone e um 
+\textit{driver} para motor CC TB6612FNG, da Toshiba. A alimentação foi feita por uma bateria Li-Po de 7,4V de tensão e 32,5A 
+de corrente, com potência de 1300mAh. 
+Foram utilizados os módulos reguladores de tensão XL6009 e MP2259, 
+sendo \textit{step-up} (aumenta a tensão) e \textit{step-down} (diminui a tensão), respectivamente. O microcontrolador utilizado 
+por \citeonline{alemao} foi o MSP430G2553, o qual possui um ADC de oito canais, 
+trabalha com \textit{clock} de 16MHz, memória \textit{flash} de 16KB e 0,5KB de 
+\sigla{SRAM}{\textit{Static Random Access Memory}}. 
+Os sensores de refletância utilizados foram os QTR-1A e QTR-8A (o qual é composto por oito unidades de QTR-1A), este empregado no 
+protótipo.\par
+%
+\citeonline{alemao} desenvolveu três protótipos, sendo que na Figura \ref{fig:marcio} pode ser visto o terceiro protótipo, o qual 
+não funcionou devido à problemas com o circuito. Testes foram feitos com o segundo protótipo e 
+segundo o autor, todas as marcações de curvas, cruzamentos e sinais (início e fim) foram reconhecidos. 
+Também foi utilizado o robô 3pi, da Pololu, o qual pode ser visto na Figura \ref{fig:pololu}, para fazer a 
+comparação entre os controladores PID e \textit{fuzzy}. Este veículo foi modificado, com a substituição das rodas e dos motores 
+originais pelos mencionados anteriormente. A bateria também foi alterada, 
+sendo utilizadas duas baterias em série, fornecendo 7,4V de tensão de 12A de corrente. Devido à limitações no \textit{hardware}, 
+não foi utilizado o controle de eventos discretos na comparação dos controladores. O controlador PID obteve um melhor desempenho, 
+conseguindo realizar 680 leituras e atuações nos motores por segundo, enquanto que o \textit{fuzzy} conseguiu somente 385. 
+O sistema \textit{fuzzy} não foi capaz de seguir a linha, devido à instabilidade, 
+logo foram adicionadas quatros regras, as quais deixaram o robõ mais 
+estável mas com frequência de operação muito baixa. 
+
+\item \citeonline{Hirai} é um dos principais competidores na categoria dos robôs seguidores de linha, tendo sido campeão em 
+várias competições na Ásia, especialmente no Japão, onde em 2015 conquistou a 
+terceira vitória seguida na Robotrace \cite{robotrace2015}. 
+O Cartisx04, o qual pode ser visto na Figura \ref{fig:Hirai}, é um protótipo desenvolvido com base no Cartis03, sendo esse o seu 
+último robô desenvolvido. Não se tem acesso ao \textit{software} desenvolvido por \citeonline{Hirai}, no entanto é disponibilizado o 
+\textit{hardware} utilizado, logo é interessante conhecer como é feito o projeto de competidor de nível mundial.\par
+%
+Segundo o autor, o CartisX04 é um robô leve de direção irregular de quatro rodas. São utilizados dois motores Maxon DCX10L, 
+o qual é um motor CC \textit{brushed}, e um motor de direção Maxon RE10. Os sensores utilizados são o giroscópio 
+Invensense ISZ-650 e o sensor de refletância GP2S700, da Sharp. O microcontrolador utilizado foi o STM32F103RE, da 
+STMicroelectronics, o qual é equipado com processador ARM-Cortex M3 de 32 bits, 72MHz de \textit{clock}, 256KB de memória 
+\textit{flash} e 64KB de SRAM.
+As dimensões do veículo são 175mm de altura, 153mm de comprimento e 
+7mm de centro de gravidade. O robô pesa 98g, 32g a menos do que o protótipo anterior, o que para o autor propiciou aumento de 
+desempenho.
 
 
 
 
 
+\end{itemize}
+%%%%%
 
 
+\begin{figure}[h]
+    \centering
+    \captionsetup{width=0.83\textwidth,font=footnotesize,textfont=bf}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/allan.png}
+        \caption{\centering \label{fig:allan}}
+    \end{subfigure}    
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/marcio1.png}
+        \caption{\centering \label{fig:marcio}}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.4\textwidth}
+	\centering
+        \includegraphics[width=0.75\textwidth,height=0.18\textheight]{figuras/polulumod.png}
+        \caption{\centering \label{fig:pololu}}
+    \end{subfigure}
+    % THE CAPTION PREVIOUSLY WAS HERE
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/Hirai.png}
+        \caption{\centering \label{fig:hirai}}
+    \end{subfigure}
+    
+    \caption{\label{fig:segLinha} Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; 
+    (b) Pololu 3pi modificado \cite{alemao}; (c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
+\end{figure}
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END OF FILE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 

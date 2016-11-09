@@ -1,8 +1,17 @@
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ÚLTIMAS ALTERAÇÕES FEITAS POR 
+%% WILLIAN AMERICANO LOPES - walopes23@gmail.com
+%% COMPILADO NO LINUX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[oneside,11pt]{normas-utf-tex} %oneside = para dissertacoes com numero de paginas menor que 100 (apenas frente da folha) 
 
 % force A4 paper format
 %\special{papersize=210mm,297mm}
+
+%% Instalar o pacote ttf-mscorefonts-installer
+\usepackage{newtxtext} %% 15ª tentativa de utilizar fonte com serif
+%\usepackage{times}
 
 \usepackage{geometry}
 \geometry{verbose,a4paper,tmargin=3cm,bmargin=2cm,lmargin=3cm,rmargin=2cm}
@@ -10,33 +19,34 @@
 
 
 \usepackage[table]{xcolor}
-\usepackage{gensymb}  % Para o (+ ou -), ou \pm
+%\usepackage{gensymb}  % Para o (+ ou -), ou \pm    %% NÃO SEI
 
 %\usepackage{abntex}
 %\usepackage{abntcite}
-%\usepackage[scaled]{helvet}
+%\usepackage[scaled]{helvet}	%% ESTA AQUI EH SANS SERIF
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 
 \usepackage[brazil]{babel} % pacote portugues brasileiro
 %\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc} % pacote para acentuacao direta
-\usepackage{amsmath,amsfonts,amssymb} % pacote matematico
+%\usepackage{amsmath,amsfonts,amssymb} % pacote matematico
+%\usepackage{newtxtext,newtxmath}
 \usepackage{graphicx} % pacote grafico
 \usepackage[final]{pdfpages} % adicao da ata
 \usepackage{hyperref} % gera hiperlinks para o sumario, links, referencias -- deve vir antes do 'abntcite' 
 \usepackage{tabularx}
-\usepackage{pgfgantt}
+%\usepackage{pgfgantt}
 \usepackage{rotating}
 \usepackage{comment}
 \usepackage{subcaption}
-\usepackage{mathptmx}
+%\usepackage{mathptmx}
 \usepackage{indentfirst} %Indenta o primeiro parágrafo da seção
 
 
 %\usepackage[scaled]{helvet}
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 
-\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\sfdefault}
 
 \usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
 
@@ -70,11 +80,9 @@
 \nivel{Graduação}
 \titulacao{Engenheiro de Computação} 
 
-%\titulo{{Controle híbrido de robô seguidor de linha auxiliado por inteligência artificial}} % titulo do trabalho em portugues
-%\titulo{{Inteligência artificial aplicada à controle híbrido de robô seguidor de linha (provisorio)}} % titulo do trabalho em portugues
 \titulo{{Projeto e Implementação de robô autônomo seguidor de linha}} % titulo do trabalho em portugues
 
-\title{{lalala}} % titulo do trabalho em ingles
+\title{{Project and implementation of a line follower autonomous robot}} % titulo do trabalho em ingles
 
 \autor{Willian Americano Lopes} % autor do trabalho
 \cita{LOPES, Willian Americano} % sobrenome (maiusculas), nome do autor do trabalho
@@ -82,9 +90,7 @@
 \palavraschave{Quadricóptero. Multi-rotor. VTOL.} % palavras-chave do trabalho
 \keywords{Quadrotor. Multi-rotor. VTOL.} % palavras-chave do trabalho em ingles
 
-%\comentario{\UTFPRdocumentodata\ de graduação, apresentado à disciplina de Trabalho de Conclusão de Curso 1, do Curso Superior de Engenharia de Computação do \UTFPRdepartamentodata\ - DAINF - da \ABNTinstituicaodata\ - UTFPR, como requisito parcial para obten\c{c}\~ao do título de ``\UTFPRtitulacaodata\ em Computação''.}
-\comentario{Proposta de \UTFPRdocumentodata\ de graduação, apresentada à disciplina de Trabalho de Conclusão de Curso 1, do Curso Superior de Engenharia de Computação do \UTFPRdepartamentodata\ - DAINF - da \ABNTinstituicaodata\ - UTFPR, como requisito parcial para obten\c{c}\~ao do título de ``\UTFPRtitulacaodata\ ''.}
-
+\comentario{\UTFPRdocumentodata\ de graduação, apresentado à disciplina de Trabalho de Conclusão de Curso 1, do Curso Superior de Engenharia de Computação do \UTFPRdepartamentodata\ - DAINF - da \ABNTinstituicaodata\ - UTFPR, como requisito parcial para obten\c{c}\~ao do título de ``\UTFPRtitulacaodata\ em Computação''.}
 
 \orientador{Prof. Dr. Fábio Favarim} % nome do orientador do trabalho
 \coorientador{Prof. Dr. Eng. César Rafael Claure Torrico} % co-orientador
@@ -100,12 +106,8 @@
 \hbadness=10000
 \sloppy
 
-
-
-
-%---------- Inicio do Documento ----------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ---------- Inicio do Documento ----------
 \begin{document}
-
 
 \capa % geracao automatica da capa
 \folhaderosto % geracao automatica da folha de rosto
@@ -140,10 +142,10 @@
 %\end{abstract}
 
 %listas (opcionais, mas recomenda-se a partir de 5 elementos)
-%\listadefiguras % geracao automatica da lista de figuras
+\listadefiguras % geracao automatica da lista de figuras
 %\listadetabelas % geracao automatica da lista de tabelas
 %\listadequadros % adivinhe :)
-%\listadesiglas % geracao automatica da lista de siglas
+\listadesiglas % geracao automatica da lista de siglas
 %\listadesimbolos % geracao automatica da lista de simbolos
 
 % sumario
@@ -165,7 +167,7 @@
 %---------- Referencias ----------
 \clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.
 
-%\label{bibstart}
+\label{bibstart}
 %\bibliographystyle{plain}
 %\bibliography{bibliografia} % geracao automatica das referencias a partir do arquivo bibliografia.bib
 %\label{bibend}
