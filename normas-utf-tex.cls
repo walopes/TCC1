@@ -910,10 +910,10 @@
 \setcounter{absfigure}{-5} % Não sei o pq, mas  ta funcionando
 \renewcommand{\thefigure}{\arabic{absfigure}}
 \AddAbsoluteCounter{table}
-\setcounter{abstable}{-5}
+\setcounter{abstable}{-6}
 \renewcommand{\thetable}{\arabic{abstable}}
 \AddAbsoluteCounter{quadro}
-\setcounter{absquadro}{-5}
+\setcounter{absquadro}{-8}
 \renewcommand{\thequadro}{\arabic{absquadro}}
 \AddAbsoluteCounter{grafico}
 \setcounter{absgrafico}{0}

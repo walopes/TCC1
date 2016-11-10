@@ -442,7 +442,7 @@ mostrada em negrito (cada saída é acionada pelo autômato quando este entra no
 
 \begin{figure}[h!]
  \centering
- \captionsetup{width=0.4\textwidth,font=footnotesize,textfont=bf}
+ \captionsetup{width=0.54\textwidth,font=footnotesize,textfont=bf}
  %\includegraphics[scale=0.6]{figuras/nasa.png}
  \includegraphics[scale=0.4]{figuras/moore.png}
  \caption{Autômato de Moore \label{fig:Moore}}
@@ -479,7 +479,7 @@ estado $x$, o autômato receberá o evento de entrada $e_i$ e expedirá o evento
 
 \begin{figure}[h!]
  \centering
- \captionsetup{width=0.4\textwidth,font=footnotesize,textfont=bf}
+ \captionsetup{width=0.75\textwidth,font=footnotesize,textfont=bf}
  %\includegraphics[scale=0.6]{figuras/nasa.png}
  \includegraphics[scale=0.4]{figuras/mealy.png}
  \caption{Autômato de Mealy \label{fig:Mealy}}
@@ -487,7 +487,7 @@ estado $x$, o autômato receberá o evento de entrada $e_i$ e expedirá o evento
  \caption*{Fonte: \cite[p.73]{cassandras}}
 \end{figure}
 
-\begin{comment}
+\begin{comment}tb6612fng
 
 
 \begin{itemize}
@@ -519,13 +519,35 @@ do estado 1 para o estado 3, gerando uma saída igual a 1, e assim por diante.
 \vspace{1cm}
 \section{Controle híbrido} \label{cap:hibrido}
 
-Para \citeonline{michaelis}, a palavra híbrido significa 
-\textquotedblleft Que ou o que é composto de elementos distintos ou disparatados\textquotedblright
-
 Para o dicionário \citeonline{webster}, a palavra \textit{hybrid} (híbrido para o português) significa 
-\textquotedblleft something that is formed by combining two or more things\textquotedblright, ou seja, é combinação de duas ou 
-mais coisas. Aplicando este conceito aos sistemas, tem-se CONTINUAR DAQUI ...................... 
-........................................
+\textquotedblleft \textit{something that is formed by combining two or more things}\textquotedblright, ou seja, 
+é combinação de duas ou mais coisas. Quando se aplica esse conceito a sistemas de controle, tem-se um sistema que é formado 
+por dinâmicas discretas e contínuas, conforme diz \citeonline{cassandras}. 
+\citeonline{hybridcont} diz que quase todos os 
+sistemas de controle atuais, ao mesmo tempo em que são executados por linhas de 
+código em um computador, também respondem comandos de variáveis contínuas. Desta forma, problemas modernos de controle 
+provavelmente serão modelados sobre um sistema híbrido.\par
+
+\citeonline{dudek_mobile} diz que o enquanto o controle em baixo nível precisa de resposta em tempo-real a eventos externos, 
+tendo natureza contínua, o controle de alto-nível geralmente é implementado como um conjunto de operações discretas ou tarefas que 
+precisam ser cumpridas. Neste contexto, o controle em alto nível geralmente é chamado de controle de tarefa ou controle de execução, 
+enquanto o controle em baixo nível é conhecido como controle reativo ou controle de execução \cite{dudek_mobile}.
+
+Na Figura \ref{fig:cas} é mostrado o diagrama de blocos de uma arquitetura de controle híbrida. Em \textit{Interface} acontece a 
+\textquotedblleft abstração\textquotedblright do sistema de controle contínuo, de baixo nível, para um SED, de alto nível. Isso acontece 
+na \textit{Interface} devido à informação dos sensores e das variáveis contínuas serem retransmitidas para o controlador supervisório, 
+o qual ocorre na forma de eventos, na medida que os comandos do supervisório são transmitidos de volta para a \textit{Interface} para 
+gerar o sinal apropriado para acionar os atuadores \cite{cassandras}.
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.38\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[scale=0.6]{figuras/nasa.png}
+ \includegraphics[width=0.4\textwidth,height=0.6\textheight,keepaspectratio]{figuras/hybrid.png}
+ \caption{Arquitetura de um sistema de controle híbrido \label{fig:cas}}
+ \vspace{-0.3cm}
+ \caption*{Fonte: \cite[p.43]{cassandras}}
+\end{figure}
 
 
 
@@ -647,8 +669,8 @@ posição do robô.
    agindo sobre ele, inclusive a gravidade. 
    São baseados em sistemas pendulares, em que a primeira integração das acelerações proporciona a velocidade e a 
    segunda, a posição \cite{secchi2012}. A precisão deste dispositivo é de grande importância, visto que pequenos erros podem 
-   influenciar na posição estimada, devido à dupla integração das acelerações. O diagrama deste dispositivo pode ser visto na Figura 
-   \ref{fig:acel}. (MELHORAR PARTE DO ACELEROMETRO)
+   influenciar na posição estimada, devido à dupla integração das acelerações. A Figura \ref{fig:acel}
+   mostra um circuito integrado (\sigla{CI}{Circuito Integrado}) de um acelerômetro.
   \end{itemize}
   
 \noindent{\bf Sensores de infravermelho:} São sensores de proximidade rápidos e baratos, que basicamente consistem na emissão de 
@@ -664,19 +686,20 @@ posição do robô.
         \caption{\centering \label{fig:optical}}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.8\textwidth}
+    \begin{subfigure}[b]{0.4\textwidth}
 	\centering
-        \includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{figuras/giro.png}
+        \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figuras/giro.png}
         \caption{\centering \label{fig:giro}}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.8\textwidth}
+    \begin{subfigure}[b]{0.4\textwidth}
 	\centering
-        \includegraphics[width=0.4\textwidth,height=0.4\textheight,keepaspectratio]{figuras/acel.png}
+        \includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{figuras/acel.png}
         \caption{\centering \label{fig:acel}}
     \end{subfigure}
     \caption{\label{fig:Malhas} Sensores inerciais: (a) Sensor óptico; (b) Giroscópio; (c) Acelerômetro.}
-    \caption*{\cite{controle}}
+    \vspace{-0.3cm}
+    \caption*{Fonte: \cite{controle}}
 \end{figure}
 
 
@@ -719,7 +742,7 @@ inclinações de até 5º.\par
  \includegraphics[scale=0.6]{figuras/Percurso1.png}
  \caption{Intersecções no percurso \label{fig:percurso1}}
  \vspace{-0.3cm}
- \caption*{Fonte: Disponível em \cite[p.4]{RegrasRobocore}.}
+ \caption*{Fonte: \cite[p.4]{RegrasRobocore}.}
 \end{figure}
 
 
@@ -737,7 +760,7 @@ inclinações de até 5º.\par
  \includegraphics[scale=0.5]{figuras/Percurso2.png}
  \caption{Área de partida-chegada \label{fig:percurso2}}
   \vspace{-0.3cm}
- \caption*{Fonte: Disponível em \cite[p.4]{RegrasRobocore}.}
+ \caption*{Fonte: \cite[p.4]{RegrasRobocore}.}
 \end{figure}
 
 
@@ -745,7 +768,8 @@ inclinações de até 5º.\par
 %\captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
 Quando houver um arco (intersecção entre a faixa branca), o raio deste é de pelo menos 100mm. Quando houver uma 
 alteração na curvatura do percurso, deve haver uma marcação no lado esquerdo da linha, como pode ser visto na Figura 
-\ref{fig:percurso4}.\par
+\ref{fig:percurso4}. A linha de partida e de chegada estarão localizadas em uma reta no circuito, sendo que esta será localizada 
+um metro antes da linha de partida.\par
 
 \begin{figure}[t!]
  \centering
@@ -753,7 +777,7 @@ alteração na curvatura do percurso, deve haver uma marcação no lado esquerdo
  \includegraphics[scale=0.6]{figuras/Percurso4.png}
  \caption{Marcações de sinalização de curvatura \label{fig:percurso4}}
  \vspace{-0.3cm}
- \caption*{Fonte: Disponível em \cite[p.4]{RegrasRobocore}.}
+ \caption*{Fonte: \cite[p.4]{RegrasRobocore}.}
 \end{figure}
 
 
@@ -909,7 +933,7 @@ desempenho.
         \caption{\centering \label{fig:hirai}}
     \end{subfigure}
     
-    \caption{\label{fig:segLinha} Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; 
+    \caption{Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; 
     (b) Pololu 3pi modificado \cite{alemao}; (c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
 \end{figure}
 

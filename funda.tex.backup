@@ -1,7 +1,7 @@
 
 \chapter{Referencial Teórico} \label{cap:funda}
 
-\vspace{-2cm} %Deixar no formato certo, 1 'ENTER' após e a seção e 2 'ENTERs' antes da seção
+\vspace{-1cm} %Deixar no formato certo, 1 'ENTER' após e a seção e 2 'ENTERs' antes da seção
 
 Neste capítulo são apresentados os principais conceitos teóricos relacionados ao desenvolvimento deste trabalho.
 
@@ -19,11 +19,8 @@ A \textit{Robotic Industries Association} (\sigla{RIA}{\textit{Robotic Industrie
 entidade norte-americana responsável pela indústria de robótica, define um robô industrial como
  \textit{um manipulador multipropósito reprogramável, controlado automaticamente, programado em três 
  ou mais eixos, os quais podem ser fixos em um lugar ou móveis para aplicações em automação industrial} \cite{RIAdef}.
-%\footnote{Fonte em \url{http://www.robotics.org/product-catalog-detail.cfm/productid/2953}. Acesso em: 15 agosto 2016}. 
-%Diferentemente do que foi imaginado por Capek, hoje máquinas fazem o trabalho destes seres-humanos.
 Diferentemente do que foi imaginado por Capek, são máquinas que realizam o trabalho.
 
-%\begin{comment}
 \citeonline{secchi2012} classifica os robôs em três tipos:
 \begin{itemize}
  \item Industriais: São formados por estruturas mecâncias articuladas, as quais se movem pelas ordens de um sistema de 
@@ -32,23 +29,21 @@ Diferentemente do que foi imaginado por Capek, são máquinas que realizam o tra
  precisão, assim como as próteses inteligentes, que visam manter a aparência e funcionalidade do membro de pessoas com 
  deficiência.;
  \item Móveis: São plataformas mecânicas, que se locomovem através de um certo ambiente e apresentam certa autonomia.
-São empregados principalmente em tarefas onde se tem risco à vida humana, como na manutenção de reatores nucleares ou 
+São empregados principalmente em tarefas em que se tem risco à vida humana, como na manutenção de reatores nucleares ou 
 exploração de 
 minérios, mas também podem ser aplicados na agricultura e no transporte de cargas.
 \end{itemize}
 
 
 \vspace{1cm}
-%\subsection{Robôs móveis}
 \subsection{Robótica móvel}	
 
 
 Mesmo que os robôs industriais apresentem alta precisão e velocidade, estes possuem uma grande desvantagem, que é a falta 
-de mobilidade. %Algumas atividades necessitam que o dispositivo trafeguem através de uma planta industrial
+de mobilidade. 
 Algumas atividades não seriam realizadas sem a utilização destes dispositivos, como a 
 \textit{Mars Pathfinder}, missão exploratória da 
 \sigla{NASA}{ \textit{National Aeronautics and Space Administration}} para o reconhecimento da atmosfera de Marte. O 
-%veículo Sojourner (Figura \ref{fig:nasa}) que foi utilizado nesta missão, explorou o território marciano por 83 dias, 
 veículo Sojourner (Figura \ref{fig:nasa}) que foi utilizado nesta missão, explorou o território marciano por oitenta e três dias, 
 tirando fotografias e realizando 
 medições do ambiente \cite{nasa}.
@@ -60,8 +55,7 @@ medições do ambiente \cite{nasa}.
  \includegraphics[scale=0.4]{figuras/nasa.png}
  \caption{Veículo exploratório Sojourner \label{fig:nasa}}
  \vspace{-0.3cm}
- %\caption*{Fonte: Disponível em \url{https://mars.jpl.nasa.gov/MPF/rover/sim2.jpg}.}
- \caption*{Fonte: Disponível em $<$https://mars.jpl.nasa.gov/MPF/rover/sim2.jpg$>$}
+ \caption*{Fonte: \cite{nasarover}}
 \end{figure}
 
 
@@ -71,8 +65,6 @@ do robô. O espaço em larga escala é de extrema importância para um robô mó
 o seu movimento, compreensão e raciocínio nesta área, sendo estes três subproblemas essenciais para este campo de pesquisa
 \cite{dudek_mobile}.
 
-%\cite{nasa}
-%É uma área de pesquisa interdisciplinar, consistindo de ...
 
 \begin{comment}
 % Retirado do livro do dudek
@@ -121,135 +113,9 @@ equilíbrio não é levado em consideração, visto que na maior parte dos proje
 o tempo todo. O robô Sojourner da Figura \ref{fig:nasa} é um exemplo de robô com rodas.%\par
 \end{itemize}
 
-Na revisão bibliográfica a seguir são mostradas técnicas desenvolvidas para o sistema de navegação de robôs móveis autônomos.
-
-%///////// AQUIIIIII
-
-%\citeonline{ufrj} propôs o desenvolvimento de uma arquitetura híbrida
-% ufrj -> Dissertação da UFRJ
-O objetivo do trabalho de \citeonline{ufrj} foi o desenvolvimento de um sistema robótico autônomo em uma 
-arquitetura híbrida de três camadas, composta pela implementação das camadas Planejador e Executivo. 
-%O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore} (no mar a uma certa distância 
-%da orla) guiado por trilhos, 
-O estudo de caso foi feito pela sistema robótico DORIS, um robô \textit{offshore}\footnote{\textit{offshore} 
-significa estar afastado da costa; em alto mar.} 
-%\footnotetext{\textit{offshore} é quando algo está localizado no mar, a uma certa distância 
-%da costa (MELHORAR SIGNIFICADO)}
-guiado por trilhos, desenvolvido pela COPPE/\sigla{UFRJ}{Universidade Federal do Rio de Janeiro}, 
-em parceria com a Petrobras e a Statoil, para a inspeção de plataformas de petróleo. O veículo 
-tem como funcionalidades a detecção de anomalias por vídeo, áudio, vibração, temperatura e por câmera de infravermelho e o 
-mapeamento 3D do ambiente.
 
 \begin{comment}
-\citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
-reativo em uma abordagem de três camadas: 
-\begin{itemize}
- \item Deliberativa: Determina um trajeto até o objetivo e evita colisões com obstáculos já conhecidos;
- \item Vital: Utiliza de comportamentos reativos para guiar o robô ao seu objetivo e evitar colisões com obstáculos (sejam estes 
-estáticos ou dinâmicos); 
-  \item Funcional: Faz a integração das camadas vital e deliberativa, fornecendo parâmetros reativos para a camada vital.
-\end{itemize}
-O sistema de controle proposto foi implementado no simulador SimRob3D, o qual permite a utilização de modelos de ambiente 
-tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes possam ser alterados em tempo real.
-\end{comment}
-
-\citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
-reativo em uma abordagem de três camadas: Deliberativa, a qual determina um trajeto até o objetivo e evita colisões com obstáculos 
-já conhecidos, Vital, que utiliza de comportamentos reativos para guiar o robô ao seu objetivo e evitar colisões com obstáculos 
-(sejam estes estáticos ou dinâmicos), e Funcional, que faz a integração das camadas vital e deliberativa, fornecendo parâmetros 
-reativos para a camada vital. O sistema de controle proposto foi implementado no simulador SimRob3D, o qual permite a utilização de 
-modelos de ambiente 
-tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes possam ser alterados em tempo real.
-
-
-A pesquisa de \citeonline{pessin} se concentra na busca por soluções inteligentes aplicadas em robôs móveis autônomos visando a operação 
-destes em ambientes dinâmicos. Através da aplicação de aprendizado de máquina, buscou-se uma nova visão sobre a operação destes 
-dispositivos em três desafios da área: navegação, localização e operações com grupos de robôs. 
-No estudo das operações com grupos de robôs, foi utilizada uma aplicação de combate a 
-incêndios, com a avaliação por quatro técnicas: Algoritmos Genéticos, 
-Otimização por Enxame de Partículas, \textit{Hill Climbing} e \textit{Simulated Annealing}. Na investigação sobre a navegação, é 
-apresentado o desenvolvimento de um veículo autônomo de grande porte, funcional para ambientes externos. Relacionado com a localização, 
-é mostrado um método que provê informações de localização para os robôs com base em dados obtidos por redes sem fio.
-
-
-
-Nas Figuras \ref{fig:marcio}, \ref{fig:pololu} e \ref{fig:allan} são mostrados os dois protótipos desenvolvidos por \citeonline{alemao} e 
-o de \citeonline{allan}, respectivamente, os quais já foram discutidos anteriormente. Na Figura \ref{fig:hirai} é mostrado o 
-Cartisx04, robô seguidor de linha de \citeonline{Hirai}, um dos melhores do segmento mundialmente. 
-Estes veículos irão fomentar a base de conhecimento deste trabalho.
-
-
-\begin{comment}
-%%% NÃO ESTÁ FUNCIONANDO!! DANGER
-\begin{figure*}[t!]
-   \centering
-   \captionsetup{width=0.74\textwidth,font=footnotesize,textfont=bf}
-    \begin{subfigure}[t]{.5\linewidth}
-        \raggedright
-        \includegraphics[width=7cm]{figuras/marcio1.png}
-        \caption{\centering \label{fig:marcio}}
-    \end{subfigure}
-    %~\hspace{0.4cm}
-    ~
-    \begin{subfigure}[t]{0.5\linewidth}
-        \raggedleft
-        \includegraphics[width=7cm,height=7cm]{figuras/polulumod.png}
-        \caption{ \label{fig:pololu}}
-    \end{subfigure}[1ex]
-    \vspace{0.4cm}
-    ~\hspace{0.4cm}
-    
-    \begin{subfigure}[t]{0.2\linewidth}
-        \centering
-        \includegraphics[width=7cm,height=3cm]{figuras/allan.png}
-        \caption{ \label{fig:allan}}
-    \end{subfigure}
-    ~\hspace{0.4cm}
-    \begin{subfigure}[t]{0.3\linewidth}
-        \centering
-        \includegraphics[width=7cm,height=3cm,keepaspectratio]{figuras/Hirai.png}
-        %\caption{Robô 3pi \label{fig:pololu}}
-        \caption{ \label{fig:hirai}}
-        %\caption*{Fonte: \cite[p.58]{alemao}}
-    \end{subfigure}
-    \caption{Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; (b) Pololu 3pi modificado \cite{alemao}; 
-(c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
-\end{figure*}
-\end{comment}
-
-
-\begin{figure}[h]
-    \centering
-    \captionsetup{width=0.83\textwidth,font=footnotesize,textfont=bf}
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/marcio1.png}
-        \caption{\centering \label{fig:marcio}}
-    \end{subfigure}
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/polulumod.png}
-        \caption{\centering \label{fig:pololu}}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/allan.png}
-        \caption{\centering \label{fig:allan}}
-    \end{subfigure}
-    % THE CAPTION PREVIOUSLY WAS HERE
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/Hirai.png}
-        \caption{\centering \label{fig:hirai}}
-    \end{subfigure}
-    
-    \caption{\label{fig:segLinha} Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; 
-    (b) Pololu 3pi modificado \cite{alemao}; (c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
-\end{figure}
-
-
-\begin{comment}
+		  TENTAR APROVEITAR ESTA PARTE!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{1cm}
 \section{Sistema embarcado}
@@ -283,105 +149,117 @@ São compostos por CPU, ADC xxxxxxxx xxxxxx.
 \vspace{1cm}
 \section{Sistemas de Controle para robôs móveis} \label{cap:controle}
 
-Para que o robô seja autônomo, %um dos requisitos para que este seja móvel, é necessário que este apresente uma resposta desejada para as 
-é necessário que este apresente uma resposta desejada para as 
+Para que o robô seja autônomo, 
+é necessário que este apresente uma resposta desejada para 
 as mais diversas situações. 
-%Para tanto se utiliza de um sistema de controle, que consoante a \citeonline{nise} consiste em subsistemas e 
-%processos, conhecidos como plantas, dos quais se obtém uma saída com desempenho desejado para uma dada entrada. Na Figura 
-%\ref{fig:basicdiag} é mostrado um sistema de controle em uma forma simplificada, em que aplicando-se uma entrada a este, obtêm-se uma 
-%resposta.
 Para tanto se utiliza de um sistema de controle, que consiste em subsistemas e processos, conhecidos como plantas, 
 dos quais se obtém uma saída com desempenho desejado para uma dada entrada \cite{nise}. Na Figura 
 \ref{fig:basicdiag} é mostrado o diagrama de blocos\footnote{Diagrama de blocos é uma representação gráfica do sistema que mostra o 
 fluxo de sinais que ocorre entre os componentes deste.} de 
 um sistema de controle em uma forma simplificada, em que aplicando-se uma entrada a este, obtêm-se uma 
-resposta.
+resposta. 
 
 \begin{figure}[h]
  \centering
  \captionsetup{width=0.6\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[width=0.6\textwidth]{figuras/DiagramaNise.png}
  \includegraphics[width=0.6\textwidth]{figuras/DiagramaNise.png}
  \caption{Descrição de um sistema de controle \label{fig:basicdiag}}
   \vspace{-0.3cm}
  \caption*{Fonte: Adaptado de \cite[p.2]{nise}.}
 \end{figure}
 
-VERIFICAR MELHOR ESTE PEDAÇO DAS MALHAS
-_________________________________________________
-%\citeonline{nise} classifica os sistemas de controle em duas configurações:
 
+\begin{comment}
 Segundo \citeonline{Intro_auto}, o controle de movimento de 
 um sistema não-holomônico\footnote{Sistemas não-holomônicos são sistemas não integráveis} não é trivial, no entanto estão disponíveis 
 soluções adequadas para contornar este contratempo:
-
 \begin{itemize}
  \item Controle por malha aberta (\textit{Open loop control}): Não utiliza de sensores, logo o veículo segue uma trajetória descrita por 
  sua posição e velocidade como uma função de tempo e a sua posição não retorna (\textit{feedback}) para o controle da velocidade e 
  controle. Mesmo sendo de mais fácil implementação, apresenta várias restrições, como a impossibilidade de se adaptar 
  automaticamente ao ambiente caso aconteçam mudanças dinâmicas neste.
- 
  \item Controle por Malha fechada (\textit{Closed loop control}): É uma abordagem mais apropriada para o controle de movimento, visto que 
 os sensores são continuamente monitorados e os atuadores\footnote{Atuadores são dispositivos capazes de alterar 
 o estado do sistema controlado com base em sinais de controle, como por exemplo os motores elétricos.} são ajustados com base nestes 
 valores \cite{heinen}. 
 \end{itemize}
+\end{comment}
+
+Para \citeonline{nise} os sistemas de controle podem ser classificados em duas configurações principais:
+\begin{itemize}
+ \item Controle por malha aberta (\textit{Open loop control}): É a configuração mais simples, onde o sinal 
+ de saída não exerce nenhuma ação de controle no sistema \cite{ogata}. Desta forma, um sistema de controle de malha aberta 
+ não é medido e nem comparado com a entrada, como pode ser visto na Figura \ref{fig:Malhaaberta}, não sendo capaz de compensar 
+ distúrbios que possam ser adicionados ao sistema \cite{nise}.
+ 
+ \item Controle por Malha fechada (\textit{Closed loop control}): Nesta configuração, a saída ou a resposta influencia a entrada do 
+ sistema \cite{controle}. Logo após a Resposta Desejada, na Figura \ref{fig:Malhafechada}, tem-se um ponto de soma, em que será feita 
+ a soma algébrica dos sinais associados. % \citeonline{nise} diz que
+ %este ponto de soma adiciona o sinal da entrada (também conhecido como referência) ao sinal 
+ %da saída do sistema, o qual chega através de um caminho de retorno (\textit{feedback path}). 
+ %
+ %O erro do sistema é obtido subtraindo-se o 
+ %sinal de saída pelo de entrada do sistema. Esta configuração permite que sejam compensados distúrbios no sistema, visto que se caso haja 
+ %divergência entre as duas respostas, o sistema aciona a planta pelo erro
+ Segundo \citeonline{ogata}, o sinal de erro atuante, que é a diferença entre o sinal de entrada e o sinal de realimentação (o qual é 
+ calculado logo após o ponto de soma, como pode ser visto na Figura \ref{fig:controlador}), 
+ realimenta o controlador que tende a minimizar o erro e deixar a saída com o valor desejado.
+\end{itemize}
+
 
 \begin{figure}[h]
     \centering
-    \captionsetup{width=0.83\textwidth,font=footnotesize,textfont=bf}
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.2\textheight,keepaspectratio]{figuras/MalhaAberta.png}
+    \captionsetup{width=0.8\textwidth,font=footnotesize,textfont=bf}
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figuras/MalhaAberta.png}
         \caption{\centering \label{fig:Malhaaberta}}
     \end{subfigure}
-    ~ 
-    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth,height=0.2\textheight,keepaspectratio]{figuras/MalhaFechada.png}
+    %~ 
+    
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figuras/MalhaFechada.png}
         \caption{\centering \label{fig:Malhafechada}}
     \end{subfigure}
     
-    \caption{\label{fig:Malhas} Técnicas de controle: (a) Malha aberta; (b) Malha fechada \cite{Intro_auto}} 
+    %\caption{\label{fig:Malhas} Técnicas de controle: (a) Malha aberta; (b) Malha fechada \cite{Intro_auto}} 
+    \caption{\label{fig:Malhas} Configurações de sistemas de controle: (a) Malha aberta; (b) Malha fechada.}
+    \caption*{\cite{controle}}
 \end{figure}
-
-
-%AGORA FALTA FALAR SOBRE A DECOMPOSIÇÃO VERTICAL (DUDEK, PAGINA 213)
-
-
-
-
-
-%EM SEGUIDA JÁ ENTRAR COM OS CONTROLADORES
 
 
 \subsection{Ações de controle}
 
-LIVRO: (OGATA 5a ED.)
-	(Aquivo X Fabio Lima Pg. 57)
-	(KUO Pg. 617 - NÃO SEI SE VOU UTILIZAR, MAS FICA AI IGUAL)
-	    -> pd: pg 492
-	    -> PI: pg 511
-	    ->PID: pg 528
-Although the systems illustrated in Fig. 9-2 are all for continuous-data control, the
-same configurations can be applied to discrete-data control, in which case the controllers
-are all digital, with the necessary interfacings and signal converters.
-
----------------------------------------------------------------------------------------------
-	
-	
-Conforme \citeonline{ogata}, um controlador automático compara o valor de saída da planta com o valor desejado (entrada do sistema), 
+Conforme \citeonline{ogata}, um controlador automático compara o valor de saída da planta com a entrada do sistema, 
 determinando o desvio e produzindo um sinal de controle que reduzirá este desvio a um valor pequeno. É chamada de ação de controle a 
-maneira que o controlador produz o sinal de controle.
+maneira pela qual o controlador produz o sinal de controle. Na Figura \ref{fig:controlador} é mostrado o diagrama de blocos 
+de um sistema de controle, composto por um controlador automático, um atuador, uma planta e um sensor, o qual é 
+o elemento de medição. Os atuadores são dispositivos capazes de alterar 
+o estado do sistema controlado com base em sinais de controle, como os motores elétricos. O sensor é um elemento que 
+converte a variável de saída em uma outra variável pertinente, que possa ser mensurável pelo sistema.
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.8\textwidth,font=footnotesize,textfont=bf}
+ \includegraphics[width=0.8\textwidth,height=0.5\textheight,keepaspectratio]{figuras/Controlador.png}
+ \caption{Diagrama de blocos de um controlador automático \label{fig:controlador}}
+ \vspace{-0.2cm}
+ \caption*{Fonte: Adaptado de \cite[p.18]{ogata}.}
+\end{figure}
 
 \citeonline{ogata} classifica os controladores industriais de acordo com as suas ações de controle:
 \begin{itemize}
- \item Controladores de duas posições ou \textit{on-off}; %(OBS.: TALVEZ DE PROBLEMA NESSE TEXTIT ANTERIOR)
- \item Controladores Proporcionais;
- \item Controladores Integrais;
- \item Controladores Proporcionais-Integrais (\sigla{PI}{Proporcional-Integral});
- \item Controladores Proporcionais-Derivativos (\sigla{PD}{Proporcional-Diferencial});
- \item Controladores Proporcionais-Integrais-Derivativos (\sigla{PID}{Proporcional-Integral-Diferencial})
+ \item Controlador de duas posições ou \textit{on-off}; %(OBS.: TALVEZ DE PROBLEMA NESSE TEXTIT ANTERIOR)
+ \item Controlador Proporcional (\sigla{P}{Proporcional});
+ \item Controlador Integral;
+ \item Controlador Proporcional-Integral (\sigla{PI}{Proporcional-Integral});
+ \item Controlador Proporcional-Derivativo (\sigla{PD}{Proporcional-Derivativo});
+ \item Controlador Proporcional-Integral-Derivativo (\sigla{PID}{Proporcional-Integral-Derivativo})
 \end{itemize}
 
-\subsubsection{Controladores \textit{on-off}}
+\subsubsection{Controlador \textit{on-off}}
 
 Em controladores de duas posições ou \textit{on-off}, o elemento atuante tem somente duas posições, as quais são fixas, geralmente sendo 
 \textit{on} (ligado) e \textit{off} (desligado) \cite{ogata}. Tem grande aplicabilidade em sistemas de controle industriais e 
@@ -390,12 +268,12 @@ domésticos, devido ao baixo custo e simplicidade de implementação.
 Considerando-se o sinal de saída do controlador $u(t)$ % $ é indicativo para equação
 e o sinal de erro atuante $e(t)$, o sinal $u(t)$ apresenta um valor máximo ou mínimo, caso o erro atuante seja negativo ou positivo, 
 respectivamente. Assim, tem-se que:
-\begin{comment}
-\begin{align*}
- u(t) = U_1, \quad para \ e(t) \ > \ 0, \\
- u(t) = U_2, \quad para \ e(t) \ < \ 0,
-\end{align*}
-\end{comment}
+
+%begin{align*}  %%Utiliza-se o align quando não deseja ter numeração nas equações
+% u(t) = U_1, \quad para \ e(t) \ > \ 0, \\
+% u(t) = U_2, \quad para \ e(t) \ < \ 0,
+%\end{align*}
+
 \begin{equation}
  u(t) = U_1, \quad para \ e(t) \ > \ 0, \\ 
 \end{equation}
@@ -403,109 +281,423 @@ respectivamente. Assim, tem-se que:
  u(t) = U_2, \quad para \ e(t) \ < \ 0,
 \end{equation}
 
-onde $U_1$ e $U_2$ são constantes.
+em que $U_1$ e $U_2$ são constantes.
 Em problemas de controle mais complexos, se faz necessária a utilização de outros controladores, devido ao \textit{on-off} apresentar 
-muitas oscilações e \textit{offset} (COLOCAR NOTA RODAPE PARA OFFSET).
+muitas oscilações e \textit{offset}\footnote{\textit{Offset} é um erro entre o valor desejado e o valor obtido.}.
+
+s defined as the voltage that must be applied between the two input
+terminals of the op amp to obtain zero volts at the output. Ideally the output of the op amp should
+be at zero volts when the inputs are grounded. 
 
 \subsubsection{Controlador Proporcional}
 
-%Segundo \citeonline{kuo}, a ação de controle proporcional tem essa denominação devido ao sinal de controle da saída do controlador 
-%ser relacionado com entrada deste por uma constante.
 
-Na ação de controle proporcional, a relação entre a saída do controlador $u(t)$ e o sinal de erro $e(t)$ é apenas um ganho \cite{lima}. 
-A equação \ref{eq:prop} mostra a equação do controlador proporcional.
+Na ação de controle proporcional, a relação entre a saída do controlador $u(t)$ e o sinal de erro $e(t)$ 
+é apenas um ganho: 
+%A equação \ref{eq:prop} mostra a equação do controlador proporcional.
 
 \begin{equation}\label{eq:prop}
  u(t) = K_pe(t),	
 \end{equation}
-em que $K_p$ é o ganho do controlador proporcional.
-
+em que $K_p$ é o ganho do controlador proporcional. 
+Para \citeonline{controle} quanto maior o ganho, menor será o erro $e(t)$, no entanto o sistema pode perder estabilidade 
+devido ao aumento do 
+tempo de acomodação\footnote{Tempo de acomodação (\textit{settling time}) é o tempo para que a curva de resposta alcance 
+valores em uma faixa (2\% a 5\%) em relação ao valor final, permanecendo nesta faixa interminavelmente.}.
 
 \subsubsection{Controlador Integral}
 
-Segundo \citeonline{lima}, na ação de controle integral, o valor da saída $u(t)$ é proporcional à entrada de erro atuante $e(t)$. 
-Conforme a equação \ref{eq:int}, 
+Segundo \citeonline{ogata}, na ação de controle integral, o valor da saída $u(t)$ é alterado a uma taxa de variação proporcional 
+ao sinal de erro atuante $e(t)$:
 
 \begin{equation}
  %u(t) = K_i \int_{lower}^{upper}
  u(t) = K_i \int_{0}^{t}e(t)dt,
 \end{equation}
-em que $K_i$ é a constante de ganho integral.
+
+em que $K_i$ é a constante de ganho integral. 
+
+\subsubsection{Controlador Proporcional-Integral (PI)}
+
+Para \citeonline{nise}, um controlador Proporcional-Integral pode ser chamado de compensador integral ideal, visto que 
+as ações de controle Proporcional e Integral alimentam o erro e a integral do erro para a planta, respectivamente, desta forma 
+tendendo a eliminar o erro em regime permanente\footnote{A resposta temporal de um sistema consiste em duas 
+partes: da resposta transitória e da resposta estacionária ou em regime permanente}. 
+A sua ação de controle é definida por: 
+
+\begin{equation}
+ u(t) = K_pe(t) + \frac{K_p}{T_i}\int_{0}^{t}e(t)dt,
+\end{equation}
+em que $T_i$ é chamado de tempo integrativo. 
 
 
-%\subsubsection{Controlador Diferencial}
-%KUO/LIMA
+\subsubsection{Controlador Proporcional-Derivativo (PD)}
 
-\subsubsection{Controlador Proporcional-Integral}
+%\citeonline{nise} denomina o controlador Proporcional-Derivativo um compensador derivativo ideal, o qual compreende as 
+%ações proporcional, consistindo na alimentação do erro, e derivativa, a qual é proporcional à derivada do erro. 
 
-NISE PG 459
-
-A ação de controle Proporcional-Integral \sigla{PI}{Proporcional-Integral}, ou 
-combina as ações proporcional e integral a um mesmo controlador, esta produzindo um sinal que é proporcional 
-
-
-The integral part of the PID controller produces a signal that is proportional to the time
-integral of the input of the controller. Fig. 9-15 illustrates the block diagram of a prototype
-second-order system with a series PI controller. The transfer function of the PI controller is
-
-immediate effects of the PI controller are as follows:
-1. Adding a zero at s = —Kj/Kp to the forward-path transfer function.
-2. Adding a pole at s = 0 to the forward-path transfer function. This means that the
-system type is increased by 1 to a type 2 system. Thus, the steady-state error of the
-original system is improved by one order; that is, if the steady-state error to a given
-input is constant, the PI control reduces it to zero (provided that the compensated
-system remains stable).
+Segundo \citeonline{controle}, as ações proporcional e derivativa deste controlador 
+contribuem com o regime transitório, %\footnote{A resposta transitória de um sistema é aquela que vai do estado inicial ao final}, 
+tendendo a aumentar a estabilidade do sistema e reduzir o tempo de acomodação. 
+A ação de controle deste controlador é definida por:
+\begin{equation}
+ u(t) = K_pe(t) + K_pT_d\frac{de(t)}{dt}
+\end{equation}
+em que $T_d$ é chamado de tempo derivativo \cite{ogata}.
 
 
-In all the examples of control systems we have discussed thus far, the controller
-has been typically a simple amplifier with a constant gain K. This type of control action
-is formally known as proportional control, because the control signal at the output
-of the controller is simply related to the input of the controller by a proportional
-constant
+\subsubsection{Controlador Proporcional-Integral-Derivativo (PID)}
+
+O controlador Proporcional-Integral-Derivativo reúne a ação das três ações de controle, atuando na melhoria do 
+regime permanente e da resposta transitória. 
+A equação do controlador é dada por:
+
+\begin{equation}
+ u(t) = K_pe(t) + \frac{K_p}{T_i}\int_{0}^{t}e(t)dt + K_pT_d\frac{de(t)}{dt}
+\end{equation}
+em que  $K_p$ é o ganho proporcional, $T_i$ é o tempo integrativo e $T_d$ é o tempo derivativo \cite{ogata}.
 
 
-\subsubsection{Controlador Proporcional-Derivativo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Sistemas a Eventos Discretos} \label{cap:sed}
+
+%O sistema de controle híbrido a ser implementado é composto pelo sistema de controle discreto, 
+%Os sistemas podem ser classificados em relação à natureza do espaço de estados selecionado, podendo ser 
+
+Para \citeonline{cassandras}, os sistemas podem ser classificados em duas categorias quanto à natureza do espaço de estados 
+selecionado: 
+\begin{itemize}
+ \item Estado contínuo: O espaço de estados $X$ é uma continuidade, compreendendo todos os vetores $n$-dimensionais de números reais ou 
+ complexos, eventualmente;
+ 
+ \item Estado discreto: O espaço de estados é um conjunto discreto. As variáveis de estado deslocam-se em pontos discretos no tempo, de 
+ um valor estado discreto para outro.
+\end{itemize}
+
+\citeonline{teixeira} diz que a modelagem computacional de um sistema pode ser estruturada em dois fundamentos:
+\begin{itemize}
+ \item Estado, que determina o \textit{status} do sistema em determinada situação;
+ %\item Noção de estado, que determina o \textit{status} do sistema em determinada situação;
+ %Teixeira, Pg 37
+ \item Transição de estados, o qual caracteriza o crescimento do sistema.
+ %\item Técnica de transição de estados, o qual caracteriza o crescimento do sistema.
+\end{itemize}
+
+Alguns sistemas são mapeados continuamente e suas estruturas de transição são regidas pelo tempo, 
+enquanto que em outros sistemas seus estados podem não ser contínuos e as transições não dependem do tempo, mas de 
+eventos instantâneos e assíncronos, como o processamento de um dado em um equipamento computacional, em que o conjunto de estados é 
+discreto e as transições não são feitas por tempo, mas por eventos como \textit{clock} e interrupções 
+\cite{teixeira}. 
+%No exemplo apresentado por \citeonline{teixeira}, do processamento de dado em algum 
+%equipamento computacional, em que o conjunto 
+
+%Segundo \citeonline{teixeira}, 
+%alguns sistemas são mapeados continuamente e suas estruturas de transição são regidas pelo tempo, sendo geralmente modelados através de 
+%equações diferenciais. Em outros sistemas, em que o espaço de estados pode não ser contínuo e as transições de estados não dependa de 
+%tempo, mas de eventos instantâneos e assíncronos, a modelagem por equações diferenciais pode não ser a mais conveniente. 
+
+\citeonline{torrico} define um Sistema a Eventos Discretos (\sigla{SED}{Sistema a Eventos Discretos}) 
+como um sistema dinâmico a estado discreto que evolui à proporção assíncrona de eventos. 
+Deste modo, os SEDs tem como características o espaço de estados ser discreto e o mecanismo de transição de estados ser 
+dirigido por eventos.
+
+Alguns exemplos dos Sistemas a Eventos Discretos, conforme \citeonline{cassandras}, são os Sistemas de Filas, os Sistemas 
+de Computador, Sistemas de Comunicação e Sistemas de Manufatura. 
+
+%\subsection{Modelagem do SED}
+\subsection{Linguagens e Autômatos}
 
 
-NISE PG 469
+Uma das maneiras formais de se estudar o comportamento lógico de um SED é baseado nas teorias de linguagens e autômatos, que se dá pelo 
+fato de qualquer Sistema a Eventos Discretos ter um conjunto implícito $E$ associado a ele. \citeonline{cassandras} chama esse 
+conjunto $E$ e a sequência de eventos como 
+\textquotedblleft alfabeto\textquotedblright e \textquotedblleft palavras\textquotedblright de linguagem, respectivamente. Para 
+demonstrar estes conceitos, o autor fala do exemplo de uma máquina que é ligada uma ou duas vezes ao dia, como um carro ou um computador 
+pessoal, e deseja-se projetar um sistema que realize uma simples tarefa: Quando a máquina estiver ligada, esta primeiramente deve 
+indicar que está ligada e depois reportar este fato (como \textquotedblleft checar óleo\textquotedblright, caso seja um 
+carro). Neste caso, cada um destes sinais define um evento, enquanto que todos os sinais possíveis que a máquina possa emitir são 
+definidos como uma sequência de eventos, ou alfabeto.
+
+%\citeonline{teixeira} define um Autônomo Finito (\sigla{AF}{Autônomo Finito}) como uma estrutura formal de 
+\citeonline{cassandras} define um autômato como um dispositivo apropriado para representar a linguagem de acordo com regras bem 
+definidas. Caso o conjunto de estados do autômato seja finito e caso este seja determinístico, ou seja, que este não possua 
+duas ou mais transições com o mesmo nome saindo de um estado, o autômato é chamado de Autômato Finito Determinístico 
+(\sigla{AFD}{Autômato Finito Determinístico}). \citeonline{torrico} diz que um autômato pode ser representado por uma tabela ou 
+por um diagrama de transição de estados, sendo que neste os estados e as transições 
+da máquina podem ser representados por vértices do diagrama e por arcos que conectam estes vértices, respectivamente.
+Duas variantes dos autômatos são os Autômatos de Mealy e de Moore, as quais serão clarificadas a seguir.
+%Duas variantes dos autômatos são:
+%Os autômatos podem ser divididos em duas variações, as quais são:
 
 
-We see from Section 9-2 that the PD controller can improve the damping and rise time of a
-control system at the expense of higher bandwidth and resonant frequency, and the steady-
-state error is not affected unless it varies with time, which is typically not the case for step-
-function inputs. Thus, the PD controller may not fulfill the compensation objectives in
-many situations.
+\subsubsection{Autômato de Moore}
 
-\subsubsection{Controlador Proporcional-Integral-Derivativo}
+O modelo de Moore são autômatos com saídas de estados, em que há uma função de saída a qual especifica uma saída para cada estado 
+\cite{cassandras}. %As transições não possuem funções de saída, as quais neste caso estão associadas aos eventos. 
+%A saída depende somente do estado atual. 
+As ações são produzidas nos estados e a saída depende somente do estado atual. 
+Um exemplo do Autômato de Moore pode ser visto na Figura \ref{fig:Moore}, em que a saída associada a cada estado é 
+mostrada em negrito (cada saída é acionada pelo autômato quando este entra no estado).
 
-NISE PG 482
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.4\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[scale=0.6]{figuras/nasa.png}
+ \includegraphics[scale=0.4]{figuras/moore.png}
+ \caption{Autômato de Moore \label{fig:Moore}}
+ \vspace{-0.3cm}
+ \caption*{Fonte: \cite[p.73]{cassandras}}
+\end{figure}
 
-One of the commonly used controllers in the compensation schemes just described is a
-PID controller, which applies a signal to the process that is proportional to the actuating
-signal in addition to adding integral and derivative of the actuating signal. Because these
-signal components are easily realized and visualized in the time domain, PID controllers
-are commonly designed using time-domain methods. In addition to the PID-type controllers, lead, lag, lead-lag, and notch controllers are also frequently used. The names of these
-controllers come from properties of their respective frequency-domain characteristics. As a
-result, these controllers are often designed using frequency-domain concepts. Despite these
-design tendencies, however, all control system designs will benefit by viewing the resulting
-design from both time- and frequency-domain viewpoints. Thus, both methods will be used
-extensively in this chapter
+\subsubsection{Autômato de Mealy} 
+\begin{comment}
+O modelo de Mealy são autômatos de entrada e saída, em que as transições são denominadas por \textquotedblleft eventos\textquotedblright 
+na forma de eventos de entrada e saída \cite{cassandras}.
 
+produz um resultado (saída de dados) baseando-se no estado em que se encontra e na entrada de dados. Isto significa que o 
+diagrama de estados irá incluir tanto o sinal de entrada como o de saída para cada vértice de transição.
+
+Já   a   Máquina   de   Mealy   é   um   
+Autômato  Finito  modificado  de  forma  a  
+gerar  uma  palavra  de  saída  para  cada  
+transição 
+entre os estados.
+
+Em uma máquina de Mealy a saída depende da entrada e do estado, representando a evolução de
+estados, numa sequência. Uma transição tem uma ação de saída e qualquer ação de saída pode ser
+usada em mais de uma transição. Ações de saída não são associadas a estados, que são passivos.
+Neste caso, as ações de saída podem ser associadas a mais de um estado.
+\end{comment}
+Diferentemente de Moore, o autômato de Mealy depende da entrada e da saída do estado, representando 
+sequencialmente o crescimento dos estados. Conforme mostra a Figura \ref{fig:Mealy}, as funções de saída estão nas transições. 
+Este modelo funciona da seguinte maneira para uma transição $e_i/e_o$ do estado $x$ para o estado $y$: Quando o sistema estiver no 
+estado $x$, o autômato receberá o evento de entrada $e_i$ e expedirá o evento de saída $e_o$ durante a transição para $y$ 
+\cite{cassandras}.
+
+
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.4\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[scale=0.6]{figuras/nasa.png}
+ \includegraphics[scale=0.4]{figuras/mealy.png}
+ \caption{Autômato de Mealy \label{fig:Mealy}}
+ \vspace{-0.3cm}
+ \caption*{Fonte: \cite[p.73]{cassandras}}
+\end{figure}
 
 \begin{comment}
 
-// ESSE AQUI EH PARA CONTROLE DIGITAL
 
-Para Ogata(discreto ), os controladores digitais são utilizados para obter desempenho ótimo, como por exemplo a máxima produtividade ou 
-menor uso de energia.
-
+\begin{itemize}
+ \item Autômato de Moore (autômatos com saídas): Neste modelo, 
+há uma função de saída que garante uma saída para cada estado \cite{cassandras}. As transições não apresentam uma ação de saída.
+Um exemplo pode ser visto na Figura \ref{fig:Moore}, em que a saída associada a cada 
+estado é mostrada em negrito.
+ \item Autômato de Mealy (autômatos de entrada e saída): As transições são nomeadas por eventos da forma de entrada e saída... 
+A saída depende do valor da entrada e do estado, reproduzindo sequencialmente a evolução dos estados. As ações de saída são 
+associadas %%%%%
+Em uma máquina de Mealy a saída depende da entrada e do estado, representando a evolução de
+estados, numa sequência. Uma transição tem uma ação de saída e qualquer ação de saída pode ser
+usada em mais de uma transição. Ações de saída não são associadas a estados, que são passivos.
+Neste caso, as ações de saída podem ser associadas a mais de um estado.
+A Figura abaixo apresenta uma máquina de Mealy. Observe que os valores de entrada (input)
+resultam em valores na saída (output). Inicialmente, a máquina inicia no estado 0 (estado inicial). Ao entrar
+um caractere ‘a’, ocorre uma transição do estado 0 para o estado 1, sendo que na transição a ação, ou
+seja, a saída é definida como sendo 0. Na sequencia, um novo caractere ‘a’ entra e provoca uma transição
+do estado 1 para o estado 3, gerando uma saída igual a 1, e assim por diante.
+ %%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
 \end{comment}
+ 
+%\subsubsection{Autômato de Moore} 
+%\subsubsection{Autômato de Mealy} 
 
-%% // CONTROLE DISCCRETO
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Controle híbrido} \label{cap:hibrido}
+
+Para o dicionário \citeonline{webster}, a palavra \textit{hybrid} (híbrido para o português) significa 
+\textquotedblleft \textit{something that is formed by combining two or more things}\textquotedblright, ou seja, 
+é combinação de duas ou mais coisas. Quando se aplica esse conceito a sistemas de controle, tem-se um sistema que é formado 
+por dinâmicas discretas e contínuas, conforme diz \citeonline{cassandras}. 
+\citeonline{hybridcont} diz que quase todos os 
+sistemas de controle atuais, ao mesmo tempo em que são executados por linhas de 
+código em um computador, também respondem comandos de variáveis contínuas. Desta forma, problemas modernos de controle 
+provavelmente serão modelados sobre um sistema híbrido.\par
+
+\citeonline{dudek_mobile} diz que o enquanto o controle em baixo nível precisa de resposta em tempo-real a eventos externos, 
+tendo natureza contínua, o controle de alto-nível geralmente é implementado como um conjunto de operações discretas ou tarefas que 
+precisam ser cumpridas. Neste contexto, o controle em alto nível geralmente é chamado de controle de tarefa ou controle de execução, 
+enquanto o controle em baixo nível é conhecido como controle reativo ou controle de execução \cite{dudek_mobile}.
+
+Na Figura \ref{fig:cas} é mostrado o diagrama de blocos de uma arquitetura de controle híbrida. Em \textit{Interface} acontece a 
+\textgravedbl abstração\textquotedblright do sistema de controle contínuo, de baixo nível, para um SED, de alto nível
+
+\begin{figure}[h!]
+ \centering
+ \captionsetup{width=0.4\textwidth,font=footnotesize,textfont=bf}
+ %\includegraphics[scale=0.6]{figuras/nasa.png}
+ \includegraphics[width=0.4\textwidth,height=0.6\textheight,keepaspectratio]{figuras/hybrid.png}
+ \caption{Arquitetura de um sistema de controle híbrido \label{fig:cas}}
+ \vspace{-0.3cm}
+ \caption*{Fonte: \cite[p.43]{cassandras}}
+\end{figure}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\vspace{1cm}
-%\section{} \label{cap:}
+\vspace{2cm} %% VERIFICAR MELHOR ISTO AQUI DEPOIS
+%\section{Sensores para robôs móveis} \label{cap:sensores}
+%\section{Sensores e atuadores} \label{cap:sensores}
+\section{Estrutura de um robô móvel} \label{cap:sensores}
+
+%Conforme \citeonline{dudek_mobile}, para que um robô possa 
+%\citeonline{dudek_mobile} diz que para um robô deve ser capaz de mover e sentir
+
+
+%O controle de malha fechada, o qual foi abordado anteriormente, necessariamente precisa do sinal de sensores para realizar o 
+%\textit{feedback} (realimentação) do sistema. 
+%Em vista disso, esta seção se preocupa com os sensores e atuadores necessários para o projeto de um robô móvel.\par
+
+%\citeonline{dudek_mobile} diz que os robôs podem ser divididos em 
+%\textit{hardware} e \textit{software}, os quais representam, nesta ordem, os componentes físicos e computacionais da máquina. 
+%O autor classifica 
+%Em 
+%relação aos componentes de \textit{hardware} do dispositivo, o autor classifica da seguinte forma:
+\citeonline{dudek_mobile} classifica os componentes físicos (\textit{hardware}) dos robôs móveis em quatro partes:
+
+\begin{itemize}
+ \item Locomoção: É como o robô se move pelo ambiente; 
+ 
+ \item Percepção: É como o robô percebe propriedades do ambiente e dele mesmo;
+ 
+ \item Raciocínio: É como o robô transforma a suas medidas em ações;
+ 
+ \item Comunicação: É como que o robô se comunica com um agente externo.
+ 
+\end{itemize}
+
+Com suporte nessa divisão e no restante da literatura, tem-se os seguintes elementos necessários para o projeto de um robô móvel:
+%% elementos estava anteriormente como "dispositivos"
+
+
+%%% BATERIAS 
+%\item[] \textbf{Bateria}: É um componente essencial do sistema, visto que o robô móvel precisa se locomover pelo espaço e não pode 
+\noindent{\bf Bateria:} É um componente essencial do sistema, visto que o robô móvel precisa se locomover pelo espaço e não pode 
+ser dependente de uma fonte externa de energia elétrica. \citeonline{dudek_mobile} diz que baterias com bom desempenho e baixo custo são 
+as baseadas em células de gel (\textit{gell cell}), 
+mas por serem pesadas não são utilizadas com veículos 
+leves. Para estes, são utilizadas tecnologias baseadas em Íons de Lítio (\textit{lithium-ion}), 
+Níquel-Cádmio (\sigla{NiCad}{Níquel-Cádmio}) e as de Hidreto Metálico de Níquel (\sigla{NiMH}{Hidreto Metálico de Níquel}), as quais são 
+originalmente projetadas para serem utilizadas em dispositivos sem-fio, como \textit{laptops} e \textit{smartphones}.
+
+%%%% MOTORES pg 33
+\noindent{\bf Motores:} 
+São os responsáveis por fazer com que o veículo \textquotedblleft ande\textquotedblright. 
+%, visto que estes convertem energia 
+%elétrica em mecânica. Dentre os motores, 
+Muitos robôs utilizam a bateria para acionar os motores de passo ou servomotores, os quais convertem energia 
+elétrica em mecânica (\citeonline{dudek_mobile}). No entanto existem outros dispositivos, capazes de gerar energia mecânica em movimento, 
+como os piezoelétricos e os pneumáticos.\par
+\begin{itemize}
+ \item O motor de passo (\textit{stepper motor}) é um motor elétrico em que o eixo move uma quantidade contralada a cada pulso, assim, 
+controlando estes pulsos obtém-se a saída desejada \cite{dudek_mobile}.\par
+ \item O servomotor (\textit{servo motor}) combina um motor elétrico de corrente contínua 
+(\sigla{CC}{Corrente Contínua}) ou corrente alternada (\sigla{CA}{Corrente Alternada}) com um sensor de orientação de eixo 
+\cite{dudek_mobile}. 
+O autor diz ainda que controle dos servomotores é mais complexo que os motores de passo, sendo necessário utilizar um controlador de 
+motor mais complexo, os quais variam em complexidade e que geralmente trabalham com parâmetros como posição, velocidade ou 
+movimento de saída.
+\end{itemize}
+
+
+
+
+%%% SERVO MOTOR CONTROL
+\noindent{\bf Controle de um servo motor:} Podem ser utilizadas as abordagens de malha aberta e malha fechada. No controle 
+de malha aberta, o valor desejado do eixo é utilizado para projetar um controlador oportuno, no entanto fica 
+suscetível a distúrbios, pois não apresenta realimentação. No controle por malha fechada, a realimentação do sistema é utilizada para 
+ajustar o movimento do disposito, sendo que um controlador amplamente utilizado é o PID \cite{dudek_mobile}.
+
+%%% COMUNICAÇÃO
+\noindent{\bf Dispositivo de comunicação:} Devido à necessidade em interagir com um operador humano, como no caso de reportar que 
+uma tarefa foi concluída, \citeonline{dudek_mobile} relata que os robôs utilizam de um meio físico para a comunicação, como por cabo, ou 
+por comunicação sem-fio (\textit{wireless}), como o \textit{bluetooth} (padrão sem-fio de curto alcance), 802.11 (padrão da IEEE 
+\sigla{IEEE}{\textit{Institute of Electrical and Electronics Engineers}} para redes locais sem-fio) ou infravermelho.
+
+%%% PROCESSAMENTO
+\noindent{\bf Processamento:} O processamento é um componente principal dos robôs móveis, tanto que \citeonline{dudek_mobile} 
+discute em que lugar o processamento do veículo deve estar. O autor chega na conclusão que a melhor forma do processamento ser feito é 
+a de separar as tarefas em \textit{on-board} (dentro do veículo) e \textit{off-board} (fora do veículo), responsáveis, 
+respectivamente, pelas tarefas de tempo crítico e as que não são de tempo crítico. Este modelo tem como vantagens a redução no consumo 
+de energia do dispositivo.
+
+\noindent{\bf Sensores:} \citeonline{secchi2012} diz que os robôs devem ser capazes de realizar três tarefas essenciais: estimar a sua posição e orientação 
+(pose), manter o mapa do ambiente atualizado e identificar os possíveis obstáculos deste. %do ambiente.
+Desta forma, para que o robô conheça o seu ambiente de trabalho e possa se adaptar a este, é necessário coletar informações e 
+adequá-las ao sistema de controle. Assim, o controle de malha fechada, o qual foi abordado anteriormente, 
+necessariamente precisa do sinal de sensores para realizar o \textit{feedback} (realimentação) do sistema.\par
+\citeonline{dudek_mobile} classifica os sensores em duas variantes: visuais e não-visuais.
+A seguir serão mostrados os principais sensores não-visuais 
+dos robôs móveis. Os sensores visuais, devido à não terem aplicação neste trabalho, não serão abordados. Para mais 
+informações sobre estes, consultar \cite{dudek_mobile}, \cite{Intro_auto} e \cite{secchi2012}.
+
+
+\subsubsection{Sensores não-visuais}
+
+
+\noindent{\bf Sensores inerciais} São sensores externos que fazem referência com o mundo externo, ou seja, medem variáveis de 
+posição do robô.
+  \begin{itemize}
+   \item Encoder óptico: Estes dispositivos medem a velocidade e a posição angular em um \textit{driver} de motor ou no eixo de uma 
+   roda. Este sensor, segundo \citeonline{Intro_auto}, é um interruptor de luz, que produz uma quantidade de pulsos para cada revolução 
+   do eixo. Os pulsos gerados pela diferença de fase entre os canais A e B é utilizada determinar a direção de rotação, como pode 
+   ser visto na Figura \ref{fig:optical}.
+   
+   \item Giroscópios: São sensores que preservam a orientação em relação a um referencial fixo, provendo a medida absoluta. Podem ser 
+   mecânicos ou ópticos. Na Figura \ref{fig:giro} pode ser visto um giroscópio de dois eixos.
+   
+   \item Acelerômetros: \citeonline{Intro_auto} diz que estes sensores são capazes de medir todas as forças externas que estejam 
+   agindo sobre ele, inclusive a gravidade. 
+   São baseados em sistemas pendulares, em que a primeira integração das acelerações proporciona a velocidade e a 
+   segunda, a posição \cite{secchi2012}. A precisão deste dispositivo é de grande importância, visto que pequenos erros podem 
+   influenciar na posição estimada, devido à dupla integração das acelerações. O diagrama deste dispositivo pode ser visto na Figura 
+   \ref{fig:acel}. (MELHORAR PARTE DO ACELEROMETRO)
+  \end{itemize}
+  
+\noindent{\bf Sensores de infravermelho:} São sensores de proximidade rápidos e baratos, que basicamente consistem na emissão de 
+ um pulso infravermelho e detecção do sinal refletido, com a distância aproximada calculada através da 
+ força do sinal \cite{dudek_mobile}.
+ 
+\begin{figure}[h]
+    \centering
+    \captionsetup{width=0.8\textwidth,font=footnotesize,textfont=bf}
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{figuras/optical.png}
+        \caption{\centering \label{fig:optical}}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{figuras/giro.png}
+        \caption{\centering \label{fig:giro}}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.8\textwidth}
+	\centering
+        \includegraphics[width=0.4\textwidth,height=0.4\textheight,keepaspectratio]{figuras/acel.png}
+        \caption{\centering \label{fig:acel}}
+    \end{subfigure}
+    \caption{\label{fig:Malhas} Sensores inerciais: (a) Sensor óptico; (b) Giroscópio; (c) Acelerômetro.}
+    \caption*{\cite{controle}}
+\end{figure}
+
 
 
 
@@ -545,18 +737,17 @@ inclinações de até 5º.\par
  \captionsetup{width=0.37\textwidth,font=footnotesize,textfont=bf}
  \includegraphics[scale=0.6]{figuras/Percurso1.png}
  \caption{Intersecções no percurso \label{fig:percurso1}}
- \vspace{-0.7cm}
+ \vspace{-0.3cm}
  \caption*{Fonte: Disponível em \cite[p.4]{RegrasRobocore}.}
 \end{figure}
-%\captionsetup{width=0.50\textwidth, font=footnotesize, textfont=bf}
 
 
-
-
-
-
-A área que se estende entre o ponto de partida e o ponto de chegada, considerando 200mm da linha e 200mm a esquerda da linha
+%A área que se estende entre o ponto de partida e o ponto de chegada, considerando 200mm da linha e 200mm a esquerda da linha
+% é denominada ``área de partida-chegada'', conforme pode ser visto na Figura \ref{fig:percurso2}.\par
+ A área que se estende entre o ponto de partida e o ponto de chegada, considerando 200mm a direita da linha e 
+ 200mm a esquerda da linha
  é denominada ``área de partida-chegada'', conforme pode ser visto na Figura \ref{fig:percurso2}.\par
+ 
 
 \vspace{0.6cm}
 \begin{figure}[h!]
@@ -588,16 +779,160 @@ alteração na curvatura do percurso, deve haver uma marcação no lado esquerdo
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Trabalhos relacionados} \label{cap:trabRel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 	ESTA PARTE VAI NO FINAL COMO TRABALHOS RELACIONADOS
+Na revisão bibliográfica a seguir são mostradas técnicas desenvolvidas para o sistema de navegação de robôs móveis autônomos.
+
+O objetivo do trabalho de \citeonline{ufrj} foi o desenvolvimento de um sistema robótico autônomo em uma 
+arquitetura híbrida de três camadas, composta pela implementação das camadas Planejador e Executivo. 
+O estudo de caso foi feito pela sistema robótico DORIS, um robô 
+guiado por trilhos, desenvolvido pela COPPE/\sigla{UFRJ}{Universidade Federal do Rio de Janeiro}, 
+em parceria com a Petrobras e a Statoil, para a inspeção de plataformas de petróleo. O veículo 
+tem como funcionalidades a detecção de anomalias por vídeo, áudio, vibração, temperatura e por câmera de infravermelho e o 
+mapeamento 3D do ambiente.
+
+
+\citeonline{heinen} também propôs uma arquitetura de controle híbrida, integrando as técnicas de controle deliberativo e 
+reativo em uma abordagem de três camadas: Deliberativa, a qual determina um trajeto até o objetivo e evita colisões com obstáculos 
+já conhecidos; Vital, que utiliza de comportamentos reativos para guiar o robô ao seu objetivo e evitar colisões com obstáculos 
+(sejam estes estáticos ou dinâmicos); e Funcional, que faz a integração das camadas vital e deliberativa, fornecendo parâmetros 
+reativos para a camada vital. O sistema de controle proposto foi implementado no simulador SimRob3D, o qual permite a utilização de 
+modelos de ambiente 
+tridimensionais, assim como sensoriais e cinemáticos, permitindo que estes possam ser alterados em tempo real.
+
+
+A pesquisa de \citeonline{pessin} se concentra na busca por soluções inteligentes aplicadas em robôs móveis autônomos visando a operação 
+destes em ambientes dinâmicos. Através da aplicação de aprendizado de máquina, buscou-se uma nova visão sobre a operação destes 
+dispositivos em três desafios da área: navegação, localização e operações com grupos de robôs. 
+No estudo das operações com grupos de robôs, foi utilizada uma aplicação de combate a 
+incêndios, com a avaliação por quatro técnicas: Algoritmos Genéticos, 
+Otimização por Enxame de Partículas, \textit{Hill Climbing} e \textit{Simulated Annealing}. Na investigação sobre a navegação, é 
+apresentado o desenvolvimento de um veículo autônomo de grande porte, funcional para ambientes externos. Relacionado com a localização, 
+é mostrado um método que provê informações de localização para os robôs com base em dados obtidos por redes sem fio.\par
+
+A seguir serão abordados os trabalhos relacionados aos robôs seguidores de linha.
+
+%%%%%
+\subsection{Robôs seguidores de linha}
+
+Nesta Seção serão abordados os trabalhos de \cite{allan}, \cite{alemao} e \cite{Hirai}:
+
+\begin{itemize}
+
+\item O trabalho de \citeonline{allan} foi pioneiro na Universidade Tecnológica Federal do Paraná - câmpus Pato Branco, sendo o 
+primeiro a ser feito sobre robôs seguidores de linha na instituição. 
+Em seu trabalho foi implementado um sistema de controle híbrido, o qual o autor define como sendo um sistema no qual ocorre interação 
+entre variáveis discretas e contínuas. Para o controle contínuo, que era o responsável pela posição do veículo, 
+foi utilizado um controlador P (ação de controle proporcional), 
+devido à planta já apresentar um integrador. O controle discreto, encarregado da detecção de marcas na pista, 
+foi implementado por um autômato de Moore, composto por dez estados e quinze transições. Este controlador definia a velocidade do 
+robô em 100\%, para retas, em 75\%, para curvas, e 0\%, quando parado (em seu estado inicial).
+Com os controladores contínuos e discretos 
+projetados, estes foram reunidos e implementados no microcontrolador. A detecção da pista foi feita por sensores de 
+refletância.\par
+Com o protótipo implementado, foram feitos testes em uma pista desenvolvida por \citeonline{allan}, a qual foi baseada em pistas da 
+competição Robocore. O percurso consistia de quatro curvas e dois cruzamentos. Primeiramente foram feitos cinco testes, sendo que 
+três destes o robô não reconheceu as marcas laterais devido à inclinação da pista não estar conforme a recomendada. Com a 
+inclinação da pista corrigida, foram feitos oito testes, sendo que destes em somente um as marcas não foram detectadas. Também foi 
+alterada a velocidade em curvas para 82\%, sendo que nesta situação o veículo não conseguiu realizar a curva. 
+O robô desenvolvido por \citeonline{allan} pode ser visto na Figura \ref{fig:allan}.
+
+\item O trabalho de \citeonline{alemao} teve como base o de \citeonline{allan}, logo nota-se a presença de várias 
+particularidades entre ambos, como o controle híbrido. Fora proposto para este projeto um \textit{hardware} mais 
+eficiente, com um novo sistema de sensoriamento, e a implementação da lógica \textit{fuzzy}, também conhecida como 
+lógica difusa, a qual foi integrada ao controlador discreto.\par %Falar da comparação fuzzy/ PID
+O sistema de controle discreto foi modelado por Moore, utilizando autômatos determinísticos 
+de estados finitos. Este controlador é muito semelhante ao projetado por \citeonline{allan}, com alteração na velocidade em 
+curvas, sendo utilizado 80\%. O controlador \textit{fuzzy} foi projetado com base no valor 
+dos sensores de refletância, comandando a velocidade dos motores de acordo com a base de regras desenvolvida. O controlador 
+contínuo escolhido foi o PID, que assim como o \textit{fuzzy} também utiliza as informações dos sensores de refletância para gerar a 
+ação de controle.\par
+%
+A estrutura do robô de \citeonline{alemao} foi feita utilizando uma placa de fenolite, a partir da qual os componentes são 
+soldados. Para a locomoção foram utilizados dois motores CC de 6V e 1000 RPM, da Pololu, duas rodas de pneus de silicone e um 
+\textit{driver} para motor CC TB6612FNG, da Toshiba. A alimentação foi feita por uma bateria Li-Po de 7,4V de tensão e 32,5A 
+de corrente, com potência de 1300mAh. 
+Foram utilizados os módulos reguladores de tensão XL6009 e MP2259, 
+sendo \textit{step-up} (aumenta a tensão) e \textit{step-down} (diminui a tensão), respectivamente. O microcontrolador utilizado 
+por \citeonline{alemao} foi o MSP430G2553, o qual possui um ADC de oito canais, 
+trabalha com \textit{clock} de 16MHz, memória \textit{flash} de 16KB e 0,5KB de 
+\sigla{SRAM}{\textit{Static Random Access Memory}}. 
+Os sensores de refletância utilizados foram os QTR-1A e QTR-8A (o qual é composto por oito unidades de QTR-1A), este empregado no 
+protótipo.\par
+%
+\citeonline{alemao} desenvolveu três protótipos, sendo que na Figura \ref{fig:marcio} pode ser visto o terceiro protótipo, o qual 
+não funcionou devido à problemas com o circuito. Testes foram feitos com o segundo protótipo e 
+segundo o autor, todas as marcações de curvas, cruzamentos e sinais (início e fim) foram reconhecidos. 
+Também foi utilizado o robô 3pi, da Pololu, o qual pode ser visto na Figura \ref{fig:pololu}, para fazer a 
+comparação entre os controladores PID e \textit{fuzzy}. Este veículo foi modificado, com a substituição das rodas e dos motores 
+originais pelos mencionados anteriormente. A bateria também foi alterada, 
+sendo utilizadas duas baterias em série, fornecendo 7,4V de tensão de 12A de corrente. Devido à limitações no \textit{hardware}, 
+não foi utilizado o controle de eventos discretos na comparação dos controladores. O controlador PID obteve um melhor desempenho, 
+conseguindo realizar 680 leituras e atuações nos motores por segundo, enquanto que o \textit{fuzzy} conseguiu somente 385. 
+O sistema \textit{fuzzy} não foi capaz de seguir a linha, devido à instabilidade, 
+logo foram adicionadas quatros regras, as quais deixaram o robõ mais 
+estável mas com frequência de operação muito baixa. 
+
+\item \citeonline{Hirai} é um dos principais competidores na categoria dos robôs seguidores de linha, tendo sido campeão em 
+várias competições na Ásia, especialmente no Japão, onde em 2015 conquistou a 
+terceira vitória seguida na Robotrace \cite{robotrace2015}. 
+O Cartisx04, o qual pode ser visto na Figura \ref{fig:Hirai}, é um protótipo desenvolvido com base no Cartis03, sendo esse o seu 
+último robô desenvolvido. Não se tem acesso ao \textit{software} desenvolvido por \citeonline{Hirai}, no entanto é disponibilizado o 
+\textit{hardware} utilizado, logo é interessante conhecer como é feito o projeto de competidor de nível mundial.\par
+%
+Segundo o autor, o CartisX04 é um robô leve de direção irregular de quatro rodas. São utilizados dois motores Maxon DCX10L, 
+o qual é um motor CC \textit{brushed}, e um motor de direção Maxon RE10. Os sensores utilizados são o giroscópio 
+Invensense ISZ-650 e o sensor de refletância GP2S700, da Sharp. O microcontrolador utilizado foi o STM32F103RE, da 
+STMicroelectronics, o qual é equipado com processador ARM-Cortex M3 de 32 bits, 72MHz de \textit{clock}, 256KB de memória 
+\textit{flash} e 64KB de SRAM.
+As dimensões do veículo são 175mm de altura, 153mm de comprimento e 
+7mm de centro de gravidade. O robô pesa 98g, 32g a menos do que o protótipo anterior, o que para o autor propiciou aumento de 
+desempenho.
 
 
 
 
 
+\end{itemize}
+%%%%%
 
 
+\begin{figure}[h]
+    \centering
+    \captionsetup{width=0.83\textwidth,font=footnotesize,textfont=bf}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/allan.png}
+        \caption{\centering \label{fig:allan}}
+    \end{subfigure}    
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/marcio1.png}
+        \caption{\centering \label{fig:marcio}}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.4\textwidth}
+	\centering
+        \includegraphics[width=0.75\textwidth,height=0.18\textheight]{figuras/polulumod.png}
+        \caption{\centering \label{fig:pololu}}
+    \end{subfigure}
+    % THE CAPTION PREVIOUSLY WAS HERE
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,height=0.18\textheight]{figuras/Hirai.png}
+        \caption{\centering \label{fig:hirai}}
+    \end{subfigure}
+    
+    \caption{\label{fig:segLinha} Robôs seguidores de linha: (a) Robô \textit{Alpha Project} \cite{alemao}; 
+    (b) Pololu 3pi modificado \cite{alemao}; (c) Protótipo de \citeonline{allan}; (d) Cartisx04 de \citeonline{Hirai}.}
+\end{figure}
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END OF FILE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
