@@ -170,6 +170,7 @@
 
 \newcommand{\espcoorient}[2]
 {
+	\hspace{1cm}
 	\leftskip 0em
 	\@tempdima 6.5em
 	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
@@ -195,7 +196,7 @@
 		%\end{center}
 		
 		%\vspace{210pt}
-		\vspace{7.1cm}
+		\vspace{7.08cm}
 		
 		\begin{center}
 		  \begin{espacosimples}
@@ -674,16 +675,21 @@
 \newcommand{\listadesiglas}
 {
 	\pretextualchapter{LISTA DE SIGLAS}
-	\begin{espacoumemeio}  %cesar230511
-	\@starttoc{lsg}
-	\end{espacoumemeio}
+	\begin{spacing}  
+	 \taxaespacosimples
+	 \@starttoc{lsg}
+	 %\par
+	\end{spacing}
+
+	%
+	%\end{espacosimples}
 }
 
 \newcommand{\sigla}[2] {{\addcontentsline{lsg}{sigla}{\numberline{#1}{#2}}}#1}
 
 \newcommand{\l@sigla}[2]
 {
-	\vspace{-0.75cm}
+	\vspace{-0.52cm} %%% O ??? eu ja não sei
 	\leftskip 0em
         \parindent -1.1em
 	\@tempdima 5em
@@ -897,21 +903,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % NUMERACAO
 
+%%% SÓ DIGO UMA COISA: NÃO DIGO NADA
+%%% E DIGO MAIS: ESSE CÓDIGO TÁ UMA LOUCURAAAAAAA xD
 % Define o tipo de numeracao de Fs, tabelas e equacoes
 \AddAbsoluteCounter{figure}
-\setcounter{absfigure}{-3} % Não sei o pq, mas  ta funcionando
+\setcounter{absfigure}{-5} % Não sei o pq, mas  ta funcionando
 \renewcommand{\thefigure}{\arabic{absfigure}}
 \AddAbsoluteCounter{table}
-\setcounter{abstable}{-5}
+\setcounter{abstable}{-6}
 \renewcommand{\thetable}{\arabic{abstable}}
 \AddAbsoluteCounter{quadro}
-\setcounter{absquadro}{-5}
+\setcounter{absquadro}{-8}
 \renewcommand{\thequadro}{\arabic{absquadro}}
 \AddAbsoluteCounter{grafico}
 \setcounter{absgrafico}{0}
 \renewcommand{\thegrafico}{\arabic{absgrafico}}
 \AddAbsoluteCounter{equation}
-\setcounter{absequation}{0}
+\setcounter{absequation}{-5}
 \renewcommand{\theequation}{\arabic{absequation}}
 
 % Define o tipo de numeracao das paginas
